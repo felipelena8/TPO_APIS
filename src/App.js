@@ -6,6 +6,7 @@ import {Route, Router, Routes } from 'react-router-dom';
 import Inicio from './components/Inicio';
 import InicioSesion from './components/InicioSesion';
 import Registrate from './components/Registrate';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/iniciar-sesion" element={<InicioSesion/>}/>
           <Route path="/registrate" element={<Registrate/>}/>
       </Routes>
+      <Footer/>
     </>
 
   );
