@@ -8,7 +8,7 @@ export default function Registrate() {
           ¡Da clases! <br/>
           ¡Vivi de lo que te apasiona!
         </div>
-        <div className='flex flex-col text-center p-8 justify-between gap-10 rounded-3xl shadow-lg max-lg:w-full'>
+        <div className='flex flex-col text-center p-8 justify-between gap-10 rounded-3xl shadow-frame max-lg:w-full'>
           <span className='font-bold text-3xl'>Crea tu perfil</span>
           <form action="" className='flex flex-col gap-2'>
             <div className='flex gap-2'>
@@ -18,7 +18,7 @@ export default function Registrate() {
             <input type="text" placeholder='Numero de telefono' className='bg-slate-300 placeholder-slate-500 rounded h-12 pl-2' />
             <input type="text" placeholder='Correo electronico' className='bg-slate-300 placeholder-slate-500 rounded h-12 pl-2' />
             <input type="text" placeholder='Contraseña' className='bg-slate-300 placeholder-slate-500 rounded h-12 pl-2' />
-            <button type="submit" className='mt-10 p-3 bg-rose-600 font-bold text-white text-lg rounded-xl'>Empezar ahora</button>
+            <button type="submit" className='mt-5 p-2 bg-red-500 text-white text-lg rounded-xl w-full font-bold'>Empezar ahora</button>
           </form>
         </div>
       </div>
