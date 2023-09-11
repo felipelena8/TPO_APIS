@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Header() {
   const [categoriasVisibles, setCategoriasVisibles] = useState(false);
@@ -39,8 +39,8 @@ export default function Header() {
           <li className="text-slate-600 hover:text-purple-800"><NavLink to="/" className={({ isActive }) => isActive ? "text-orange-500" : ""} >Inicio</NavLink></li>
           <li className="text-slate-600 hover:text-purple-800"><NavLink to="como-funciona" className={({ isActive }) => isActive ? "text-orange-500" : ""} >Como funciona</NavLink></li>
           <li className="flex justify-between">
-            <a className="px-3 py-2 mx-2 border-black border rounded transition ease-in-out hover:bg-black hover:text-white" href="iniciar-sesion">Iniciar sesion</a>
-            <a className="px-3 py-2 mx-2 bg-black rounded text-white transition ease-in-out hover:bg-white hover:text-black border border-black" href="registrate">Registrate</a>
+            <Link className="px-3 py-2 mx-2 border-black border rounded transition ease-in-out hover:bg-black hover:text-white"to={"iniciar-sesion"}>Iniciar sesion</Link>
+            <Link className="px-3 py-2 mx-2 bg-black rounded text-white transition ease-in-out hover:bg-white hover:text-black border border-black" to="registrate">Registrate</Link>
           </li>
         </ul >
         <div className="flex flex-col justify-between w-full md:hidden">
@@ -66,8 +66,8 @@ export default function Header() {
 
           {(navMobile && <div className="p-3" id="mobile-menu">
             <div className="pb-3 flex flex-col">
-              <NavLink to="/iniciar-sesion" className={({ isActive }) => "py-3 border-b" + (isActive ? " text-orange-500" : "")}>Inicia sesion</NavLink>
-              <NavLink to="/registrate" className={({ isActive }) => "py-3 border-b" + (isActive ? " text-orange-500" : "")}>Regístrate</NavLink>
+              <Link to="iniciar-sesion" className={({ isActive }) => "py-3 border-b" + (isActive ? " text-orange-500" : "")}>Inicia sesion</Link>
+              <Link to="registrate" className={({ isActive }) => "py-3 border-b" + (isActive ? " text-orange-500" : "")}>Regístrate</Link>
 
             </div>
             <ul className="flex flex-col justify-center">
