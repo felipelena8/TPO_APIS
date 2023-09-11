@@ -7,6 +7,8 @@ import Inicio from './components/Inicio';
 import InicioSesion from './components/InicioSesion';
 import Registrate from './components/Registrate';
 import Footer from './components/Footer';
+import ContenedorClases from './components/ContenedorClases';
+import Clase from './components/Clase';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
           <Route path="/como-funciona" element={<ComoFunciona/>}/>
           <Route path="/iniciar-sesion" element={<InicioSesion/>}/>
           <Route path="/registrate" element={<Registrate/>}/>
+          <Route path="/clases/:categoria" element={<ContenedorClases/>}/>
+          <Route path="/clase/:id" element={<Clase/>}/>
       </Routes>
       <Footer/>
     </>

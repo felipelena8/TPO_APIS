@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <footer className='flex flex-col relative bottom-0 w-full justify-center text-center bg-slate-300 mt-8'>
+    <footer className='flex flex-col relative bottom-0 w-full justify-center text-center bg-slate-200 mt-8'>
       <div className='flex justify-evenly max-sm:items-center px-10 max-sm:flex-col max-sm:gap-4 py-8 border-b-2'>
         <div className="flex flex-col text-left">
           <h4 className='font-bold mb-3 text-lg text-center'>Acerca de nosotros</h4>
