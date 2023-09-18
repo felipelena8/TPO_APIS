@@ -26,6 +26,7 @@ export default function InicioSesion({ props }) {
     localStorage.setItem("nombre", usuario.nombre)
     localStorage.setItem("apellido", usuario.apellido)
     localStorage.setItem("telefono", usuario.telefono)
+    localStorage.setItem("img", usuario.img)
     setSesionIniciada(true)
   }
 
