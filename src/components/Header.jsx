@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-export default function Header() {
+
+export default function Header({ props }) {
   const [categoriasVisibles, setCategoriasVisibles] = useState(false);
   const [data, setData] = useState([]);
   const [navMobile, setNavMobile] = useState(false);
+
+  const { sesionIniciada, setSesionIniciada } = props;
 
   const getData = () => {
     fetch("/categorias.json").then(response => response.json()).then(json => setData(json))
@@ -12,10 +15,14 @@ export default function Header() {
 
   useEffect(() => {
     getData()
-
   }, [])
 
-  const categorias = data.map(element => <li className="border-b p-1 w-full hover:bg-slate-200 pl-2 rounded-lg"><a href={"/clases/"+element.toLowerCase()}>{element}</a></li>)
+  function cerrarSesion() {
+    localStorage.clear()
+    setSesionIniciada(false)
+  }
+
+  const categorias = data.map(element => <li className="border-b p-1 w-full hover:bg-slate-200 pl-2 rounded-lg"><a href={"/clases/" + element.toLowerCase()}>{element}</a></li>)
 
   return (
     <header className="py-14">
@@ -38,10 +45,11 @@ export default function Header() {
           </li>
           <li className="text-slate-600 hover:text-purple-800"><NavLink to="/" className={({ isActive }) => isActive ? "text-orange-500" : ""} >Inicio</NavLink></li>
           <li className="text-slate-600 hover:text-purple-800"><NavLink to="como-funciona" className={({ isActive }) => isActive ? "text-orange-500" : ""} >Como funciona</NavLink></li>
-          <li className="flex justify-between">
-            <Link className="px-3 py-2 mx-2 border-black border rounded transition ease-in-out hover:bg-black hover:text-white"to={"iniciar-sesion"}>Iniciar sesion</Link>
-            <Link className="px-3 py-2 mx-2 bg-black rounded text-white transition ease-in-out hover:bg-white hover:text-black border border-black" to="registrate">Registrate</Link>
-          </li>
+          {(sesionIniciada ?
+            <li><button className="px-3 py-2 mx-2 border-black border rounded transition ease-in-out hover:bg-black hover:text-white" onClick={(e) => cerrarSesion()}>Cerrar Sesion</button></li> :
+            <li className="flex justify-between"><Link className="px-3 py-2 mx-2 border-black border rounded transition ease-in-out hover:bg-black hover:text-white" to={"iniciar-sesion"}>Iniciar sesion</Link>
+              <Link className="px-3 py-2 mx-2 bg-black rounded text-white transition ease-in-out hover:bg-white hover:text-black border border-black" to="registrate">Registrate</Link>
+            </li>)}
         </ul >
         <div className="flex flex-col justify-between w-full md:hidden">
           <ul className="flex justify-between w-full px-3">
@@ -65,11 +73,10 @@ export default function Header() {
           </ul>
 
           {(navMobile && <div className="p-3" id="mobile-menu">
-            <div className="pb-3 flex flex-col">
-              <Link to="iniciar-sesion" className={({ isActive }) => "py-3 border-b" + (isActive ? " text-orange-500" : "")}>Inicia sesion</Link>
-              <Link to="registrate" className={({ isActive }) => "py-3 border-b" + (isActive ? " text-orange-500" : "")}>Regístrate</Link>
-
-            </div>
+            {(sesionIniciada ? <button className={"border-b p-1 w-full hover:bg-slate-200 pl-2 rounded-lg text-left"} onClick={cerrarSesion}>Cerrar sesion</button> : <div className="pb-3 flex flex-col">
+              <Link to="iniciar-sesion" className={"border-b p-1 w-full hover:bg-slate-200 pl-2 rounded-lg text-left"}>Inicia sesion</Link>
+              <Link to="registrate" className={"border-b p-1 w-full hover:bg-slate-200 pl-2 rounded-lg text-left"}>Regístrate</Link>
+            </div>)}
             <ul className="flex flex-col justify-center">
               <li className="">
                 <div className="justify-center items-center flex ">
@@ -86,18 +93,11 @@ export default function Header() {
               </li>
               <li className="text-slate-600 hover:bg-zinc-100 p-2 rounded border border-t-0"> <NavLink to="/como-funciona" className={({ isActive }) => isActive ? "text-orange-500" : ""} >Como funciona</NavLink></li>
             </ul>
+
           </div>)}
         </div>
       </nav >
     </header >
   );
-}
-function intercambiarVisibilidad() {
-  let header = document.getElementById("mobile-menu");
-  if (header.classList.contains("hidden")) {
-    header.classList.remove("hidden");
-  } else {
-    header.classList.add("hidden");
-  }
 }
 
