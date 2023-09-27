@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function CardClase({props}) {
-  const {nombre, categoria, calificacion, costo, ubicacion, img, descripcion, id} = props
-
+export default function CardClase({ props }) {
+  const { nombre, ubicacion, img, servicio } = props
+  let { calificacion, categoria, costo, descripcion, id } = servicio
   return (
-    <div className='rounded-3xl border border-slate-400  w-72'>
+    <div className='rounded-3xl border border-slate-400  w-72 shadow-xl'>
       <div className='flex relative'>
-        <Link to={"/clase/"+id}><img src={img} alt="" className='rounded-3xl w-72 h-72' /></Link>
+        <Link to={"/clase/" + id}><img src={img} alt="" className='rounded-3xl w-72 h-72' /></Link>
         <span className='absolute bottom-12 left-4 text-3xl font-bold text-white'>{nombre}</span>
         <span className='absolute bottom-4 left-4 text-xl font-bold text-white'>{categoria}</span>
       </div>

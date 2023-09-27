@@ -13,18 +13,20 @@ import React, { useState } from 'react';
 
 
 function App() {
-  const [sesionIniciada, setSesionIniciada] = useState(()=>{return localStorage.getItem("mail")!=null})
+  const [sesionIniciada, setSesionIniciada] = useState(() => { return localStorage.getItem("mail") != null })
   return (
     <>
-        <Header props={{sesionIniciada, setSesionIniciada}}/>
+      <Header props={{ sesionIniciada, setSesionIniciada }} />
+      <main className='min-h-screen'>
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/como-funciona" element={<ComoFunciona />} />
-          <Route path="/iniciar-sesion" element={<InicioSesion props={{sesionIniciada, setSesionIniciada}}/>} />
-          <Route path="/registrate" element={<Registrate props={{sesionIniciada}}/>} />
+          <Route path="/iniciar-sesion" element={<InicioSesion props={{ sesionIniciada, setSesionIniciada }} />} />
+          <Route path="/registrate" element={<Registrate props={{ sesionIniciada }} />} />
           <Route path="/clases/:categoria" element={<ContenedorClases />} />
           <Route path="/clase/:id" element={<Clase />} />
         </Routes>
+      </main>
       <Footer />
     </>
 

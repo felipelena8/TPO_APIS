@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router';
 
 
-export default function Registrate({props}) {
+export default function Registrate({ props }) {
   const [values, setValues] = useState({ nombre: "", apellido: "", numero: "", mail: "", password: "" })
   const [submitted, setSubmitted] = useState(false);
   const goTo = useNavigate();
@@ -49,7 +49,7 @@ export default function Registrate({props}) {
             {submitted && !values.mail ? (<span className='w-full text-left text-red-500'>Ingrese su email</span>) : ""}
             <input type="password" placeholder='Contraseña' name='password' value={values.password} onChange={handleInputChange} className='bg-slate-300 placeholder-slate-500 rounded h-12 pl-2' />
             {submitted && !values.password ? (<span className='w-full text-left text-red-500'>Ingrese una contraseña</span>) : (values.password.length < 8 ? ((<span className='w-full text-left text-red-500'>La contraseña debe tener minimo 8 caracteres</span>)) : "")}
-            <button type="submit" onClick={handleSubmit} className='mt-5 p-2 bg-red-500 text-white text-lg rounded-xl w-full font-bold'>Empezar ahora</button>
+            <button type="submit" onClick={handleSubmit} className='mt-5 p-2 bg-coral text-white text-lg rounded-xl w-full font-bold'>Empezar ahora</button>
           </form>
         </div>
       </div>
