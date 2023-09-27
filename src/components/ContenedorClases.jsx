@@ -17,7 +17,7 @@ export default function ContenedorClases() {
     getData();
   }, [])
 
-
+  //Se filtran las clases de una materia por profesor
   let proveedores = []
   for (let i = 0; i < data.length; i++) {
     let servicios = []
@@ -33,20 +33,14 @@ export default function ContenedorClases() {
     }
   }
 
+  //Se crea la lista de clases que luego se pasaran al componente
   let clases = []
   for (let i = 0; i < proveedores.length; i++) {
     let proveedor = proveedores[i]
     for (let j = 0; j < proveedores[i].servicios.length; j++) {
       let servicio = proveedor.servicios[j]
-      clases.push({
-        nombre: proveedor.nombre,
-        categoria: servicio.categoria,
-        calificacion: servicio.calificacion,
-        ubicacion: proveedor.ubicacion,
-        costo:servicio.costo,
-        img:proveedor.img,
-        descripcion:servicio.descripcion
-      })
+      proveedor.servicio = servicio;
+      clases.push(proveedor)
     }
   }
 
@@ -55,12 +49,12 @@ export default function ContenedorClases() {
   return (
     <div className='flex flex-wrap gap-4 justify-around lg:mx-28'>
       {cargando ? <div
-        class="inline-block h-8 w-8 animate-spin rounded-full border-4 border-blue-500 border-solid border-current border-r-transparent align-[-0.125em] text-primary motion-reduce:animate-[spin_1.5s_linear_infinite]"
+        className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-blue-500 border-solid border-current border-r-transparent align-[-0.125em] text-primary motion-reduce:animate-[spin_1.5s_linear_infinite]"
         role="status">
         <span
-          class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+          className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
         >Loading...</span>
-      </div> : clases.map(clase => <CardClase props={clase} />)}
+      </div> : clases.map(clase => <CardClase props={clase} key={clase.servicio.id} />)}
     </div>
   )
 }

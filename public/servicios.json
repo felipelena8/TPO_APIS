@@ -1,1291 +1,1291 @@
 [
   {
-    "nombre": "Juan Martin",
-    "apellido": "Caceres",
-    "telefono": "1234567810",
-    "mail": "proveedor1@example.com",
-    "experiencia": "Como tutor experimentado, comprendo las necesidades únicas de mis estudiantes. Mi objetivo es proporcionar un ambiente de aprendizaje enriquecedor y estimulante.",
-    "password": "password1",
-    "ubicacion": "Rosario",
-    "img": "/personaCard.jpg",
-    "servicios": [
-      {
-        "id": 1,
-        "categoria": "Idiomas",
-        "tipoClase": "Grupal",
-        "frecuencia": "Mensual",
-        "calificacion": 3.3,
-        "tipo": "Ambas",
-        "costo": 31.62,
-        "duracion": 0.54,
-        "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
-        "activo": true,
-        "comentarios": [
+      "nombre": "Juan Martin",
+      "apellido": "Caceres",
+      "telefono": "1234567810",
+      "mail": "proveedor1@example.com",
+      "experiencia": "Como tutor experimentado, comprendo las necesidades únicas de mis estudiantes. Mi objetivo es proporcionar un ambiente de aprendizaje enriquecedor y estimulante.",
+      "password": "password1",
+      "ubicacion": "Rosario",
+      "img": "/personaCard.jpg",
+      "servicios": [
           {
-            "fecha": "2023-06-02T15:29:26",
-            "mensaje": "Quisquam etincidunt adipisci dolor numquam non."
+              "id": 1,
+              "categoria": "Idiomas",
+              "tipoClase": "Grupal",
+              "frecuencia": "Mensual",
+              "calificacion": 3.3,
+              "tipo": "Ambas",
+              "costo": 2900,
+              "duracion": 0.54,
+              "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
+              "activo": true,
+              "comentarios": [
+                  {
+                      "fecha": "2023-06-02T15:29:26",
+                      "mensaje": "Quisquam etincidunt adipisci dolor numquam non."
+                  }
+              ]
+          },
+          {
+              "id": 2,
+              "categoria": "Música",
+              "tipoClase": "Individual",
+              "frecuencia": "Unica",
+              "calificacion": 4,
+              "tipo": "Presencial",
+              "costo": 2000,
+              "duracion": 1.74,
+              "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
+              "activo": false,
+              "comentarios": [
+                  {
+                      "fecha": "2022-06-11T01:38:00",
+                      "mensaje": "Porro magnam adipisci eius dolor etincidunt."
+                  },
+                  {
+                      "fecha": "2022-02-03T08:49:32",
+                      "mensaje": "Est voluptatem neque dolor consectetur."
+                  },
+                  {
+                      "fecha": "2021-01-29T15:17:59",
+                      "mensaje": "Adipisci tempora amet adipisci numquam."
+                  },
+                  {
+                      "fecha": "2023-04-22T08:34:10",
+                      "mensaje": "Est modi velit porro quaerat."
+                  }
+              ]
+          },
+          {
+              "id": 3,
+              "categoria": "Programación",
+              "tipoClase": "Individual",
+              "frecuencia": "Mensual",
+              "calificacion": 3.5,
+              "tipo": "Virtual",
+              "costo": 4900,
+              "duracion": 1.99,
+              "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
+              "activo": false,
+              "comentarios": [
+                  {
+                      "fecha": "2021-11-23T13:19:54",
+                      "mensaje": "Dolore labore sit ipsum quiquia."
+                  },
+                  {
+                      "fecha": "2022-05-04T21:12:13",
+                      "mensaje": "Porro numquam porro dolor tempora."
+                  }
+              ]
+          },
+          {
+              "id": 4,
+              "categoria": "Geografía",
+              "tipoClase": "Grupal",
+              "frecuencia": "Semanal",
+              "calificacion": 2.8,
+              "tipo": "Presencial",
+              "costo": 4700,
+              "duracion": 1.36,
+              "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
+              "activo": false,
+              "comentarios": [
+                  {
+                      "fecha": "2021-12-05T22:52:36",
+                      "mensaje": "Porro aliquam voluptatem quiquia quaerat porro."
+                  },
+                  {
+                      "fecha": "2021-06-08T19:49:17",
+                      "mensaje": "Porro etincidunt consectetur neque."
+                  },
+                  {
+                      "fecha": "2022-06-04T05:46:22",
+                      "mensaje": "Dolore velit amet numquam dolore sed ut."
+                  },
+                  {
+                      "fecha": "2020-12-18T02:49:58",
+                      "mensaje": "Magnam etincidunt eius ipsum neque porro."
+                  },
+                  {
+                      "fecha": "2020-05-25T03:27:20",
+                      "mensaje": "Consectetur numquam quaerat dolor porro."
+                  }
+              ]
+          },
+          {
+              "id": 5,
+              "categoria": "Matemáticas",
+              "tipoClase": "Individual",
+              "frecuencia": "Mensual",
+              "calificacion": 1.1,
+              "tipo": "Ambas",
+              "costo": 3000,
+              "duracion": 1.19,
+              "descripcion": "La enseñanza es mi pasión y mi vocación. Mi enfoque es fomentar el amor por el aprendizaje y ayudar a mis alumnos a alcanzar sus metas educativas.",
+              "activo": false,
+              "comentarios": [
+                  {
+                      "fecha": "2023-07-29T22:45:26",
+                      "mensaje": "Adipisci quaerat voluptatem sit."
+                  },
+                  {
+                      "fecha": "2022-10-29T05:27:06",
+                      "mensaje": "Tempora aliquam dolore eius."
+                  },
+                  {
+                      "fecha": "2022-07-21T20:44:40",
+                      "mensaje": "Magnam adipisci sit sed neque est sed."
+                  },
+                  {
+                      "fecha": "2021-03-11T12:29:27",
+                      "mensaje": "Adipisci ut ipsum eius."
+                  }
+              ]
           }
-        ]
-      },
-      {
-        "id": 2,
-        "categoria": "Música",
-        "tipoClase": "Individual",
-        "frecuencia": "Unica",
-        "calificacion": 4.0,
-        "tipo": "Presencial",
-        "costo": 31.12,
-        "duracion": 1.74,
-        "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
-        "activo": false,
-        "comentarios": [
-          {
-            "fecha": "2022-06-11T01:38:00",
-            "mensaje": "Porro magnam adipisci eius dolor etincidunt."
-          },
-          {
-            "fecha": "2022-02-03T08:49:32",
-            "mensaje": "Est voluptatem neque dolor consectetur."
-          },
-          {
-            "fecha": "2021-01-29T15:17:59",
-            "mensaje": "Adipisci tempora amet adipisci numquam."
-          },
-          {
-            "fecha": "2023-04-22T08:34:10",
-            "mensaje": "Est modi velit porro quaerat."
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "categoria": "Programación",
-        "tipoClase": "Individual",
-        "frecuencia": "Mensual",
-        "calificacion": 3.5,
-        "tipo": "Virtual",
-        "costo": 44.85,
-        "duracion": 1.99,
-        "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
-        "activo": false,
-        "comentarios": [
-          {
-            "fecha": "2021-11-23T13:19:54",
-            "mensaje": "Dolore labore sit ipsum quiquia."
-          },
-          {
-            "fecha": "2022-05-04T21:12:13",
-            "mensaje": "Porro numquam porro dolor tempora."
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "categoria": "Geografía",
-        "tipoClase": "Grupal",
-        "frecuencia": "Semanal",
-        "calificacion": 2.8,
-        "tipo": "Presencial",
-        "costo": 45.0,
-        "duracion": 1.36,
-        "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
-        "activo": false,
-        "comentarios": [
-          {
-            "fecha": "2021-12-05T22:52:36",
-            "mensaje": "Porro aliquam voluptatem quiquia quaerat porro."
-          },
-          {
-            "fecha": "2021-06-08T19:49:17",
-            "mensaje": "Porro etincidunt consectetur neque."
-          },
-          {
-            "fecha": "2022-06-04T05:46:22",
-            "mensaje": "Dolore velit amet numquam dolore sed ut."
-          },
-          {
-            "fecha": "2020-12-18T02:49:58",
-            "mensaje": "Magnam etincidunt eius ipsum neque porro."
-          },
-          {
-            "fecha": "2020-05-25T03:27:20",
-            "mensaje": "Consectetur numquam quaerat dolor porro."
-          }
-        ]
-      },
-      {
-        "id": 5,
-        "categoria": "Matemáticas",
-        "tipoClase": "Individual",
-        "frecuencia": "Mensual",
-        "calificacion": 1.1,
-        "tipo": "Ambas",
-        "costo": 38.95,
-        "duracion": 1.19,
-        "descripcion": "La enseñanza es mi pasión y mi vocación. Mi enfoque es fomentar el amor por el aprendizaje y ayudar a mis alumnos a alcanzar sus metas educativas.",
-        "activo": false,
-        "comentarios": [
-          {
-            "fecha": "2023-07-29T22:45:26",
-            "mensaje": "Adipisci quaerat voluptatem sit."
-          },
-          {
-            "fecha": "2022-10-29T05:27:06",
-            "mensaje": "Tempora aliquam dolore eius."
-          },
-          {
-            "fecha": "2022-07-21T20:44:40",
-            "mensaje": "Magnam adipisci sit sed neque est sed."
-          },
-          {
-            "fecha": "2021-03-11T12:29:27",
-            "mensaje": "Adipisci ut ipsum eius."
-          }
-        ]
-      }
-    ]
+      ]
   },
   {
-    "nombre": "Sofia",
-    "apellido": "Lopez",
-    "telefono": "1234567820",
-    "mail": "proveedor2@example.com",
-    "experiencia": "He dedicado mi vida a la educación y tengo una profunda pasión por transmitir conocimiento. Mis clases son interactivas y están diseñadas para inspirar el aprendizaje.",
-    "password": "password2",
-    "ubicacion": "Salta",
-    "img": "/personaCard.jpg",
-    "servicios": [
-      {
-        "id": 1,
-        "categoria": "Historia",
-        "tipoClase": "Grupal",
-        "frecuencia": "Unica",
-        "calificacion": 2.4,
-        "tipo": "Presencial",
-        "costo": 41.94,
-        "duracion": 0.79,
-        "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
-        "activo": false,
-        "comentarios": [
+      "nombre": "Sofia",
+      "apellido": "Lopez",
+      "telefono": "1234567820",
+      "mail": "proveedor2@example.com",
+      "experiencia": "He dedicado mi vida a la educación y tengo una profunda pasión por transmitir conocimiento. Mis clases son interactivas y están diseñadas para inspirar el aprendizaje.",
+      "password": "password2",
+      "ubicacion": "Salta",
+      "img": "/personaCard.jpg",
+      "servicios": [
           {
-            "fecha": "2020-12-26T09:53:44",
-            "mensaje": "Adipisci modi sed quisquam numquam sed."
+              "id": 6,
+              "categoria": "Historia",
+              "tipoClase": "Grupal",
+              "frecuencia": "Unica",
+              "calificacion": 2.4,
+              "tipo": "Presencial",
+              "costo": 2600,
+              "duracion": 0.79,
+              "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
+              "activo": false,
+              "comentarios": [
+                  {
+                      "fecha": "2020-12-26T09:53:44",
+                      "mensaje": "Adipisci modi sed quisquam numquam sed."
+                  },
+                  {
+                      "fecha": "2023-06-05T03:55:47",
+                      "mensaje": "Quiquia tempora modi ipsum est quaerat."
+                  },
+                  {
+                      "fecha": "2021-10-07T18:28:48",
+                      "mensaje": "Quisquam dolor quiquia dolorem ipsum ipsum consectetur consectetur."
+                  }
+              ]
           },
           {
-            "fecha": "2023-06-05T03:55:47",
-            "mensaje": "Quiquia tempora modi ipsum est quaerat."
+              "id": 7,
+              "categoria": "Idiomas",
+              "tipoClase": "Individual",
+              "frecuencia": "Unica",
+              "calificacion": 3.8,
+              "tipo": "Presencial",
+              "costo": 4600,
+              "duracion": 1.45,
+              "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
+              "activo": true,
+              "comentarios": [
+                  {
+                      "fecha": "2021-10-27T21:38:31",
+                      "mensaje": "Dolore ipsum magnam neque voluptatem dolorem quiquia etincidunt."
+                  }
+              ]
           },
           {
-            "fecha": "2021-10-07T18:28:48",
-            "mensaje": "Quisquam dolor quiquia dolorem ipsum ipsum consectetur consectetur."
+              "id": 8,
+              "categoria": "Música",
+              "tipoClase": "Grupal",
+              "frecuencia": "Mensual",
+              "calificacion": 1.7,
+              "tipo": "Virtual",
+              "costo": 3400,
+              "duracion": 1.55,
+              "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
+              "activo": false,
+              "comentarios": [
+                  {
+                      "fecha": "2022-07-12T19:52:52",
+                      "mensaje": "Amet sed aliquam sit dolorem neque."
+                  },
+                  {
+                      "fecha": "2020-07-29T23:56:12",
+                      "mensaje": "Voluptatem eius magnam est amet velit quisquam."
+                  },
+                  {
+                      "fecha": "2022-02-22T00:57:45",
+                      "mensaje": "Est labore porro quisquam."
+                  },
+                  {
+                      "fecha": "2021-09-23T02:18:15",
+                      "mensaje": "Ipsum quaerat ipsum voluptatem sed est adipisci."
+                  }
+              ]
+          },
+          {
+              "id": 9,
+              "categoria": "Programación",
+              "tipoClase": "Grupal",
+              "frecuencia": "Mensual",
+              "calificacion": 3.9,
+              "tipo": "Ambas",
+              "costo": 3700,
+              "duracion": 0.71,
+              "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
+              "activo": false,
+              "comentarios": [
+                  {
+                      "fecha": "2022-06-14T03:24:05",
+                      "mensaje": "Dolorem quisquam sed consectetur."
+                  }
+              ]
+          },
+          {
+              "id": 10,
+              "categoria": "Matemáticas",
+              "tipoClase": "Individual",
+              "frecuencia": "Mensual",
+              "calificacion": 3.2,
+              "tipo": "Virtual",
+              "costo": 2200,
+              "duracion": 1.94,
+              "descripcion": "Ofrezco una amplia gama de servicios de tutoría, desde clases individuales hasta sesiones grupales. Mi objetivo es proporcionar una experiencia de aprendizaje efectiva y atractiva.",
+              "activo": true,
+              "comentarios": [
+                  {
+                      "fecha": "2021-07-06T16:42:07",
+                      "mensaje": "Consectetur modi ut magnam etincidunt quisquam sit voluptatem."
+                  },
+                  {
+                      "fecha": "2023-08-01T20:27:30",
+                      "mensaje": "Voluptatem ipsum dolorem quiquia dolor velit."
+                  },
+                  {
+                      "fecha": "2020-01-20T11:17:59",
+                      "mensaje": "Aliquam magnam dolorem labore."
+                  }
+              ]
           }
-        ]
-      },
-      {
-        "id": 2,
-        "categoria": "Idiomas",
-        "tipoClase": "Individual",
-        "frecuencia": "Unica",
-        "calificacion": 3.8,
-        "tipo": "Presencial",
-        "costo": 35.06,
-        "duracion": 1.45,
-        "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
-        "activo": true,
-        "comentarios": [
-          {
-            "fecha": "2021-10-27T21:38:31",
-            "mensaje": "Dolore ipsum magnam neque voluptatem dolorem quiquia etincidunt."
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "categoria": "Música",
-        "tipoClase": "Grupal",
-        "frecuencia": "Mensual",
-        "calificacion": 1.7,
-        "tipo": "Virtual",
-        "costo": 26.56,
-        "duracion": 1.55,
-        "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
-        "activo": false,
-        "comentarios": [
-          {
-            "fecha": "2022-07-12T19:52:52",
-            "mensaje": "Amet sed aliquam sit dolorem neque."
-          },
-          {
-            "fecha": "2020-07-29T23:56:12",
-            "mensaje": "Voluptatem eius magnam est amet velit quisquam."
-          },
-          {
-            "fecha": "2022-02-22T00:57:45",
-            "mensaje": "Est labore porro quisquam."
-          },
-          {
-            "fecha": "2021-09-23T02:18:15",
-            "mensaje": "Ipsum quaerat ipsum voluptatem sed est adipisci."
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "categoria": "Programación",
-        "tipoClase": "Grupal",
-        "frecuencia": "Mensual",
-        "calificacion": 3.9,
-        "tipo": "Ambas",
-        "costo": 32.48,
-        "duracion": 0.71,
-        "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
-        "activo": false,
-        "comentarios": [
-          {
-            "fecha": "2022-06-14T03:24:05",
-            "mensaje": "Dolorem quisquam sed consectetur."
-          }
-        ]
-      },
-      {
-        "id": 5,
-        "categoria": "Matemáticas",
-        "tipoClase": "Individual",
-        "frecuencia": "Mensual",
-        "calificacion": 3.2,
-        "tipo": "Virtual",
-        "costo": 32.42,
-        "duracion": 1.94,
-        "descripcion": "Ofrezco una amplia gama de servicios de tutoría, desde clases individuales hasta sesiones grupales. Mi objetivo es proporcionar una experiencia de aprendizaje efectiva y atractiva.",
-        "activo": true,
-        "comentarios": [
-          {
-            "fecha": "2021-07-06T16:42:07",
-            "mensaje": "Consectetur modi ut magnam etincidunt quisquam sit voluptatem."
-          },
-          {
-            "fecha": "2023-08-01T20:27:30",
-            "mensaje": "Voluptatem ipsum dolorem quiquia dolor velit."
-          },
-          {
-            "fecha": "2020-01-20T11:17:59",
-            "mensaje": "Aliquam magnam dolorem labore."
-          }
-        ]
-      }
-    ]
+      ]
   },
   {
-    "nombre": "Santino",
-    "apellido": "Lopez",
-    "telefono": "1234567830",
-    "mail": "proveedor3@example.com",
-    "experiencia": "Mi amor por la enseñanza y el aprendizaje me motiva a ayudar a mis alumnos a tener éxito en sus estudios. Creo en la importancia de la educación en el desarrollo personal.",
-    "password": "password3",
-    "ubicacion": "Buenos Aires",
-    "img": "/personaCard.jpg",
-    "servicios": [
-      {
-        "id": 1,
-        "categoria": "Deportes",
-        "tipoClase": "Individual",
-        "frecuencia": "Unica",
-        "calificacion": 0.2,
-        "tipo": "Virtual",
-        "costo": 36.13,
-        "duracion": 1.02,
-        "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
-        "activo": false,
-        "comentarios": []
-      },
-      {
-        "id": 2,
-        "categoria": "Lengua Española",
-        "tipoClase": "Grupal",
-        "frecuencia": "Unica",
-        "calificacion": 2.3,
-        "tipo": "Virtual",
-        "costo": 28.37,
-        "duracion": 0.77,
-        "descripcion": "La enseñanza es mi pasión y mi vocación. Mi enfoque es fomentar el amor por el aprendizaje y ayudar a mis alumnos a alcanzar sus metas educativas.",
-        "activo": true,
-        "comentarios": [
+      "nombre": "Santino",
+      "apellido": "Lopez",
+      "telefono": "1234567830",
+      "mail": "proveedor3@example.com",
+      "experiencia": "Mi amor por la enseñanza y el aprendizaje me motiva a ayudar a mis alumnos a tener éxito en sus estudios. Creo en la importancia de la educación en el desarrollo personal.",
+      "password": "password3",
+      "ubicacion": "Buenos Aires",
+      "img": "/personaCard.jpg",
+      "servicios": [
           {
-            "fecha": "2021-10-27T15:23:06",
-            "mensaje": "Ipsum quisquam numquam velit aliquam quiquia eius dolore."
+              "id": 11,
+              "categoria": "Deportes",
+              "tipoClase": "Individual",
+              "frecuencia": "Unica",
+              "calificacion": 0.2,
+              "tipo": "Virtual",
+              "costo": 4300,
+              "duracion": 1.02,
+              "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
+              "activo": false,
+              "comentarios": []
+          },
+          {
+              "id": 12,
+              "categoria": "Lengua Española",
+              "tipoClase": "Grupal",
+              "frecuencia": "Unica",
+              "calificacion": 2.3,
+              "tipo": "Virtual",
+              "costo": 4500,
+              "duracion": 0.77,
+              "descripcion": "La enseñanza es mi pasión y mi vocación. Mi enfoque es fomentar el amor por el aprendizaje y ayudar a mis alumnos a alcanzar sus metas educativas.",
+              "activo": true,
+              "comentarios": [
+                  {
+                      "fecha": "2021-10-27T15:23:06",
+                      "mensaje": "Ipsum quisquam numquam velit aliquam quiquia eius dolore."
+                  }
+              ]
+          },
+          {
+              "id": 13,
+              "categoria": "Deportes",
+              "tipoClase": "Individual",
+              "frecuencia": "Mensual",
+              "calificacion": 4.6,
+              "tipo": "Ambas",
+              "costo": 4500,
+              "duracion": 1.93,
+              "descripcion": "Ofrezco una amplia gama de servicios de tutoría, desde clases individuales hasta sesiones grupales. Mi objetivo es proporcionar una experiencia de aprendizaje efectiva y atractiva.",
+              "activo": false,
+              "comentarios": [
+                  {
+                      "fecha": "2020-11-17T14:17:00",
+                      "mensaje": "Dolore adipisci ipsum ipsum quiquia."
+                  },
+                  {
+                      "fecha": "2020-11-15T21:54:39",
+                      "mensaje": "Dolore est dolorem magnam dolorem consectetur."
+                  },
+                  {
+                      "fecha": "2021-02-10T10:06:59",
+                      "mensaje": "Quisquam sed ut consectetur etincidunt quisquam amet quiquia."
+                  },
+                  {
+                      "fecha": "2020-01-29T17:34:20",
+                      "mensaje": "Modi sed ipsum dolore neque."
+                  },
+                  {
+                      "fecha": "2021-01-04T08:24:11",
+                      "mensaje": "Eius quiquia ipsum numquam non numquam."
+                  }
+              ]
+          },
+          {
+              "id": 14,
+              "categoria": "Matemáticas",
+              "tipoClase": "Grupal",
+              "frecuencia": "Semanal",
+              "calificacion": 3.5,
+              "tipo": "Ambas",
+              "costo": 4700,
+              "duracion": 1.36,
+              "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
+              "activo": false,
+              "comentarios": [
+                  {
+                      "fecha": "2021-06-15T22:43:14",
+                      "mensaje": "Consectetur dolorem consectetur neque porro est modi."
+                  },
+                  {
+                      "fecha": "2020-08-03T01:39:46",
+                      "mensaje": "Dolorem est adipisci porro."
+                  },
+                  {
+                      "fecha": "2021-03-26T02:33:44",
+                      "mensaje": "Eius numquam magnam tempora dolorem magnam adipisci velit."
+                  }
+              ]
+          },
+          {
+              "id": 15,
+              "categoria": "Economía",
+              "tipoClase": "Individual",
+              "frecuencia": "Semanal",
+              "calificacion": 3.5,
+              "tipo": "Ambas",
+              "costo": 3400,
+              "duracion": 0.82,
+              "descripcion": "La enseñanza es mi pasión y mi vocación. Mi enfoque es fomentar el amor por el aprendizaje y ayudar a mis alumnos a alcanzar sus metas educativas.",
+              "activo": true,
+              "comentarios": [
+                  {
+                      "fecha": "2020-03-23T04:32:03",
+                      "mensaje": "Est amet ut amet magnam sed quisquam aliquam."
+                  },
+                  {
+                      "fecha": "2020-05-29T22:58:19",
+                      "mensaje": "Consectetur neque amet etincidunt labore."
+                  }
+              ]
           }
-        ]
-      },
-      {
-        "id": 3,
-        "categoria": "Deportes",
-        "tipoClase": "Individual",
-        "frecuencia": "Mensual",
-        "calificacion": 4.6,
-        "tipo": "Ambas",
-        "costo": 32.95,
-        "duracion": 1.93,
-        "descripcion": "Ofrezco una amplia gama de servicios de tutoría, desde clases individuales hasta sesiones grupales. Mi objetivo es proporcionar una experiencia de aprendizaje efectiva y atractiva.",
-        "activo": false,
-        "comentarios": [
-          {
-            "fecha": "2020-11-17T14:17:00",
-            "mensaje": "Dolore adipisci ipsum ipsum quiquia."
-          },
-          {
-            "fecha": "2020-11-15T21:54:39",
-            "mensaje": "Dolore est dolorem magnam dolorem consectetur."
-          },
-          {
-            "fecha": "2021-02-10T10:06:59",
-            "mensaje": "Quisquam sed ut consectetur etincidunt quisquam amet quiquia."
-          },
-          {
-            "fecha": "2020-01-29T17:34:20",
-            "mensaje": "Modi sed ipsum dolore neque."
-          },
-          {
-            "fecha": "2021-01-04T08:24:11",
-            "mensaje": "Eius quiquia ipsum numquam non numquam."
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "categoria": "Matemáticas",
-        "tipoClase": "Grupal",
-        "frecuencia": "Semanal",
-        "calificacion": 3.5,
-        "tipo": "Ambas",
-        "costo": 43.22,
-        "duracion": 1.36,
-        "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
-        "activo": false,
-        "comentarios": [
-          {
-            "fecha": "2021-06-15T22:43:14",
-            "mensaje": "Consectetur dolorem consectetur neque porro est modi."
-          },
-          {
-            "fecha": "2020-08-03T01:39:46",
-            "mensaje": "Dolorem est adipisci porro."
-          },
-          {
-            "fecha": "2021-03-26T02:33:44",
-            "mensaje": "Eius numquam magnam tempora dolorem magnam adipisci velit."
-          }
-        ]
-      },
-      {
-        "id": 5,
-        "categoria": "Economía",
-        "tipoClase": "Individual",
-        "frecuencia": "Semanal",
-        "calificacion": 3.5,
-        "tipo": "Ambas",
-        "costo": 33.55,
-        "duracion": 0.82,
-        "descripcion": "La enseñanza es mi pasión y mi vocación. Mi enfoque es fomentar el amor por el aprendizaje y ayudar a mis alumnos a alcanzar sus metas educativas.",
-        "activo": true,
-        "comentarios": [
-          {
-            "fecha": "2020-03-23T04:32:03",
-            "mensaje": "Est amet ut amet magnam sed quisquam aliquam."
-          },
-          {
-            "fecha": "2020-05-29T22:58:19",
-            "mensaje": "Consectetur neque amet etincidunt labore."
-          }
-        ]
-      }
-    ]
+      ]
   },
   {
-    "nombre": "Francisco",
-    "apellido": "Ruiz",
-    "telefono": "1234567840",
-    "mail": "proveedor4@example.com",
-    "experiencia": "He dedicado mi vida a la educación y tengo una profunda pasión por transmitir conocimiento. Mis clases son interactivas y están diseñadas para inspirar el aprendizaje.",
-    "password": "password4",
-    "ubicacion": "Santa Fe",
-    "img": "/personaCard.jpg",
-    "servicios": [
-      {
-        "id": 1,
-        "categoria": "Programación",
-        "tipoClase": "Individual",
-        "frecuencia": "Unica",
-        "calificacion": 3.6,
-        "tipo": "Virtual",
-        "costo": 43.44,
-        "duracion": 1.43,
-        "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
-        "activo": true,
-        "comentarios": [
+      "nombre": "Francisco",
+      "apellido": "Ruiz",
+      "telefono": "1234567840",
+      "mail": "proveedor4@example.com",
+      "experiencia": "He dedicado mi vida a la educación y tengo una profunda pasión por transmitir conocimiento. Mis clases son interactivas y están diseñadas para inspirar el aprendizaje.",
+      "password": "password4",
+      "ubicacion": "Santa Fe",
+      "img": "/personaCard.jpg",
+      "servicios": [
           {
-            "fecha": "2021-04-24T21:54:22",
-            "mensaje": "Est quaerat est porro."
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "categoria": "Música",
-        "tipoClase": "Grupal",
-        "frecuencia": "Unica",
-        "calificacion": 3.1,
-        "tipo": "Ambas",
-        "costo": 39.87,
-        "duracion": 1.06,
-        "descripcion": "La enseñanza es mi pasión y mi vocación. Mi enfoque es fomentar el amor por el aprendizaje y ayudar a mis alumnos a alcanzar sus metas educativas.",
-        "activo": false,
-        "comentarios": [
-          {
-            "fecha": "2022-01-06T04:36:05",
-            "mensaje": "Aliquam tempora adipisci ut dolor labore."
+              "id": 16,
+              "categoria": "Programación",
+              "tipoClase": "Individual",
+              "frecuencia": "Unica",
+              "calificacion": 3.6,
+              "tipo": "Virtual",
+              "costo": 2300,
+              "duracion": 1.43,
+              "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
+              "activo": true,
+              "comentarios": [
+                  {
+                      "fecha": "2021-04-24T21:54:22",
+                      "mensaje": "Est quaerat est porro."
+                  }
+              ]
           },
           {
-            "fecha": "2020-03-04T01:59:20",
-            "mensaje": "Quaerat velit neque sed."
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "categoria": "Arte",
-        "tipoClase": "Individual",
-        "frecuencia": "Semanal",
-        "calificacion": 0.4,
-        "tipo": "Virtual",
-        "costo": 21.24,
-        "duracion": 0.63,
-        "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
-        "activo": true,
-        "comentarios": [
-          {
-            "fecha": "2023-01-16T00:44:12",
-            "mensaje": "Dolorem consectetur dolor eius dolorem non."
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "categoria": "Arte",
-        "tipoClase": "Individual",
-        "frecuencia": "Unica",
-        "calificacion": 4.7,
-        "tipo": "Presencial",
-        "costo": 29.15,
-        "duracion": 0.5,
-        "descripcion": "La enseñanza es mi pasión y mi vocación. Mi enfoque es fomentar el amor por el aprendizaje y ayudar a mis alumnos a alcanzar sus metas educativas.",
-        "activo": true,
-        "comentarios": []
-      },
-      {
-        "id": 5,
-        "categoria": "Música",
-        "tipoClase": "Individual",
-        "frecuencia": "Unica",
-        "calificacion": 4.9,
-        "tipo": "Presencial",
-        "costo": 25.93,
-        "duracion": 0.83,
-        "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
-        "activo": true,
-        "comentarios": [
-          {
-            "fecha": "2022-09-08T11:15:38",
-            "mensaje": "Adipisci dolore velit consectetur neque porro quiquia."
+              "id": 17,
+              "categoria": "Música",
+              "tipoClase": "Grupal",
+              "frecuencia": "Unica",
+              "calificacion": 3.1,
+              "tipo": "Ambas",
+              "costo": 4100,
+              "duracion": 1.06,
+              "descripcion": "La enseñanza es mi pasión y mi vocación. Mi enfoque es fomentar el amor por el aprendizaje y ayudar a mis alumnos a alcanzar sus metas educativas.",
+              "activo": false,
+              "comentarios": [
+                  {
+                      "fecha": "2022-01-06T04:36:05",
+                      "mensaje": "Aliquam tempora adipisci ut dolor labore."
+                  },
+                  {
+                      "fecha": "2020-03-04T01:59:20",
+                      "mensaje": "Quaerat velit neque sed."
+                  }
+              ]
           },
           {
-            "fecha": "2020-11-30T07:19:21",
-            "mensaje": "Labore ut quisquam dolore dolor dolor non."
+              "id": 18,
+              "categoria": "Arte",
+              "tipoClase": "Individual",
+              "frecuencia": "Semanal",
+              "calificacion": 0.4,
+              "tipo": "Virtual",
+              "costo": 4900,
+              "duracion": 0.63,
+              "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
+              "activo": true,
+              "comentarios": [
+                  {
+                      "fecha": "2023-01-16T00:44:12",
+                      "mensaje": "Dolorem consectetur dolor eius dolorem non."
+                  }
+              ]
           },
           {
-            "fecha": "2023-04-22T19:50:26",
-            "mensaje": "Adipisci dolor amet porro est ipsum."
+              "id": 19,
+              "categoria": "Arte",
+              "tipoClase": "Individual",
+              "frecuencia": "Unica",
+              "calificacion": 4.7,
+              "tipo": "Presencial",
+              "costo": 4700,
+              "duracion": 0.5,
+              "descripcion": "La enseñanza es mi pasión y mi vocación. Mi enfoque es fomentar el amor por el aprendizaje y ayudar a mis alumnos a alcanzar sus metas educativas.",
+              "activo": true,
+              "comentarios": []
+          },
+          {
+              "id": 20,
+              "categoria": "Música",
+              "tipoClase": "Individual",
+              "frecuencia": "Unica",
+              "calificacion": 4.9,
+              "tipo": "Presencial",
+              "costo": 4400,
+              "duracion": 0.83,
+              "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
+              "activo": true,
+              "comentarios": [
+                  {
+                      "fecha": "2022-09-08T11:15:38",
+                      "mensaje": "Adipisci dolore velit consectetur neque porro quiquia."
+                  },
+                  {
+                      "fecha": "2020-11-30T07:19:21",
+                      "mensaje": "Labore ut quisquam dolore dolor dolor non."
+                  },
+                  {
+                      "fecha": "2023-04-22T19:50:26",
+                      "mensaje": "Adipisci dolor amet porro est ipsum."
+                  }
+              ]
           }
-        ]
-      }
-    ]
+      ]
   },
   {
-    "nombre": "Emilia",
-    "apellido": "Herrera",
-    "telefono": "1234567850",
-    "mail": "proveedor5@example.com",
-    "experiencia": "Soy un apasionado por la enseñanza con años de experiencia ayudando a estudiantes a alcanzar sus metas académicas. Mi enfoque es brindar una educación de calidad y personalizada.",
-    "password": "password5",
-    "ubicacion": "La Plata",
-    "img": "/personaCard.jpg",
-    "servicios": [
-      {
-        "id": 1,
-        "categoria": "Matemáticas",
-        "tipoClase": "Individual",
-        "frecuencia": "Unica",
-        "calificacion": 4.3,
-        "tipo": "Ambas",
-        "costo": 41.89,
-        "duracion": 0.91,
-        "descripcion": "La enseñanza es mi pasión y mi vocación. Mi enfoque es fomentar el amor por el aprendizaje y ayudar a mis alumnos a alcanzar sus metas educativas.",
-        "activo": false,
-        "comentarios": [
+      "nombre": "Emilia",
+      "apellido": "Herrera",
+      "telefono": "1234567850",
+      "mail": "proveedor5@example.com",
+      "experiencia": "Soy un apasionado por la enseñanza con años de experiencia ayudando a estudiantes a alcanzar sus metas académicas. Mi enfoque es brindar una educación de calidad y personalizada.",
+      "password": "password5",
+      "ubicacion": "La Plata",
+      "img": "/personaCard.jpg",
+      "servicios": [
           {
-            "fecha": "2023-02-02T20:03:03",
-            "mensaje": "Velit ipsum velit etincidunt non dolore."
+              "id": 21,
+              "categoria": "Matemáticas",
+              "tipoClase": "Individual",
+              "frecuencia": "Unica",
+              "calificacion": 4.3,
+              "tipo": "Ambas",
+              "costo": 3400,
+              "duracion": 0.91,
+              "descripcion": "La enseñanza es mi pasión y mi vocación. Mi enfoque es fomentar el amor por el aprendizaje y ayudar a mis alumnos a alcanzar sus metas educativas.",
+              "activo": false,
+              "comentarios": [
+                  {
+                      "fecha": "2023-02-02T20:03:03",
+                      "mensaje": "Velit ipsum velit etincidunt non dolore."
+                  },
+                  {
+                      "fecha": "2020-09-10T07:10:45",
+                      "mensaje": "Voluptatem amet etincidunt modi dolorem."
+                  },
+                  {
+                      "fecha": "2022-06-01T06:49:47",
+                      "mensaje": "Aliquam labore voluptatem adipisci quiquia porro."
+                  },
+                  {
+                      "fecha": "2022-09-07T12:55:23",
+                      "mensaje": "Tempora sed est dolor consectetur voluptatem."
+                  },
+                  {
+                      "fecha": "2022-06-29T06:44:36",
+                      "mensaje": "Ut dolore aliquam amet consectetur dolore ut."
+                  }
+              ]
           },
           {
-            "fecha": "2020-09-10T07:10:45",
-            "mensaje": "Voluptatem amet etincidunt modi dolorem."
+              "id": 22,
+              "categoria": "Deportes",
+              "tipoClase": "Individual",
+              "frecuencia": "Mensual",
+              "calificacion": 3.7,
+              "tipo": "Presencial",
+              "costo": 3000,
+              "duracion": 0.63,
+              "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
+              "activo": true,
+              "comentarios": [
+                  {
+                      "fecha": "2021-02-08T20:01:10",
+                      "mensaje": "Porro ipsum quiquia sit aliquam non tempora sed."
+                  }
+              ]
           },
           {
-            "fecha": "2022-06-01T06:49:47",
-            "mensaje": "Aliquam labore voluptatem adipisci quiquia porro."
+              "id": 23,
+              "categoria": "Economía",
+              "tipoClase": "Grupal",
+              "frecuencia": "Semanal",
+              "calificacion": 3.3,
+              "tipo": "Virtual",
+              "costo": 1500,
+              "duracion": 1.06,
+              "descripcion": "La enseñanza es mi pasión y mi vocación. Mi enfoque es fomentar el amor por el aprendizaje y ayudar a mis alumnos a alcanzar sus metas educativas.",
+              "activo": true,
+              "comentarios": []
           },
           {
-            "fecha": "2022-09-07T12:55:23",
-            "mensaje": "Tempora sed est dolor consectetur voluptatem."
+              "id": 24,
+              "categoria": "Música",
+              "tipoClase": "Individual",
+              "frecuencia": "Mensual",
+              "calificacion": 2.2,
+              "tipo": "Presencial",
+              "costo": 3400,
+              "duracion": 1.62,
+              "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
+              "activo": false,
+              "comentarios": [
+                  {
+                      "fecha": "2021-12-09T19:17:38",
+                      "mensaje": "Labore amet amet modi modi non est."
+                  },
+                  {
+                      "fecha": "2022-01-23T01:36:33",
+                      "mensaje": "Aliquam labore sit eius dolorem etincidunt dolore consectetur."
+                  }
+              ]
           },
           {
-            "fecha": "2022-06-29T06:44:36",
-            "mensaje": "Ut dolore aliquam amet consectetur dolore ut."
+              "id": 25,
+              "categoria": "Arte",
+              "tipoClase": "Grupal",
+              "frecuencia": "Unica",
+              "calificacion": 2.7,
+              "tipo": "Virtual",
+              "costo": 2600,
+              "duracion": 0.74,
+              "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
+              "activo": true,
+              "comentarios": []
           }
-        ]
-      },
-      {
-        "id": 2,
-        "categoria": "Deportes",
-        "tipoClase": "Individual",
-        "frecuencia": "Mensual",
-        "calificacion": 3.7,
-        "tipo": "Presencial",
-        "costo": 46.86,
-        "duracion": 0.63,
-        "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
-        "activo": true,
-        "comentarios": [
-          {
-            "fecha": "2021-02-08T20:01:10",
-            "mensaje": "Porro ipsum quiquia sit aliquam non tempora sed."
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "categoria": "Economía",
-        "tipoClase": "Grupal",
-        "frecuencia": "Semanal",
-        "calificacion": 3.3,
-        "tipo": "Virtual",
-        "costo": 28.92,
-        "duracion": 1.06,
-        "descripcion": "La enseñanza es mi pasión y mi vocación. Mi enfoque es fomentar el amor por el aprendizaje y ayudar a mis alumnos a alcanzar sus metas educativas.",
-        "activo": true,
-        "comentarios": []
-      },
-      {
-        "id": 4,
-        "categoria": "Música",
-        "tipoClase": "Individual",
-        "frecuencia": "Mensual",
-        "calificacion": 2.2,
-        "tipo": "Presencial",
-        "costo": 22.05,
-        "duracion": 1.62,
-        "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
-        "activo": false,
-        "comentarios": [
-          {
-            "fecha": "2021-12-09T19:17:38",
-            "mensaje": "Labore amet amet modi modi non est."
-          },
-          {
-            "fecha": "2022-01-23T01:36:33",
-            "mensaje": "Aliquam labore sit eius dolorem etincidunt dolore consectetur."
-          }
-        ]
-      },
-      {
-        "id": 5,
-        "categoria": "Arte",
-        "tipoClase": "Grupal",
-        "frecuencia": "Unica",
-        "calificacion": 2.7,
-        "tipo": "Virtual",
-        "costo": 40.57,
-        "duracion": 0.74,
-        "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
-        "activo": true,
-        "comentarios": []
-      }
-    ]
+      ]
   },
   {
-    "nombre": "Julia",
-    "apellido": "Ramirez",
-    "telefono": "1234567860",
-    "mail": "proveedor6@example.com",
-    "experiencia": "He dedicado mi vida a la educación y tengo una profunda pasión por transmitir conocimiento. Mis clases son interactivas y están diseñadas para inspirar el aprendizaje.",
-    "password": "password6",
-    "ubicacion": "Buenos Aires",
-    "img": "/personaCard.jpg",
-    "servicios": [
-      {
-        "id": 1,
-        "categoria": "Música",
-        "tipoClase": "Individual",
-        "frecuencia": "Mensual",
-        "calificacion": 4.6,
-        "tipo": "Presencial",
-        "costo": 39.49,
-        "duracion": 0.77,
-        "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
-        "activo": false,
-        "comentarios": [
+      "nombre": "Julia",
+      "apellido": "Ramirez",
+      "telefono": "1234567860",
+      "mail": "proveedor6@example.com",
+      "experiencia": "He dedicado mi vida a la educación y tengo una profunda pasión por transmitir conocimiento. Mis clases son interactivas y están diseñadas para inspirar el aprendizaje.",
+      "password": "password6",
+      "ubicacion": "Buenos Aires",
+      "img": "/personaCard.jpg",
+      "servicios": [
           {
-            "fecha": "2023-03-02T21:29:00",
-            "mensaje": "Tempora quiquia quiquia velit quaerat."
+              "id": 26,
+              "categoria": "Música",
+              "tipoClase": "Individual",
+              "frecuencia": "Mensual",
+              "calificacion": 4.6,
+              "tipo": "Presencial",
+              "costo": 1500,
+              "duracion": 0.77,
+              "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
+              "activo": false,
+              "comentarios": [
+                  {
+                      "fecha": "2023-03-02T21:29:00",
+                      "mensaje": "Tempora quiquia quiquia velit quaerat."
+                  },
+                  {
+                      "fecha": "2020-09-25T11:12:13",
+                      "mensaje": "Amet quiquia sed magnam non quiquia."
+                  },
+                  {
+                      "fecha": "2022-07-12T01:56:53",
+                      "mensaje": "Amet sed quaerat neque."
+                  },
+                  {
+                      "fecha": "2021-09-21T17:30:14",
+                      "mensaje": "Numquam est ut etincidunt."
+                  }
+              ]
           },
           {
-            "fecha": "2020-09-25T11:12:13",
-            "mensaje": "Amet quiquia sed magnam non quiquia."
+              "id": 27,
+              "categoria": "Música",
+              "tipoClase": "Grupal",
+              "frecuencia": "Mensual",
+              "calificacion": 0,
+              "tipo": "Ambas",
+              "costo": 3200,
+              "duracion": 0.84,
+              "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
+              "activo": true,
+              "comentarios": []
           },
           {
-            "fecha": "2022-07-12T01:56:53",
-            "mensaje": "Amet sed quaerat neque."
+              "id": 28,
+              "categoria": "Psicología",
+              "tipoClase": "Grupal",
+              "frecuencia": "Unica",
+              "calificacion": 3.7,
+              "tipo": "Ambas",
+              "costo": 4500,
+              "duracion": 1.74,
+              "descripcion": "La enseñanza es mi pasión y mi vocación. Mi enfoque es fomentar el amor por el aprendizaje y ayudar a mis alumnos a alcanzar sus metas educativas.",
+              "activo": true,
+              "comentarios": [
+                  {
+                      "fecha": "2023-01-14T02:29:08",
+                      "mensaje": "Sit dolor magnam dolor sit."
+                  },
+                  {
+                      "fecha": "2022-02-13T13:44:01",
+                      "mensaje": "Quisquam etincidunt quiquia velit eius."
+                  },
+                  {
+                      "fecha": "2023-08-03T14:43:32",
+                      "mensaje": "Eius numquam sed est voluptatem dolore sit."
+                  },
+                  {
+                      "fecha": "2021-01-28T23:16:33",
+                      "mensaje": "Dolor porro adipisci sit."
+                  },
+                  {
+                      "fecha": "2022-10-05T15:55:20",
+                      "mensaje": "Voluptatem voluptatem voluptatem labore quaerat sed ut."
+                  }
+              ]
           },
           {
-            "fecha": "2021-09-21T17:30:14",
-            "mensaje": "Numquam est ut etincidunt."
+              "id": 29,
+              "categoria": "Geografía",
+              "tipoClase": "Individual",
+              "frecuencia": "Mensual",
+              "calificacion": 3.1,
+              "tipo": "Presencial",
+              "costo": 1100,
+              "duracion": 0.81,
+              "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
+              "activo": false,
+              "comentarios": [
+                  {
+                      "fecha": "2020-11-13T16:22:48",
+                      "mensaje": "Etincidunt quaerat dolorem eius numquam sit neque magnam."
+                  },
+                  {
+                      "fecha": "2022-03-10T12:48:29",
+                      "mensaje": "Ipsum eius ut est etincidunt dolor sit quisquam."
+                  },
+                  {
+                      "fecha": "2021-02-13T06:47:17",
+                      "mensaje": "Quaerat tempora est tempora magnam."
+                  }
+              ]
+          },
+          {
+              "id": 30,
+              "categoria": "Idiomas",
+              "tipoClase": "Individual",
+              "frecuencia": "Unica",
+              "calificacion": 4,
+              "tipo": "Presencial",
+              "costo": 4000,
+              "duracion": 0.75,
+              "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
+              "activo": true,
+              "comentarios": [
+                  {
+                      "fecha": "2022-12-29T18:29:06",
+                      "mensaje": "Consectetur eius dolore est tempora non est neque."
+                  },
+                  {
+                      "fecha": "2022-07-30T20:00:00",
+                      "mensaje": "Dolor adipisci neque sit labore est quaerat."
+                  },
+                  {
+                      "fecha": "2021-09-20T19:02:44",
+                      "mensaje": "Dolorem amet voluptatem aliquam amet."
+                  }
+              ]
           }
-        ]
-      },
-      {
-        "id": 2,
-        "categoria": "Música",
-        "tipoClase": "Grupal",
-        "frecuencia": "Mensual",
-        "calificacion": 0.0,
-        "tipo": "Ambas",
-        "costo": 36.39,
-        "duracion": 0.84,
-        "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
-        "activo": true,
-        "comentarios": []
-      },
-      {
-        "id": 3,
-        "categoria": "Psicología",
-        "tipoClase": "Grupal",
-        "frecuencia": "Unica",
-        "calificacion": 3.7,
-        "tipo": "Ambas",
-        "costo": 47.46,
-        "duracion": 1.74,
-        "descripcion": "La enseñanza es mi pasión y mi vocación. Mi enfoque es fomentar el amor por el aprendizaje y ayudar a mis alumnos a alcanzar sus metas educativas.",
-        "activo": true,
-        "comentarios": [
-          {
-            "fecha": "2023-01-14T02:29:08",
-            "mensaje": "Sit dolor magnam dolor sit."
-          },
-          {
-            "fecha": "2022-02-13T13:44:01",
-            "mensaje": "Quisquam etincidunt quiquia velit eius."
-          },
-          {
-            "fecha": "2023-08-03T14:43:32",
-            "mensaje": "Eius numquam sed est voluptatem dolore sit."
-          },
-          {
-            "fecha": "2021-01-28T23:16:33",
-            "mensaje": "Dolor porro adipisci sit."
-          },
-          {
-            "fecha": "2022-10-05T15:55:20",
-            "mensaje": "Voluptatem voluptatem voluptatem labore quaerat sed ut."
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "categoria": "Geografía",
-        "tipoClase": "Individual",
-        "frecuencia": "Mensual",
-        "calificacion": 3.1,
-        "tipo": "Presencial",
-        "costo": 47.5,
-        "duracion": 0.81,
-        "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
-        "activo": false,
-        "comentarios": [
-          {
-            "fecha": "2020-11-13T16:22:48",
-            "mensaje": "Etincidunt quaerat dolorem eius numquam sit neque magnam."
-          },
-          {
-            "fecha": "2022-03-10T12:48:29",
-            "mensaje": "Ipsum eius ut est etincidunt dolor sit quisquam."
-          },
-          {
-            "fecha": "2021-02-13T06:47:17",
-            "mensaje": "Quaerat tempora est tempora magnam."
-          }
-        ]
-      },
-      {
-        "id": 5,
-        "categoria": "Idiomas",
-        "tipoClase": "Individual",
-        "frecuencia": "Unica",
-        "calificacion": 4.0,
-        "tipo": "Presencial",
-        "costo": 26.0,
-        "duracion": 0.75,
-        "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
-        "activo": true,
-        "comentarios": [
-          {
-            "fecha": "2022-12-29T18:29:06",
-            "mensaje": "Consectetur eius dolore est tempora non est neque."
-          },
-          {
-            "fecha": "2022-07-30T20:00:00",
-            "mensaje": "Dolor adipisci neque sit labore est quaerat."
-          },
-          {
-            "fecha": "2021-09-20T19:02:44",
-            "mensaje": "Dolorem amet voluptatem aliquam amet."
-          }
-        ]
-      }
-    ]
+      ]
   },
   {
-    "nombre": "Francisco",
-    "apellido": "Romero",
-    "telefono": "1234567870",
-    "mail": "proveedor7@example.com",
-    "experiencia": "Mi amor por la enseñanza y el aprendizaje me motiva a ayudar a mis alumnos a tener éxito en sus estudios. Creo en la importancia de la educación en el desarrollo personal.",
-    "password": "password7",
-    "ubicacion": "San Juan",
-    "img": "/personaCard.jpg",
-    "servicios": [
-      {
-        "id": 1,
-        "categoria": "Ciencias",
-        "tipoClase": "Individual",
-        "frecuencia": "Unica",
-        "calificacion": 1.3,
-        "tipo": "Presencial",
-        "costo": 40.22,
-        "duracion": 0.7,
-        "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
-        "activo": true,
-        "comentarios": [
+      "nombre": "Francisco",
+      "apellido": "Romero",
+      "telefono": "1234567870",
+      "mail": "proveedor7@example.com",
+      "experiencia": "Mi amor por la enseñanza y el aprendizaje me motiva a ayudar a mis alumnos a tener éxito en sus estudios. Creo en la importancia de la educación en el desarrollo personal.",
+      "password": "password7",
+      "ubicacion": "San Juan",
+      "img": "/personaCard.jpg",
+      "servicios": [
           {
-            "fecha": "2022-06-01T20:28:38",
-            "mensaje": "Neque amet consectetur quaerat porro."
+              "id": 31,
+              "categoria": "Ciencias",
+              "tipoClase": "Individual",
+              "frecuencia": "Unica",
+              "calificacion": 1.3,
+              "tipo": "Presencial",
+              "costo": 3600,
+              "duracion": 0.7,
+              "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
+              "activo": true,
+              "comentarios": [
+                  {
+                      "fecha": "2022-06-01T20:28:38",
+                      "mensaje": "Neque amet consectetur quaerat porro."
+                  }
+              ]
+          },
+          {
+              "id": 32,
+              "categoria": "Matemáticas",
+              "tipoClase": "Grupal",
+              "frecuencia": "Mensual",
+              "calificacion": 3,
+              "tipo": "Virtual",
+              "costo": 3700,
+              "duracion": 0.94,
+              "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
+              "activo": false,
+              "comentarios": [
+                  {
+                      "fecha": "2021-12-11T19:50:18",
+                      "mensaje": "Quiquia non voluptatem magnam amet est sed neque."
+                  },
+                  {
+                      "fecha": "2023-05-10T12:29:25",
+                      "mensaje": "Ipsum magnam tempora quisquam modi aliquam amet."
+                  },
+                  {
+                      "fecha": "2021-12-05T07:08:34",
+                      "mensaje": "Quaerat velit tempora consectetur numquam."
+                  }
+              ]
+          },
+          {
+              "id": 33,
+              "categoria": "Deportes",
+              "tipoClase": "Grupal",
+              "frecuencia": "Unica",
+              "calificacion": 4.3,
+              "tipo": "Ambas",
+              "costo": 3700,
+              "duracion": 1.72,
+              "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
+              "activo": false,
+              "comentarios": [
+                  {
+                      "fecha": "2020-03-25T23:59:16",
+                      "mensaje": "Amet consectetur quiquia eius dolor."
+                  },
+                  {
+                      "fecha": "2021-12-02T17:30:35",
+                      "mensaje": "Modi quaerat velit est dolorem modi consectetur eius."
+                  }
+              ]
+          },
+          {
+              "id": 34,
+              "categoria": "Idiomas",
+              "tipoClase": "Individual",
+              "frecuencia": "Mensual",
+              "calificacion": 2.2,
+              "tipo": "Presencial",
+              "costo": 4000,
+              "duracion": 1.88,
+              "descripcion": "La enseñanza es mi pasión y mi vocación. Mi enfoque es fomentar el amor por el aprendizaje y ayudar a mis alumnos a alcanzar sus metas educativas.",
+              "activo": false,
+              "comentarios": [
+                  {
+                      "fecha": "2020-05-13T18:26:27",
+                      "mensaje": "Dolor eius tempora sit."
+                  },
+                  {
+                      "fecha": "2021-01-17T02:05:00",
+                      "mensaje": "Eius neque quisquam porro."
+                  },
+                  {
+                      "fecha": "2020-04-03T14:49:52",
+                      "mensaje": "Ut voluptatem non neque quisquam quiquia voluptatem magnam."
+                  }
+              ]
+          },
+          {
+              "id": 35,
+              "categoria": "Ciencias",
+              "tipoClase": "Individual",
+              "frecuencia": "Mensual",
+              "calificacion": 1.4,
+              "tipo": "Ambas",
+              "costo": 4600,
+              "duracion": 1.13,
+              "descripcion": "Ofrezco una amplia gama de servicios de tutoría, desde clases individuales hasta sesiones grupales. Mi objetivo es proporcionar una experiencia de aprendizaje efectiva y atractiva.",
+              "activo": false,
+              "comentarios": [
+                  {
+                      "fecha": "2020-07-13T22:26:26",
+                      "mensaje": "Voluptatem sed dolorem etincidunt dolor dolor."
+                  },
+                  {
+                      "fecha": "2020-03-24T15:26:53",
+                      "mensaje": "Adipisci adipisci porro quisquam magnam adipisci quiquia modi."
+                  },
+                  {
+                      "fecha": "2020-11-27T06:10:47",
+                      "mensaje": "Quaerat quaerat quaerat modi amet ipsum etincidunt."
+                  },
+                  {
+                      "fecha": "2021-04-30T04:46:54",
+                      "mensaje": "Neque dolore sed consectetur."
+                  }
+              ]
           }
-        ]
-      },
-      {
-        "id": 2,
-        "categoria": "Matemáticas",
-        "tipoClase": "Grupal",
-        "frecuencia": "Mensual",
-        "calificacion": 3.0,
-        "tipo": "Virtual",
-        "costo": 32.59,
-        "duracion": 0.94,
-        "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
-        "activo": false,
-        "comentarios": [
-          {
-            "fecha": "2021-12-11T19:50:18",
-            "mensaje": "Quiquia non voluptatem magnam amet est sed neque."
-          },
-          {
-            "fecha": "2023-05-10T12:29:25",
-            "mensaje": "Ipsum magnam tempora quisquam modi aliquam amet."
-          },
-          {
-            "fecha": "2021-12-05T07:08:34",
-            "mensaje": "Quaerat velit tempora consectetur numquam."
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "categoria": "Deportes",
-        "tipoClase": "Grupal",
-        "frecuencia": "Unica",
-        "calificacion": 4.3,
-        "tipo": "Ambas",
-        "costo": 33.19,
-        "duracion": 1.72,
-        "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
-        "activo": false,
-        "comentarios": [
-          {
-            "fecha": "2020-03-25T23:59:16",
-            "mensaje": "Amet consectetur quiquia eius dolor."
-          },
-          {
-            "fecha": "2021-12-02T17:30:35",
-            "mensaje": "Modi quaerat velit est dolorem modi consectetur eius."
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "categoria": "Idiomas",
-        "tipoClase": "Individual",
-        "frecuencia": "Mensual",
-        "calificacion": 2.2,
-        "tipo": "Presencial",
-        "costo": 28.77,
-        "duracion": 1.88,
-        "descripcion": "La enseñanza es mi pasión y mi vocación. Mi enfoque es fomentar el amor por el aprendizaje y ayudar a mis alumnos a alcanzar sus metas educativas.",
-        "activo": false,
-        "comentarios": [
-          {
-            "fecha": "2020-05-13T18:26:27",
-            "mensaje": "Dolor eius tempora sit."
-          },
-          {
-            "fecha": "2021-01-17T02:05:00",
-            "mensaje": "Eius neque quisquam porro."
-          },
-          {
-            "fecha": "2020-04-03T14:49:52",
-            "mensaje": "Ut voluptatem non neque quisquam quiquia voluptatem magnam."
-          }
-        ]
-      },
-      {
-        "id": 5,
-        "categoria": "Ciencias",
-        "tipoClase": "Individual",
-        "frecuencia": "Mensual",
-        "calificacion": 1.4,
-        "tipo": "Ambas",
-        "costo": 36.06,
-        "duracion": 1.13,
-        "descripcion": "Ofrezco una amplia gama de servicios de tutoría, desde clases individuales hasta sesiones grupales. Mi objetivo es proporcionar una experiencia de aprendizaje efectiva y atractiva.",
-        "activo": false,
-        "comentarios": [
-          {
-            "fecha": "2020-07-13T22:26:26",
-            "mensaje": "Voluptatem sed dolorem etincidunt dolor dolor."
-          },
-          {
-            "fecha": "2020-03-24T15:26:53",
-            "mensaje": "Adipisci adipisci porro quisquam magnam adipisci quiquia modi."
-          },
-          {
-            "fecha": "2020-11-27T06:10:47",
-            "mensaje": "Quaerat quaerat quaerat modi amet ipsum etincidunt."
-          },
-          {
-            "fecha": "2021-04-30T04:46:54",
-            "mensaje": "Neque dolore sed consectetur."
-          }
-        ]
-      }
-    ]
+      ]
   },
   {
-    "nombre": "Morena Jazmin",
-    "apellido": "Ayala",
-    "telefono": "1234567880",
-    "mail": "proveedor8@example.com",
-    "experiencia": "He dedicado mi vida a la educación y tengo una profunda pasión por transmitir conocimiento. Mis clases son interactivas y están diseñadas para inspirar el aprendizaje.",
-    "password": "password8",
-    "ubicacion": "Córdoba",
-    "img": "/personaCard.jpg",
-    "servicios": [
-      {
-        "id": 1,
-        "categoria": "Ciencias",
-        "tipoClase": "Individual",
-        "frecuencia": "Unica",
-        "calificacion": 3.5,
-        "tipo": "Virtual",
-        "costo": 23.02,
-        "duracion": 0.83,
-        "descripcion": "Ofrezco una amplia gama de servicios de tutoría, desde clases individuales hasta sesiones grupales. Mi objetivo es proporcionar una experiencia de aprendizaje efectiva y atractiva.",
-        "activo": false,
-        "comentarios": [
+      "nombre": "Morena Jazmin",
+      "apellido": "Ayala",
+      "telefono": "1234567880",
+      "mail": "proveedor8@example.com",
+      "experiencia": "He dedicado mi vida a la educación y tengo una profunda pasión por transmitir conocimiento. Mis clases son interactivas y están diseñadas para inspirar el aprendizaje.",
+      "password": "password8",
+      "ubicacion": "Córdoba",
+      "img": "/personaCard.jpg",
+      "servicios": [
           {
-            "fecha": "2021-06-08T08:38:14",
-            "mensaje": "Neque labore quaerat dolorem non tempora non voluptatem."
+              "id": 36,
+              "categoria": "Ciencias",
+              "tipoClase": "Individual",
+              "frecuencia": "Unica",
+              "calificacion": 3.5,
+              "tipo": "Virtual",
+              "costo": 1300,
+              "duracion": 0.83,
+              "descripcion": "Ofrezco una amplia gama de servicios de tutoría, desde clases individuales hasta sesiones grupales. Mi objetivo es proporcionar una experiencia de aprendizaje efectiva y atractiva.",
+              "activo": false,
+              "comentarios": [
+                  {
+                      "fecha": "2021-06-08T08:38:14",
+                      "mensaje": "Neque labore quaerat dolorem non tempora non voluptatem."
+                  }
+              ]
+          },
+          {
+              "id": 38,
+              "categoria": "Idiomas",
+              "tipoClase": "Grupal",
+              "frecuencia": "Mensual",
+              "calificacion": 0.4,
+              "tipo": "Virtual",
+              "costo": 3900,
+              "duracion": 1.46,
+              "descripcion": "Ofrezco una amplia gama de servicios de tutoría, desde clases individuales hasta sesiones grupales. Mi objetivo es proporcionar una experiencia de aprendizaje efectiva y atractiva.",
+              "activo": false,
+              "comentarios": [
+                  {
+                      "fecha": "2020-08-25T23:38:29",
+                      "mensaje": "Quisquam numquam aliquam ipsum voluptatem consectetur labore sed."
+                  },
+                  {
+                      "fecha": "2023-01-11T01:50:47",
+                      "mensaje": "Amet dolorem tempora ut quaerat labore."
+                  },
+                  {
+                      "fecha": "2020-06-05T01:07:59",
+                      "mensaje": "Ut velit ipsum quiquia quaerat non."
+                  },
+                  {
+                      "fecha": "2021-11-20T18:45:01",
+                      "mensaje": "Amet numquam velit quisquam est est velit non."
+                  }
+              ]
+          },
+          {
+              "id": 39,
+              "categoria": "Geografía",
+              "tipoClase": "Grupal",
+              "frecuencia": "Mensual",
+              "calificacion": 1.6,
+              "tipo": "Virtual",
+              "costo": 1800,
+              "duracion": 0.6,
+              "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
+              "activo": true,
+              "comentarios": [
+                  {
+                      "fecha": "2022-09-18T18:19:34",
+                      "mensaje": "Sed porro adipisci non quaerat."
+                  },
+                  {
+                      "fecha": "2023-04-08T08:28:47",
+                      "mensaje": "Quisquam sed ut adipisci dolore neque porro porro."
+                  },
+                  {
+                      "fecha": "2020-10-27T09:06:17",
+                      "mensaje": "Labore aliquam dolorem voluptatem ut."
+                  }
+              ]
+          },
+          {
+              "id": 40,
+              "categoria": "Matemáticas",
+              "tipoClase": "Grupal",
+              "frecuencia": "Unica",
+              "calificacion": 3.4,
+              "tipo": "Presencial",
+              "costo": 2600,
+              "duracion": 1.62,
+              "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
+              "activo": false,
+              "comentarios": [
+                  {
+                      "fecha": "2022-08-25T12:20:29",
+                      "mensaje": "Eius dolor etincidunt modi consectetur consectetur sit."
+                  },
+                  {
+                      "fecha": "2020-03-13T10:48:37",
+                      "mensaje": "Aliquam est neque velit."
+                  },
+                  {
+                      "fecha": "2020-10-31T12:08:39",
+                      "mensaje": "Dolorem magnam adipisci porro non amet aliquam dolore."
+                  },
+                  {
+                      "fecha": "2021-08-14T04:32:18",
+                      "mensaje": "Consectetur quisquam quisquam voluptatem consectetur velit."
+                  }
+              ]
+          },
+          {
+              "id": 41,
+              "categoria": "Psicología",
+              "tipoClase": "Individual",
+              "frecuencia": "Unica",
+              "calificacion": 1.5,
+              "tipo": "Ambas",
+              "costo": 2300,
+              "duracion": 1.26,
+              "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
+              "activo": false,
+              "comentarios": [
+                  {
+                      "fecha": "2021-10-29T12:00:30",
+                      "mensaje": "Magnam ipsum ut velit porro."
+                  },
+                  {
+                      "fecha": "2021-08-22T07:48:20",
+                      "mensaje": "Labore sed quiquia aliquam quiquia est modi tempora."
+                  }
+              ]
           }
-        ]
-      },
-      {
-        "id": 2,
-        "categoria": "Idiomas",
-        "tipoClase": "Grupal",
-        "frecuencia": "Mensual",
-        "calificacion": 0.4,
-        "tipo": "Virtual",
-        "costo": 49.22,
-        "duracion": 1.46,
-        "descripcion": "Ofrezco una amplia gama de servicios de tutoría, desde clases individuales hasta sesiones grupales. Mi objetivo es proporcionar una experiencia de aprendizaje efectiva y atractiva.",
-        "activo": false,
-        "comentarios": [
-          {
-            "fecha": "2020-08-25T23:38:29",
-            "mensaje": "Quisquam numquam aliquam ipsum voluptatem consectetur labore sed."
-          },
-          {
-            "fecha": "2023-01-11T01:50:47",
-            "mensaje": "Amet dolorem tempora ut quaerat labore."
-          },
-          {
-            "fecha": "2020-06-05T01:07:59",
-            "mensaje": "Ut velit ipsum quiquia quaerat non."
-          },
-          {
-            "fecha": "2021-11-20T18:45:01",
-            "mensaje": "Amet numquam velit quisquam est est velit non."
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "categoria": "Geografía",
-        "tipoClase": "Grupal",
-        "frecuencia": "Mensual",
-        "calificacion": 1.6,
-        "tipo": "Virtual",
-        "costo": 20.45,
-        "duracion": 0.6,
-        "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
-        "activo": true,
-        "comentarios": [
-          {
-            "fecha": "2022-09-18T18:19:34",
-            "mensaje": "Sed porro adipisci non quaerat."
-          },
-          {
-            "fecha": "2023-04-08T08:28:47",
-            "mensaje": "Quisquam sed ut adipisci dolore neque porro porro."
-          },
-          {
-            "fecha": "2020-10-27T09:06:17",
-            "mensaje": "Labore aliquam dolorem voluptatem ut."
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "categoria": "Matemáticas",
-        "tipoClase": "Grupal",
-        "frecuencia": "Unica",
-        "calificacion": 3.4,
-        "tipo": "Presencial",
-        "costo": 44.03,
-        "duracion": 1.62,
-        "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
-        "activo": false,
-        "comentarios": [
-          {
-            "fecha": "2022-08-25T12:20:29",
-            "mensaje": "Eius dolor etincidunt modi consectetur consectetur sit."
-          },
-          {
-            "fecha": "2020-03-13T10:48:37",
-            "mensaje": "Aliquam est neque velit."
-          },
-          {
-            "fecha": "2020-10-31T12:08:39",
-            "mensaje": "Dolorem magnam adipisci porro non amet aliquam dolore."
-          },
-          {
-            "fecha": "2021-08-14T04:32:18",
-            "mensaje": "Consectetur quisquam quisquam voluptatem consectetur velit."
-          }
-        ]
-      },
-      {
-        "id": 5,
-        "categoria": "Psicología",
-        "tipoClase": "Individual",
-        "frecuencia": "Unica",
-        "calificacion": 1.5,
-        "tipo": "Ambas",
-        "costo": 26.3,
-        "duracion": 1.26,
-        "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
-        "activo": false,
-        "comentarios": [
-          {
-            "fecha": "2021-10-29T12:00:30",
-            "mensaje": "Magnam ipsum ut velit porro."
-          },
-          {
-            "fecha": "2021-08-22T07:48:20",
-            "mensaje": "Labore sed quiquia aliquam quiquia est modi tempora."
-          }
-        ]
-      }
-    ]
+      ]
   },
   {
-    "nombre": "Lautaro",
-    "apellido": "Gomez",
-    "telefono": "1234567890",
-    "mail": "proveedor9@example.com",
-    "experiencia": "Como tutor experimentado, comprendo las necesidades únicas de mis estudiantes. Mi objetivo es proporcionar un ambiente de aprendizaje enriquecedor y estimulante.",
-    "password": "password9",
-    "ubicacion": "Rosario",
-    "img": "/personaCard.jpg",
-    "servicios": [
-      {
-        "id": 1,
-        "categoria": "Idiomas",
-        "tipoClase": "Individual",
-        "frecuencia": "Mensual",
-        "calificacion": 4.9,
-        "tipo": "Presencial",
-        "costo": 46.36,
-        "duracion": 0.95,
-        "descripcion": "La enseñanza es mi pasión y mi vocación. Mi enfoque es fomentar el amor por el aprendizaje y ayudar a mis alumnos a alcanzar sus metas educativas.",
-        "activo": true,
-        "comentarios": [
+      "nombre": "Lautaro",
+      "apellido": "Gomez",
+      "telefono": "1234567890",
+      "mail": "proveedor9@example.com",
+      "experiencia": "Como tutor experimentado, comprendo las necesidades únicas de mis estudiantes. Mi objetivo es proporcionar un ambiente de aprendizaje enriquecedor y estimulante.",
+      "password": "password9",
+      "ubicacion": "Rosario",
+      "img": "/personaCard.jpg",
+      "servicios": [
           {
-            "fecha": "2021-10-06T14:34:13",
-            "mensaje": "Est etincidunt sed consectetur magnam voluptatem est neque."
+              "id": 42,
+              "categoria": "Idiomas",
+              "tipoClase": "Individual",
+              "frecuencia": "Mensual",
+              "calificacion": 4.9,
+              "tipo": "Presencial",
+              "costo": 1200,
+              "duracion": 0.95,
+              "descripcion": "La enseñanza es mi pasión y mi vocación. Mi enfoque es fomentar el amor por el aprendizaje y ayudar a mis alumnos a alcanzar sus metas educativas.",
+              "activo": true,
+              "comentarios": [
+                  {
+                      "fecha": "2021-10-06T14:34:13",
+                      "mensaje": "Est etincidunt sed consectetur magnam voluptatem est neque."
+                  },
+                  {
+                      "fecha": "2021-01-20T23:17:17",
+                      "mensaje": "Quiquia voluptatem quisquam non est consectetur velit aliquam."
+                  },
+                  {
+                      "fecha": "2021-11-01T19:51:42",
+                      "mensaje": "Labore consectetur velit dolore numquam amet."
+                  },
+                  {
+                      "fecha": "2020-02-10T14:34:15",
+                      "mensaje": "Etincidunt aliquam sed voluptatem."
+                  },
+                  {
+                      "fecha": "2020-03-22T02:24:43",
+                      "mensaje": "Neque tempora sit voluptatem."
+                  }
+              ]
           },
           {
-            "fecha": "2021-01-20T23:17:17",
-            "mensaje": "Quiquia voluptatem quisquam non est consectetur velit aliquam."
+              "id": 43,
+              "categoria": "Deportes",
+              "tipoClase": "Individual",
+              "frecuencia": "Mensual",
+              "calificacion": 4.6,
+              "tipo": "Virtual",
+              "costo": 1200,
+              "duracion": 1.86,
+              "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
+              "activo": false,
+              "comentarios": []
           },
           {
-            "fecha": "2021-11-01T19:51:42",
-            "mensaje": "Labore consectetur velit dolore numquam amet."
+              "id": 44,
+              "categoria": "Ciencias",
+              "tipoClase": "Individual",
+              "frecuencia": "Mensual",
+              "calificacion": 2.9,
+              "tipo": "Ambas",
+              "costo": 2700,
+              "duracion": 1.39,
+              "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
+              "activo": true,
+              "comentarios": [
+                  {
+                      "fecha": "2022-10-16T03:33:58",
+                      "mensaje": "Quisquam dolore non porro eius amet ipsum."
+                  }
+              ]
           },
           {
-            "fecha": "2020-02-10T14:34:15",
-            "mensaje": "Etincidunt aliquam sed voluptatem."
+              "id": 45,
+              "categoria": "Historia",
+              "tipoClase": "Grupal",
+              "frecuencia": "Mensual",
+              "calificacion": 2.6,
+              "tipo": "Ambas",
+              "costo": 3700,
+              "duracion": 0.66,
+              "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
+              "activo": false,
+              "comentarios": [
+                  {
+                      "fecha": "2020-06-22T09:23:36",
+                      "mensaje": "Amet consectetur quisquam sed sit ut eius."
+                  },
+                  {
+                      "fecha": "2023-01-06T09:13:24",
+                      "mensaje": "Non dolor quaerat aliquam velit modi sed velit."
+                  }
+              ]
           },
           {
-            "fecha": "2020-03-22T02:24:43",
-            "mensaje": "Neque tempora sit voluptatem."
+              "id": 46,
+              "categoria": "Ciencias",
+              "tipoClase": "Grupal",
+              "frecuencia": "Unica",
+              "calificacion": 0.2,
+              "tipo": "Ambas",
+              "costo": 3000,
+              "duracion": 1.49,
+              "descripcion": "Ofrezco una amplia gama de servicios de tutoría, desde clases individuales hasta sesiones grupales. Mi objetivo es proporcionar una experiencia de aprendizaje efectiva y atractiva.",
+              "activo": false,
+              "comentarios": [
+                  {
+                      "fecha": "2023-08-15T05:11:29",
+                      "mensaje": "Consectetur amet est amet."
+                  },
+                  {
+                      "fecha": "2021-11-24T06:01:42",
+                      "mensaje": "Est quiquia neque amet ipsum numquam."
+                  },
+                  {
+                      "fecha": "2022-04-03T11:30:30",
+                      "mensaje": "Porro amet ut dolor adipisci velit ut sit."
+                  }
+              ]
           }
-        ]
-      },
-      {
-        "id": 2,
-        "categoria": "Deportes",
-        "tipoClase": "Individual",
-        "frecuencia": "Mensual",
-        "calificacion": 4.6,
-        "tipo": "Virtual",
-        "costo": 24.96,
-        "duracion": 1.86,
-        "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
-        "activo": false,
-        "comentarios": []
-      },
-      {
-        "id": 3,
-        "categoria": "Ciencias",
-        "tipoClase": "Individual",
-        "frecuencia": "Mensual",
-        "calificacion": 2.9,
-        "tipo": "Ambas",
-        "costo": 29.37,
-        "duracion": 1.39,
-        "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
-        "activo": true,
-        "comentarios": [
-          {
-            "fecha": "2022-10-16T03:33:58",
-            "mensaje": "Quisquam dolore non porro eius amet ipsum."
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "categoria": "Historia",
-        "tipoClase": "Grupal",
-        "frecuencia": "Mensual",
-        "calificacion": 2.6,
-        "tipo": "Ambas",
-        "costo": 38.13,
-        "duracion": 0.66,
-        "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
-        "activo": false,
-        "comentarios": [
-          {
-            "fecha": "2020-06-22T09:23:36",
-            "mensaje": "Amet consectetur quisquam sed sit ut eius."
-          },
-          {
-            "fecha": "2023-01-06T09:13:24",
-            "mensaje": "Non dolor quaerat aliquam velit modi sed velit."
-          }
-        ]
-      },
-      {
-        "id": 5,
-        "categoria": "Ciencias",
-        "tipoClase": "Grupal",
-        "frecuencia": "Unica",
-        "calificacion": 0.2,
-        "tipo": "Ambas",
-        "costo": 31.75,
-        "duracion": 1.49,
-        "descripcion": "Ofrezco una amplia gama de servicios de tutoría, desde clases individuales hasta sesiones grupales. Mi objetivo es proporcionar una experiencia de aprendizaje efectiva y atractiva.",
-        "activo": false,
-        "comentarios": [
-          {
-            "fecha": "2023-08-15T05:11:29",
-            "mensaje": "Consectetur amet est amet."
-          },
-          {
-            "fecha": "2021-11-24T06:01:42",
-            "mensaje": "Est quiquia neque amet ipsum numquam."
-          },
-          {
-            "fecha": "2022-04-03T11:30:30",
-            "mensaje": "Porro amet ut dolor adipisci velit ut sit."
-          }
-        ]
-      }
-    ]
+      ]
   },
   {
-    "nombre": "Lola",
-    "apellido": "Maidana",
-    "telefono": "12345678100",
-    "mail": "proveedor10@example.com",
-    "experiencia": "Mi amor por la enseñanza y el aprendizaje me motiva a ayudar a mis alumnos a tener éxito en sus estudios. Creo en la importancia de la educación en el desarrollo personal.",
-    "password": "password10",
-    "ubicacion": "Córdoba",
-    "img": "/personaCard.jpg",
-    "servicios": [
-      {
-        "id": 1,
-        "categoria": "Ciencias",
-        "tipoClase": "Grupal",
-        "frecuencia": "Unica",
-        "calificacion": 4.3,
-        "tipo": "Ambas",
-        "costo": 39.89,
-        "duracion": 1.45,
-        "descripcion": "La enseñanza es mi pasión y mi vocación. Mi enfoque es fomentar el amor por el aprendizaje y ayudar a mis alumnos a alcanzar sus metas educativas.",
-        "activo": true,
-        "comentarios": []
-      },
-      {
-        "id": 2,
-        "categoria": "Geografía",
-        "tipoClase": "Individual",
-        "frecuencia": "Semanal",
-        "calificacion": 2.8,
-        "tipo": "Ambas",
-        "costo": 47.56,
-        "duracion": 0.82,
-        "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
-        "activo": false,
-        "comentarios": [
+      "nombre": "Lola",
+      "apellido": "Maidana",
+      "telefono": "12345678100",
+      "mail": "proveedor10@example.com",
+      "experiencia": "Mi amor por la enseñanza y el aprendizaje me motiva a ayudar a mis alumnos a tener éxito en sus estudios. Creo en la importancia de la educación en el desarrollo personal.",
+      "password": "password10",
+      "ubicacion": "Córdoba",
+      "img": "/personaCard.jpg",
+      "servicios": [
           {
-            "fecha": "2020-06-25T09:11:31",
-            "mensaje": "Tempora quisquam eius tempora."
+              "id": 47,
+              "categoria": "Ciencias",
+              "tipoClase": "Grupal",
+              "frecuencia": "Unica",
+              "calificacion": 4.3,
+              "tipo": "Ambas",
+              "costo": 4900,
+              "duracion": 1.45,
+              "descripcion": "La enseñanza es mi pasión y mi vocación. Mi enfoque es fomentar el amor por el aprendizaje y ayudar a mis alumnos a alcanzar sus metas educativas.",
+              "activo": true,
+              "comentarios": []
           },
           {
-            "fecha": "2020-02-29T05:51:59",
-            "mensaje": "Velit porro modi quiquia adipisci ipsum eius quaerat."
+              "id": 48,
+              "categoria": "Geografía",
+              "tipoClase": "Individual",
+              "frecuencia": "Semanal",
+              "calificacion": 2.8,
+              "tipo": "Ambas",
+              "costo": 2000,
+              "duracion": 0.82,
+              "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
+              "activo": false,
+              "comentarios": [
+                  {
+                      "fecha": "2020-06-25T09:11:31",
+                      "mensaje": "Tempora quisquam eius tempora."
+                  },
+                  {
+                      "fecha": "2020-02-29T05:51:59",
+                      "mensaje": "Velit porro modi quiquia adipisci ipsum eius quaerat."
+                  }
+              ]
+          },
+          {
+              "id": 49,
+              "categoria": "Psicología",
+              "tipoClase": "Individual",
+              "frecuencia": "Unica",
+              "calificacion": 3.4,
+              "tipo": "Ambas",
+              "costo": 3300,
+              "duracion": 1.07,
+              "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
+              "activo": true,
+              "comentarios": [
+                  {
+                      "fecha": "2021-11-24T23:00:23",
+                      "mensaje": "Amet dolorem quaerat consectetur adipisci dolor."
+                  },
+                  {
+                      "fecha": "2021-11-20T13:58:23",
+                      "mensaje": "Dolorem quaerat eius porro."
+                  },
+                  {
+                      "fecha": "2023-05-31T22:29:53",
+                      "mensaje": "Sit consectetur quisquam sed labore amet."
+                  }
+              ]
+          },
+          {
+              "id": 50,
+              "categoria": "Historia",
+              "tipoClase": "Individual",
+              "frecuencia": "Mensual",
+              "calificacion": 1.1,
+              "tipo": "Presencial",
+              "costo": 3500,
+              "duracion": 1.6,
+              "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
+              "activo": true,
+              "comentarios": [
+                  {
+                      "fecha": "2022-03-31T13:40:44",
+                      "mensaje": "Sit ipsum ipsum non."
+                  },
+                  {
+                      "fecha": "2020-02-12T20:09:34",
+                      "mensaje": "Quiquia dolore quaerat ut dolore tempora numquam neque."
+                  },
+                  {
+                      "fecha": "2022-06-27T12:09:57",
+                      "mensaje": "Labore sed voluptatem non porro."
+                  }
+              ]
+          },
+          {
+              "id": 51,
+              "categoria": "Arte",
+              "tipoClase": "Individual",
+              "frecuencia": "Unica",
+              "calificacion": 3.2,
+              "tipo": "Presencial",
+              "costo": 4700,
+              "duracion": 1.66,
+              "descripcion": "Ofrezco una amplia gama de servicios de tutoría, desde clases individuales hasta sesiones grupales. Mi objetivo es proporcionar una experiencia de aprendizaje efectiva y atractiva.",
+              "activo": true,
+              "comentarios": [
+                  {
+                      "fecha": "2021-08-04T16:32:43",
+                      "mensaje": "Sit amet neque quiquia ipsum porro magnam."
+                  },
+                  {
+                      "fecha": "2020-08-01T02:27:08",
+                      "mensaje": "Modi etincidunt etincidunt tempora."
+                  },
+                  {
+                      "fecha": "2022-07-19T19:49:40",
+                      "mensaje": "Amet quisquam etincidunt magnam amet est velit."
+                  },
+                  {
+                      "fecha": "2020-10-01T06:10:03",
+                      "mensaje": "Amet labore dolorem amet ipsum consectetur tempora tempora."
+                  }
+              ]
           }
-        ]
-      },
-      {
-        "id": 3,
-        "categoria": "Psicología",
-        "tipoClase": "Individual",
-        "frecuencia": "Unica",
-        "calificacion": 3.4,
-        "tipo": "Ambas",
-        "costo": 38.8,
-        "duracion": 1.07,
-        "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
-        "activo": true,
-        "comentarios": [
-          {
-            "fecha": "2021-11-24T23:00:23",
-            "mensaje": "Amet dolorem quaerat consectetur adipisci dolor."
-          },
-          {
-            "fecha": "2021-11-20T13:58:23",
-            "mensaje": "Dolorem quaerat eius porro."
-          },
-          {
-            "fecha": "2023-05-31T22:29:53",
-            "mensaje": "Sit consectetur quisquam sed labore amet."
-          }
-        ]
-      },
-      {
-        "id": 4,
-        "categoria": "Historia",
-        "tipoClase": "Individual",
-        "frecuencia": "Mensual",
-        "calificacion": 1.1,
-        "tipo": "Presencial",
-        "costo": 21.09,
-        "duracion": 1.6,
-        "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
-        "activo": true,
-        "comentarios": [
-          {
-            "fecha": "2022-03-31T13:40:44",
-            "mensaje": "Sit ipsum ipsum non."
-          },
-          {
-            "fecha": "2020-02-12T20:09:34",
-            "mensaje": "Quiquia dolore quaerat ut dolore tempora numquam neque."
-          },
-          {
-            "fecha": "2022-06-27T12:09:57",
-            "mensaje": "Labore sed voluptatem non porro."
-          }
-        ]
-      },
-      {
-        "id": 5,
-        "categoria": "Arte",
-        "tipoClase": "Individual",
-        "frecuencia": "Unica",
-        "calificacion": 3.2,
-        "tipo": "Presencial",
-        "costo": 46.33,
-        "duracion": 1.66,
-        "descripcion": "Ofrezco una amplia gama de servicios de tutoría, desde clases individuales hasta sesiones grupales. Mi objetivo es proporcionar una experiencia de aprendizaje efectiva y atractiva.",
-        "activo": true,
-        "comentarios": [
-          {
-            "fecha": "2021-08-04T16:32:43",
-            "mensaje": "Sit amet neque quiquia ipsum porro magnam."
-          },
-          {
-            "fecha": "2020-08-01T02:27:08",
-            "mensaje": "Modi etincidunt etincidunt tempora."
-          },
-          {
-            "fecha": "2022-07-19T19:49:40",
-            "mensaje": "Amet quisquam etincidunt magnam amet est velit."
-          },
-          {
-            "fecha": "2020-10-01T06:10:03",
-            "mensaje": "Amet labore dolorem amet ipsum consectetur tempora tempora."
-          }
-        ]
-      }
-    ]
+      ]
   }
 ]

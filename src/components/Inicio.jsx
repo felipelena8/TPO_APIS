@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function Inicio() {
   return (
-    <main className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center">
       Cambio 2
-    </main>
+    </div>
   )
 }

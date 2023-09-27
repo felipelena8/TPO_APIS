@@ -38,7 +38,7 @@ export default function InicioSesion({ props }) {
           <input type="text" placeholder='Correo electronico' className='bg-slate-300 placeholder-slate-500 rounded h-10 w-full pl-2' onChange={(e) => setMail(e.target.value)} />
           <input type="password" placeholder='Contraseña' className='bg-slate-300 placeholder-slate-500 rounded h-10 w-full pl-2' onChange={(e) => setPassword(e.target.value)} />
           <div className='flex self-start gap-2'><input type="checkbox" name="sesion" id="" /><span>Mantener mi sesion iniciada</span></div>
-          <button type="submit" className='my-3 p-2 bg-red-500 text-white text-lg rounded-xl w-full font-bold' onClick={buscarUsuario}>Entrar</button>
+          <button type="submit" className='my-3 p-2 bg-coral text-white text-lg rounded-xl w-full font-bold' onClick={buscarUsuario}>Entrar</button>
           <span className='font-bold text-lg text-blue-600'>¿Has olvidado tu constraseña?</span>
         </div>
 
