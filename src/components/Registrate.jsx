@@ -35,7 +35,7 @@ export default function Registrate({ props }) {
           ¡Da clases! <br />
           ¡Vivi de lo que te apasiona!
         </div>
-        <div className='flex flex-col text-center p-8 justify-between gap-10 rounded-3xl shadow-frame max-lg:w-full'>
+        <div className='flex flex-col text-center p-8 justify-between gap-10 rounded-3xl shadow-card max-lg:w-full'>
           <span className='font-bold text-3xl'>Crea tu perfil</span>
           <form action="" className='flex flex-col gap-2'>
             <div className='flex gap-2'>

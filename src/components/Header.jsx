@@ -23,7 +23,7 @@ export default function Header({ props }) {
     setSesionIniciada(false)
   }
 
-  const categorias = data.map(element => <li className="border-b p-1 w-full hover:bg-coral hover:text-white transition-all pl-2 rounded-lg"><a href={"/clases/" + element.toLowerCase()}>{element}</a></li>)
+  const categorias = data.map(element => <li className="border-b p-1 w-full hover:bg-coral hover:text-white transition-all pl-2 rounded-lg" key={element.toLowerCase()}><a href={"/clases/" + element.toLowerCase()}>{element}</a></li >)
 
   const miniPerfil =
     <div className="rounded-full relative w-14 h-14 z-50 cursor-pointer" onClick={() => setMostrarPerfil(!mostrarPerfil)}>

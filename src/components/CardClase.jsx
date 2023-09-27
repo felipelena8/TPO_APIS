@@ -5,7 +5,7 @@ export default function CardClase({ props }) {
   const { nombre, ubicacion, img, servicio } = props
   let { calificacion, categoria, costo, descripcion, id } = servicio
   return (
-    <div className='rounded-3xl border border-slate-400  w-72 shadow-xl'>
+    <div className='rounded-3xl border border-slate-400  w-72 shadow-card'>
       <div className='flex relative'>
         <Link to={"/clase/" + id}><img src={img} alt="" className='rounded-3xl w-72 h-72' /></Link>
         <span className='absolute bottom-12 left-4 text-3xl font-bold text-white'>{nombre}</span>
