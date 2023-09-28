@@ -26,7 +26,7 @@ export default function Header({ props }) {
   const categorias = data.map(element => <li className="border-b p-1 w-full hover:bg-coral hover:text-white transition-all pl-2 rounded-lg" key={element.toLowerCase()}><a href={"/clases/" + element.toLowerCase()}>{element}</a></li >)
 
   const miniPerfil =
-    <div className="rounded-full relative w-14 h-14 z-50 cursor-pointer" onClick={() => setMostrarPerfil(!mostrarPerfil)}>
+    <div className="rounded-full relative w-14 h-14 cursor-pointer" onClick={() => setMostrarPerfil(!mostrarPerfil)}>
       <img src={localStorage.getItem("img")} alt="" className="rounded-full" />
       {(mostrarPerfil && <div className="absolute mt-5 max-lg:right-0 -right-1/2 shadow-2xl border-2 border-coral bg-white py-2 px-2 rounded-lg">
         <ul className="w-full flex flex-col gap-1">

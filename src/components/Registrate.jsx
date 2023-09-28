@@ -21,9 +21,14 @@ export default function Registrate({ props }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSubmitted(true)
-    goTo("/");
     console.log(values)
+    setSubmitted(true)
+    if (values.nombre && values.apellido && values.numero && !isNaN(values.numero) && values.password && values.mail && values.password.length >= 8) {
+      console.log("hola")
+      goTo("/")
+    } else {
+
+    }
   }
 
 
