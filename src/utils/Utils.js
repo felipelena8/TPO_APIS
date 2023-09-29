@@ -28,7 +28,7 @@ async function serviciosPorCategoria(categoria) {
         let profesor = datos[i]
         let servicios = []
         for (let j in profesor.servicios) {
-            if (profesor.servicios[j].categoria.toLowerCase() == categoria.toLowerCase()) {
+            if (profesor.servicios[j].activo == true && profesor.servicios[j].categoria.toLowerCase() == categoria.toLowerCase()) {
                 servicios.push(profesor.servicios[j])
             }
         }
@@ -38,6 +38,17 @@ async function serviciosPorCategoria(categoria) {
         }
     }
     return await clases
+}
+
+async function serviciosPorProfesor(idProfesor) {
+    let datos = await getData()
+    for (let i in datos) {
+        let profesor = datos[i]
+        if (profesor.id == idProfesor) {
+            return await profesor
+        }
+    }
+    return {}
 }
 
 async function filtrarServicios(datos, tipo, frecuencia, calificacion) {
@@ -78,6 +89,8 @@ async function buscarServicio(id) {
     }
     return {}
 }
+
+
 
 function reseñaEstrella(calificacion, setCalificacion) {
     let estrellas = []
@@ -137,6 +150,10 @@ function isEmail(mail) {
 }
 
 
+async function getCategorias() {
+    return await fetch("/categorias.json").then(response => response.json())
+}
 
 
-export { getData, buscarServicio, formatearFecha, estrellasHtml, isEmail, reseñaEstrella, serviciosPorCategoria, filtrarServicios };
+
+export { getData, buscarServicio, formatearFecha, estrellasHtml, isEmail, reseñaEstrella, serviciosPorCategoria, filtrarServicios, serviciosPorProfesor, getCategorias };

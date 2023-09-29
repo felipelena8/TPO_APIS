@@ -10,6 +10,9 @@ import Footer from './components/Footer';
 import ContenedorClases from './components/ContenedorClases';
 import Clase from './components/Clase';
 import React, { useState } from 'react';
+import Perfil from './components/Perfil';
+import Notificaciones from './components/Notificaciones';
+import MisClases from './components/MisClases';
 
 
 function App() {
@@ -25,6 +28,10 @@ function App() {
           <Route path="/registrate" element={<Registrate props={{ sesionIniciada }} />} />
           <Route path="/clases/:categoria" element={<ContenedorClases />} />
           <Route path="/clase/:id" element={<Clase />} />
+
+          <Route path='/notificaciones' element={<Notificaciones />} />
+          <Route path='/perfil' element={<Perfil />} />
+          <Route path='/mis-clases' element={<MisClases props={{ sesionIniciada }} />} />
         </Routes>
       </main>
       <Footer />

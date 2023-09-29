@@ -17,7 +17,7 @@
         "calificacion": 3.3,
         "metodologia": "Ambas",
         "costo": 2900,
-        "duracion": 0.54,
+        "duracion": 1,
         "descripcion": "Mejora tus habilidades en el idioma inglés con mis clases en línea. Trabajaremos en gramática, vocabulario y conversación para que te sientas más seguro y fluido en este idioma tan importante.",
         "activo": true,
         "comentarios": [
@@ -37,7 +37,7 @@
         "calificacion": 4,
         "metodologia": "Presencial",
         "costo": 2000,
-        "duracion": 1.74,
+        "duracion": 1,
         "descripcion": "Si tienes pasión por la música, te ofrezco clases en línea para desarrollar tus habilidades musicales. Aprende a tocar un instrumento, componer canciones o mejorar tus conocimientos teóricos musicales.",
         "activo": false,
         "comentarios": [
@@ -75,9 +75,9 @@
         "calificacion": 3.5,
         "metodologia": "Virtual",
         "costo": 4900,
-        "duracion": 1.99,
+        "duracion": 1,
         "descripcion": "Imparto clases virtuales de Física, ayudándote a dominar conceptos desde la Mecánica hasta la Termodinámica. Mi objetivo es que entiendas los principios físicos de manera clara y te sientas seguro al abordar problemas y experimentos.",
-        "activo": false,
+        "activo": true,
         "comentarios": [
           {
             "fecha": "2021-11-23T13:19:54",
@@ -101,9 +101,9 @@
         "calificacion": 2.8,
         "metodologia": "Presencial",
         "costo": 4700,
-        "duracion": 1.36,
+        "duracion": 1,
         "descripcion": "Descubre el fascinante mundo de la Geografía a través de mis clases en línea. Exploraremos la geografía física y humana, los mapas y los sistemas geográficos globales para que entiendas mejor nuestro planeta.",
-        "activo": false,
+        "activo": true,
         "comentarios": [
           {
             "fecha": "2021-12-05T22:52:36",
@@ -145,9 +145,9 @@
         "calificacion": 1.1,
         "metodologia": "Ambas",
         "costo": 3000,
-        "duracion": 1.19,
+        "duracion": 1,
         "descripcion": "Como profesor particular de Matemáticas, ofrezco clases en línea que cubren temas como Análisis Matemático y Álgebra. Además, brindo un seguimiento personalizado de trabajos prácticos y te preparo de manera efectiva para tus exámenes. Aprende Matemáticas de una manera comprensible y amigable.",
-        "activo": false,
+        "activo": true,
         "comentarios": [
           {
             "fecha": "2023-07-29T22:45:26",
@@ -196,9 +196,9 @@
         "calificacion": 2.4,
         "metodologia": "Presencial",
         "costo": 2600,
-        "duracion": 0.79,
+        "duracion": 1,
         "descripcion": "Como profesor particular de Historia, te llevaré en un emocionante viaje a través del tiempo. Exploraremos eventos históricos importantes y analizaremos sus implicaciones. Juntos, desentrañaremos los misterios del pasado.",
-        "activo": false,
+        "activo": true,
         "comentarios": [
           {
             "fecha": "2020-12-26T09:53:44",
@@ -228,7 +228,7 @@
         "calificacion": 3.8,
         "metodologia": "Presencial",
         "costo": 4600,
-        "duracion": 1.45,
+        "duracion": 1,
         "descripcion": "Mejora tus habilidades en el idioma inglés con mis clases en línea. Trabajaremos en gramática, vocabulario y conversación para que te sientas más seguro y fluido en este idioma tan importante.",
         "activo": true,
         "comentarios": [
@@ -248,9 +248,9 @@
         "calificacion": 1.7,
         "metodologia": "Virtual",
         "costo": 3400,
-        "duracion": 1.55,
+        "duracion": 1,
         "descripcion": "Si tienes pasión por la música, te ofrezco clases en línea para desarrollar tus habilidades musicales. Aprende a tocar un instrumento, componer canciones o mejorar tus conocimientos teóricos musicales.",
-        "activo": false,
+        "activo": true,
         "comentarios": [
           {
             "fecha": "2022-07-12T19:52:52",
@@ -286,9 +286,9 @@
         "calificacion": 3.9,
         "metodologia": "Ambas",
         "costo": 3700,
-        "duracion": 0.71,
+        "duracion": 1,
         "descripcion": "Imparto clases virtuales de Física, ayudándote a dominar conceptos desde la Mecánica hasta la Termodinámica. Mi objetivo es que entiendas los principios físicos de manera clara y te sientas seguro al abordar problemas y experimentos.",
-        "activo": false,
+        "activo": true,
         "comentarios": [
           {
             "fecha": "2022-06-14T03:24:05",
@@ -306,7 +306,7 @@
         "calificacion": 3.2,
         "metodologia": "Virtual",
         "costo": 2200,
-        "duracion": 1.94,
+        "duracion": 1,
         "descripcion": "Como profesor particular de Matemáticas, ofrezco clases en línea que cubren temas como Análisis Matemático y Álgebra. Además, brindo un seguimiento personalizado de trabajos prácticos y te preparo de manera efectiva para tus exámenes. Aprende Matemáticas de una manera comprensible y amigable.",
         "comentarios": [
           {
@@ -350,9 +350,9 @@
         "calificacion": 0.2,
         "metodologia": "Virtual",
         "costo": 4300,
-        "duracion": 1.02,
+        "duracion": 1,
         "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
-        "activo": false,
+        "activo": true,
         "comentarios": []
       },
       {
@@ -363,7 +363,7 @@
         "calificacion": 2.3,
         "metodologia": "Virtual",
         "costo": 4500,
-        "duracion": 0.77,
+        "duracion": 1,
         "descripcion": "La enseñanza es mi pasión y mi vocación. Mi enfoque es fomentar el amor por el aprendizaje y ayudar a mis alumnos a alcanzar sus metas educativas.",
         "activo": true,
         "comentarios": [
@@ -383,9 +383,9 @@
         "calificacion": 4.6,
         "metodologia": "Ambas",
         "costo": 4500,
-        "duracion": 1.93,
+        "duracion": 1,
         "descripcion": "Ofrezco una amplia gama de servicios de tutoría, desde clases individuales hasta sesiones grupales. Mi objetivo es proporcionar una experiencia de aprendizaje efectiva y atractiva.",
-        "activo": false,
+        "activo": true,
         "comentarios": [
           {
             "fecha": "2020-11-17T14:17:00",
@@ -427,9 +427,9 @@
         "calificacion": 3.5,
         "metodologia": "Ambas",
         "costo": 4700,
-        "duracion": 1.36,
+        "duracion": 1,
         "descripcion": "Como profesor particular de Matemáticas, ofrezco clases en línea que cubren temas como Análisis Matemático y Álgebra. Además, brindo un seguimiento personalizado de trabajos prácticos y te preparo de manera efectiva para tus exámenes. Aprende Matemáticas de una manera comprensible y amigable.",
-        "activo": false,
+        "activo": true,
         "comentarios": [
           {
             "fecha": "2021-06-15T22:43:14",
@@ -459,7 +459,7 @@
         "calificacion": 3.5,
         "metodologia": "Ambas",
         "costo": 3400,
-        "duracion": 0.82,
+        "duracion": 1,
         "descripcion": "Explora el mundo de la Economía a través de mis clases personalizadas en línea. Abordaremos temas económicos actuales y te ayudaré a comprender conceptos clave, desde la oferta y la demanda hasta la macroeconomía.",
         "activo": true,
         "comentarios": [
@@ -498,7 +498,7 @@
         "calificacion": 3.6,
         "metodologia": "Virtual",
         "costo": 2300,
-        "duracion": 1.43,
+        "duracion": 1,
         "descripcion": "Imparto clases virtuales de Física, ayudándote a dominar conceptos desde la Mecánica hasta la Termodinámica. Mi objetivo es que entiendas los principios físicos de manera clara y te sientas seguro al abordar problemas y experimentos.",
         "activo": true,
         "comentarios": [
@@ -518,9 +518,9 @@
         "calificacion": 3.1,
         "metodologia": "Ambas",
         "costo": 4100,
-        "duracion": 1.06,
+        "duracion": 1,
         "descripcion": "Si tienes pasión por la música, te ofrezco clases en línea para desarrollar tus habilidades musicales. Aprende a tocar un instrumento, componer canciones o mejorar tus conocimientos teóricos musicales.",
-        "activo": false,
+        "activo": true,
         "comentarios": [
           {
             "fecha": "2022-01-06T04:36:05",
@@ -544,7 +544,7 @@
         "calificacion": 0.4,
         "metodologia": "Virtual",
         "costo": 4900,
-        "duracion": 0.63,
+        "duracion": 1,
         "descripcion": "Si estás interesado en desarrollar tus habilidades artísticas, puedo ayudarte a explorar el mundo del arte. Ofrezco clases personalizadas de arte en línea, donde te guiaré en técnicas de dibujo, pintura y escultura para que expreses tu creatividad de manera única.",
         "activo": true,
         "comentarios": [
@@ -564,7 +564,7 @@
         "calificacion": 4.7,
         "metodologia": "Presencial",
         "costo": 4700,
-        "duracion": 0.5,
+        "duracion": 1,
         "descripcion": "La enseñanza es mi pasión y mi vocación. Mi enfoque es fomentar el amor por el aprendizaje y ayudar a mis alumnos a alcanzar sus metas educativas.",
         "activo": true,
         "comentarios": []
@@ -577,7 +577,7 @@
         "calificacion": 4.9,
         "metodologia": "Presencial",
         "costo": 4400,
-        "duracion": 0.83,
+        "duracion": 1,
         "descripcion": "Si tienes pasión por la música, te ofrezco clases en línea para desarrollar tus habilidades musicales. Aprende a tocar un instrumento, componer canciones o mejorar tus conocimientos teóricos musicales.",
         "activo": true,
         "comentarios": [
@@ -622,9 +622,9 @@
         "calificacion": 4.3,
         "metodologia": "Ambas",
         "costo": 3400,
-        "duracion": 0.91,
+        "duracion": 1,
         "descripcion": "Como profesor particular de Matemáticas, ofrezco clases en línea que cubren temas como Análisis Matemático y Álgebra. Además, brindo un seguimiento personalizado de trabajos prácticos y te preparo de manera efectiva para tus exámenes. Aprende Matemáticas de una manera comprensible y amigable.",
-        "activo": false,
+        "activo": true,
         "comentarios": [
           {
             "fecha": "2023-02-02T20:03:03",
@@ -666,7 +666,7 @@
         "calificacion": 3.7,
         "metodologia": "Presencial",
         "costo": 3000,
-        "duracion": 0.63,
+        "duracion": 1,
         "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
         "activo": true,
         "comentarios": [
@@ -686,7 +686,7 @@
         "calificacion": 3.3,
         "metodologia": "Virtual",
         "costo": 1500,
-        "duracion": 1.06,
+        "duracion": 1,
         "descripcion": "Explora el mundo de la Economía a través de mis clases personalizadas en línea. Abordaremos temas económicos actuales y te ayudaré a comprender conceptos clave, desde la oferta y la demanda hasta la macroeconomía.",
         "activo": true,
         "comentarios": []
@@ -699,9 +699,9 @@
         "calificacion": 2.2,
         "metodologia": "Presencial",
         "costo": 3400,
-        "duracion": 1.62,
+        "duracion": 1,
         "descripcion": "Si tienes pasión por la música, te ofrezco clases en línea para desarrollar tus habilidades musicales. Aprende a tocar un instrumento, componer canciones o mejorar tus conocimientos teóricos musicales.",
-        "activo": false,
+        "activo": true,
         "comentarios": [
           {
             "fecha": "2021-12-09T19:17:38",
@@ -725,7 +725,7 @@
         "calificacion": 2.7,
         "metodologia": "Virtual",
         "costo": 2600,
-        "duracion": 0.74,
+        "duracion": 1,
         "descripcion": "Si estás interesado en desarrollar tus habilidades artísticas, puedo ayudarte a explorar el mundo del arte. Ofrezco clases personalizadas de arte en línea, donde te guiaré en técnicas de dibujo, pintura y escultura para que expreses tu creatividad de manera única.",
         "activo": true,
         "comentarios": []
@@ -751,9 +751,9 @@
         "calificacion": 4.6,
         "metodologia": "Presencial",
         "costo": 1500,
-        "duracion": 0.77,
+        "duracion": 1,
         "descripcion": "Si tienes pasión por la música, te ofrezco clases en línea para desarrollar tus habilidades musicales. Aprende a tocar un instrumento, componer canciones o mejorar tus conocimientos teóricos musicales.",
-        "activo": false,
+        "activo": true,
         "comentarios": [
           {
             "fecha": "2023-03-02T21:29:00",
@@ -789,7 +789,7 @@
         "calificacion": 0,
         "metodologia": "Ambas",
         "costo": 3200,
-        "duracion": 0.84,
+        "duracion": 1,
         "descripcion": "Si tienes pasión por la música, te ofrezco clases en línea para desarrollar tus habilidades musicales. Aprende a tocar un instrumento, componer canciones o mejorar tus conocimientos teóricos musicales.",
         "activo": true,
         "comentarios": []
@@ -802,7 +802,7 @@
         "calificacion": 3.7,
         "metodologia": "Ambas",
         "costo": 4500,
-        "duracion": 1.74,
+        "duracion": 1,
         "descripcion": "La enseñanza es mi pasión y mi vocación. Mi enfoque es fomentar el amor por el aprendizaje y ayudar a mis alumnos a alcanzar sus metas educativas.",
         "activo": true,
         "comentarios": [
@@ -846,9 +846,9 @@
         "calificacion": 3.1,
         "metodologia": "Presencial",
         "costo": 1100,
-        "duracion": 0.81,
+        "duracion": 1,
         "descripcion": "Descubre el fascinante mundo de la Geografía a través de mis clases en línea. Exploraremos la geografía física y humana, los mapas y los sistemas geográficos globales para que entiendas mejor nuestro planeta.",
-        "activo": false,
+        "activo": true,
         "comentarios": [
           {
             "fecha": "2020-11-13T16:22:48",
@@ -878,7 +878,7 @@
         "calificacion": 4,
         "metodologia": "Presencial",
         "costo": 4000,
-        "duracion": 0.75,
+        "duracion": 1,
         "descripcion": "Mejora tus habilidades en el idioma inglés con mis clases en línea. Trabajaremos en gramática, vocabulario y conversación para que te sientas más seguro y fluido en este idioma tan importante.",
         "activo": true,
         "comentarios": [
@@ -923,7 +923,7 @@
         "calificacion": 1.3,
         "metodologia": "Presencial",
         "costo": 3600,
-        "duracion": 0.7,
+        "duracion": 1,
         "descripcion": "Como profesor particular de Biología, te ayudaré a desentrañar los misterios de la vida. Exploraremos la genética, la ecología y la anatomía, y te proporcionaré las herramientas para comprender el mundo natural que te rodea.",
         "activo": true,
         "comentarios": [
@@ -943,9 +943,9 @@
         "calificacion": 3,
         "metodologia": "Virtual",
         "costo": 3700,
-        "duracion": 0.94,
+        "duracion": 1,
         "descripcion": "Como profesor particular de Matemáticas, ofrezco clases en línea que cubren temas como Análisis Matemático y Álgebra. Además, brindo un seguimiento personalizado de trabajos prácticos y te preparo de manera efectiva para tus exámenes. Aprende Matemáticas de una manera comprensible y amigable.",
-        "activo": false,
+        "activo": true,
         "comentarios": [
           {
             "fecha": "2021-12-11T19:50:18",
@@ -975,9 +975,9 @@
         "calificacion": 4.3,
         "metodologia": "Ambas",
         "costo": 3700,
-        "duracion": 1.72,
+        "duracion": 1,
         "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
-        "activo": false,
+        "activo": true,
         "comentarios": [
           {
             "fecha": "2020-03-25T23:59:16",
@@ -1001,9 +1001,9 @@
         "calificacion": 2.2,
         "metodologia": "Presencial",
         "costo": 4000,
-        "duracion": 1.88,
+        "duracion": 1,
         "descripcion": "Mejora tus habilidades en el idioma inglés con mis clases en línea. Trabajaremos en gramática, vocabulario y conversación para que te sientas más seguro y fluido en este idioma tan importante.",
-        "activo": false,
+        "activo": true,
         "comentarios": [
           {
             "fecha": "2020-05-13T18:26:27",
@@ -1033,9 +1033,9 @@
         "calificacion": 1.4,
         "metodologia": "Ambas",
         "costo": 4600,
-        "duracion": 1.13,
+        "duracion": 1,
         "descripcion": "Como profesor particular de Biología, te ayudaré a desentrañar los misterios de la vida. Exploraremos la genética, la ecología y la anatomía, y te proporcionaré las herramientas para comprender el mundo natural que te rodea.",
-        "activo": false,
+        "activo": true,
         "comentarios": [
           {
             "fecha": "2020-07-13T22:26:26",
@@ -1084,9 +1084,9 @@
         "calificacion": 3.5,
         "metodologia": "Virtual",
         "costo": 1300,
-        "duracion": 0.83,
+        "duracion": 1,
         "descripcion": "Como profesor particular de Biología, te ayudaré a desentrañar los misterios de la vida. Exploraremos la genética, la ecología y la anatomía, y te proporcionaré las herramientas para comprender el mundo natural que te rodea.",
-        "activo": false,
+        "activo": true,
         "comentarios": [
           {
             "fecha": "2021-06-08T08:38:14",
@@ -1104,9 +1104,9 @@
         "calificacion": 0.4,
         "metodologia": "Virtual",
         "costo": 3900,
-        "duracion": 1.46,
+        "duracion": 1,
         "descripcion": "Mejora tus habilidades en el idioma inglés con mis clases en línea. Trabajaremos en gramática, vocabulario y conversación para que te sientas más seguro y fluido en este idioma tan importante.",
-        "activo": false,
+        "activo": true,
         "comentarios": [
           {
             "fecha": "2020-08-25T23:38:29",
@@ -1142,7 +1142,7 @@
         "calificacion": 1.6,
         "metodologia": "Virtual",
         "costo": 1800,
-        "duracion": 0.6,
+        "duracion": 1,
         "descripcion": "Descubre el fascinante mundo de la Geografía a través de mis clases en línea. Exploraremos la geografía física y humana, los mapas y los sistemas geográficos globales para que entiendas mejor nuestro planeta.",
         "activo": true,
         "comentarios": [
@@ -1174,9 +1174,9 @@
         "calificacion": 3.4,
         "metodologia": "Presencial",
         "costo": 2600,
-        "duracion": 1.62,
+        "duracion": 1,
         "descripcion": "Como profesor particular de Matemáticas, ofrezco clases en línea que cubren temas como Análisis Matemático y Álgebra. Además, brindo un seguimiento personalizado de trabajos prácticos y te preparo de manera efectiva para tus exámenes. Aprende Matemáticas de una manera comprensible y amigable.",
-        "activo": false,
+        "activo": true,
         "comentarios": [
           {
             "fecha": "2022-08-25T12:20:29",
@@ -1212,9 +1212,9 @@
         "calificacion": 1.5,
         "metodologia": "Ambas",
         "costo": 2300,
-        "duracion": 1.26,
+        "duracion": 1,
         "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
-        "activo": false,
+        "activo": true,
         "comentarios": [
           {
             "fecha": "2021-10-29T12:00:30",
@@ -1251,7 +1251,7 @@
         "calificacion": 4.9,
         "metodologia": "Presencial",
         "costo": 1200,
-        "duracion": 0.95,
+        "duracion": 1,
         "descripcion": "Mejora tus habilidades en el idioma inglés con mis clases en línea. Trabajaremos en gramática, vocabulario y conversación para que te sientas más seguro y fluido en este idioma tan importante.",
         "activo": true,
         "comentarios": [
@@ -1295,9 +1295,9 @@
         "calificacion": 4.6,
         "metodologia": "Virtual",
         "costo": 1200,
-        "duracion": 1.86,
+        "duracion": 1,
         "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
-        "activo": false,
+        "activo": true,
         "comentarios": []
       },
       {
@@ -1308,7 +1308,7 @@
         "calificacion": 2.9,
         "metodologia": "Ambas",
         "costo": 2700,
-        "duracion": 1.39,
+        "duracion": 1,
         "descripcion": "Como profesor particular de Biología, te ayudaré a desentrañar los misterios de la vida. Exploraremos la genética, la ecología y la anatomía, y te proporcionaré las herramientas para comprender el mundo natural que te rodea.",
         "activo": true,
         "comentarios": [
@@ -1328,9 +1328,9 @@
         "calificacion": 2.6,
         "metodologia": "Ambas",
         "costo": 3700,
-        "duracion": 0.66,
+        "duracion": 1,
         "descripcion": "Como profesor particular de Historia, te llevaré en un emocionante viaje a través del tiempo. Exploraremos eventos históricos importantes y analizaremos sus implicaciones. Juntos, desentrañaremos los misterios del pasado.",
-        "activo": false,
+        "activo": true,
         "comentarios": [
           {
             "fecha": "2020-06-22T09:23:36",
@@ -1354,9 +1354,9 @@
         "calificacion": 0.2,
         "metodologia": "Ambas",
         "costo": 3000,
-        "duracion": 1.49,
+        "duracion": 1,
         "descripcion": "Como profesor particular de Biología, te ayudaré a desentrañar los misterios de la vida. Exploraremos la genética, la ecología y la anatomía, y te proporcionaré las herramientas para comprender el mundo natural que te rodea.",
-        "activo": false,
+        "activo": true,
         "comentarios": [
           {
             "fecha": "2023-08-15T05:11:29",
@@ -1399,7 +1399,7 @@
         "calificacion": 4.3,
         "metodologia": "Ambas",
         "costo": 4900,
-        "duracion": 1.45,
+        "duracion": 1,
         "descripcion": "Como profesor particular de Biología, te ayudaré a desentrañar los misterios de la vida. Exploraremos la genética, la ecología y la anatomía, y te proporcionaré las herramientas para comprender el mundo natural que te rodea.",
         "activo": true,
         "comentarios": []
@@ -1412,9 +1412,9 @@
         "calificacion": 2.8,
         "metodologia": "Ambas",
         "costo": 2000,
-        "duracion": 0.82,
+        "duracion": 1,
         "descripcion": "Descubre el fascinante mundo de la Geografía a través de mis clases en línea. Exploraremos la geografía física y humana, los mapas y los sistemas geográficos globales para que entiendas mejor nuestro planeta.",
-        "activo": false,
+        "activo": true,
         "comentarios": [
           {
             "fecha": "2020-06-25T09:11:31",
@@ -1438,7 +1438,7 @@
         "calificacion": 3.4,
         "metodologia": "Ambas",
         "costo": 3300,
-        "duracion": 1.07,
+        "duracion": 1,
         "descripcion": "Mis clases se centran en la comprensión profunda de los conceptos y la resolución de problemas. Personalizo cada lección para abordar las necesidades específicas de mis estudiantes.",
         "activo": true,
         "comentarios": [
@@ -1470,7 +1470,7 @@
         "calificacion": 1.1,
         "metodologia": "Presencial",
         "costo": 3500,
-        "duracion": 1.6,
+        "duracion": 1,
         "descripcion": "Como profesor particular de Historia, te llevaré en un emocionante viaje a través del tiempo. Exploraremos eventos históricos importantes y analizaremos sus implicaciones. Juntos, desentrañaremos los misterios del pasado.",
         "activo": true,
         "comentarios": [
@@ -1502,7 +1502,7 @@
         "calificacion": 3.2,
         "metodologia": "Presencial",
         "costo": 4700,
-        "duracion": 1.66,
+        "duracion": 1,
         "descripcion": "Si estás interesado en desarrollar tus habilidades artísticas, puedo ayudarte a explorar el mundo del arte. Ofrezco clases personalizadas de arte en línea, donde te guiaré en técnicas de dibujo, pintura y escultura para que expreses tu creatividad de manera única.",
         "activo": true,
         "comentarios": [

@@ -24,10 +24,7 @@ export default function Registrate({ props }) {
     e.preventDefault();
     setSubmitted(true)
     if (values.nombre && values.apellido && values.numero && !isNaN(values.numero) && values.password && isEmail(values.mail) && values.password.length >= 8) {
-      console.log("hola")
       goTo("/")
-    } else {
-
     }
   }
 

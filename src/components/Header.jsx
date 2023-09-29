@@ -28,11 +28,11 @@ export default function Header({ props }) {
   const miniPerfil =
     <div className="rounded-full relative w-14 h-14 cursor-pointer" onClick={() => setMostrarPerfil(!mostrarPerfil)}>
       <img src={localStorage.getItem("img")} alt="" className="rounded-full" />
-      {(mostrarPerfil && <div className="absolute mt-5 max-lg:right-0 -right-1/2 shadow-2xl border-2 border-coral bg-white py-2 px-2 rounded-lg">
+      {(mostrarPerfil && <div className="absolute mt-5 max-lg:right-0 -right-1/2 shadow-2xl border-2 border-coral bg-white py-2 px-2 rounded-lg z-10">
         <ul className="w-full flex flex-col gap-1">
-          <li className="py-2   border-b pr-12 border-black hover:text-coral cursor-pointer">Notificaciones</li>
-          <li className="py-2   border-b pr-12 border-black hover:text-coral cursor-pointer">Perfil</li>
-          <li className="py-2   border-b pr-12 border-black hover:text-coral cursor-pointer">Mis clases</li>
+          <li className="py-2   border-b pr-12 border-black hover:text-coral cursor-pointer"><NavLink to="/notificaciones">Notificaciones</NavLink></li>
+          <li className="py-2   border-b pr-12 border-black hover:text-coral cursor-pointer"><NavLink to="/perfil">Perfil</NavLink> </li>
+          <li className="py-2   border-b pr-12 border-black hover:text-coral cursor-pointer"><NavLink to="/mis-clases">Mis clases</NavLink></li>
           <li className="py-2   border-b pr-12 border-black hover:text-coral cursor-pointer" onClick={(e) => cerrarSesion()}>Cerrar Sesion</li>
         </ul>
       </div>)}

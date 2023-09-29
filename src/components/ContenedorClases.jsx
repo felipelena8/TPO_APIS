@@ -104,7 +104,7 @@ export default function ContenedorClases() {
         <button className={'flex rounded-full border p-2 w-36 h-10' + (calificacionesSeleccionadas[3] ? " bg-slate-200" : "")} value={3} onClick={(e) => { handleCalificacion(e) }}>{estrellasHtml(4)}</button>
         <button className={'flex rounded-full border p-2 w-36 h-10' + (calificacionesSeleccionadas[4] ? " bg-slate-200" : "")} value={4} onClick={(e) => { handleCalificacion(e) }}>{estrellasHtml(5)}</button>
       </div>
-      <div className='flex flex-wrap gap-4 justify-around lg:mx-28'>
+      <div className='flex flex-wrap gap-4  lg:mx-28'>
         {cargando ? <div
           className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-blue-500 border-solid border-current border-r-transparent align-[-0.125em] text-primary motion-reduce:animate-[spin_1.5s_linear_infinite]"
           role="status">

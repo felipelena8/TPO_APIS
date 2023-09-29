@@ -1,17 +1,24 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Metodologia from './Metodologia'
 
-export default function CardClase(props) {
-  const { nombre, ubicacion, img, servicio } = props
-  let { calificacion, categoria, costo, descripcion, id, metodologia } = servicio
+export default function CardClaseAdmin(props) {
+  const { nombre, ubicacion, img, servicio, setModal, setPublicacion } = props
+  let { calificacion, categoria, costo, descripcion, id, metodologia, activo } = servicio
+
+  const handleModificar = () => {
+    setModal(true)
+    setPublicacion(servicio)
+  }
+
   return (
-    <div className='rounded-3xl border border-slate-400  w-72 shadow-card'>
+    <div className={`rounded-3xl border border-slate-400  w-72 shadow-card ${activo ? "" : "bg-gray-100"}`}>
       <div className='flex relative'>
         <Link to={"/clase/" + id}><img src={img} alt="" className='rounded-3xl w-72 h-72' /></Link>
         <span className='absolute bottom-12 left-4 text-3xl font-bold text-white'>{nombre}</span>
         <span className='absolute bottom-4 left-4 text-xl font-bold text-white'>{categoria}</span>
       </div>
-      <div className='flex flex-col gap-3 py-3 px-5 h-64 justify-between'>
+      <div className='flex flex-col gap-3 py-3 px-5  justify-between'>
         <div className='overflow-hidden text-sm text-gray-500  h-14'>{descripcion}</div>
         <div className='flex flex-col gap-3 pb-1'>
           <div className='flex gap-2 items-center'>
@@ -56,11 +63,18 @@ export default function CardClase(props) {
           <div className='flex mt-3 gap-3'>
             {
               (metodologia == "Ambas" ?
-                <><div className='p-1 px-3 border rounded-full text-coral border-coral font-bold'>Virtual</div><div className='p-1 px-3 border rounded-full text-coral border-coral font-bold'>Presencial</div></>
-                : metodologia == "Presencial" ? <div className='p-1 px-3 border rounded-full text-coral border-coral font-bold'>Presencial</div> : <div className='p-1 px-3 border rounded-full text-coral border-coral font-bold'>Virtual</div>)
+                <><Metodologia metodologia={"Presencial"} /><Metodologia metodologia={"Virtual"} /></>
+                : metodologia == "Presencial" ? <Metodologia metodologia={"Presencial"} /> : <Metodologia metodologia={"Virtual"} />)
             }
           </div>
-        </div>
+          <div className='flex items-center flex-col gap-2 mt-2'>
+            <button className='bg-coral rounded-lg p-2 w-2/3 text-white border border-coral hover:bg-white hover:text-coral transition-all'>Eliminar</button>
+            {(activo ?
+              <button className='bg-coral rounded-lg p-2 w-2/3 text-white border border-coral hover:bg-white hover:text-coral transition-all'>Despublicar</button> :
+              <button className='bg-verde rounded-lg p-2 w-2/3 text-white border border-verde hover:bg-white hover:text-verde transition-all'>Publicar</button>
+            )}
+            <button className='bg-celeste rounded-lg p-2 w-2/3 text-white border border-celeste hover:bg-white hover:text-celeste transition-all' onClick={handleModificar}>Modificar</button>
+          </div> </div>
       </div>
     </div>
   )
