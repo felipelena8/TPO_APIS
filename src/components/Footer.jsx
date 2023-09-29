@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -7,8 +8,8 @@ export default function Footer() {
         <div className="flex flex-col text-left">
           <h4 className='font-bold mb-3 text-lg text-white text-center'>Acerca de nosotros</h4>
           <ul className='flex gap-2 flex-col'>
-            <li className='text-white'>Como funciona</li>
-            <li className='text-white'>Dar clases particulares</li>
+            <li className='text-white'><Link to="/como-funciona">Como funciona</Link></li>
+            <li className='text-white'><Link to="/registrate">Dar clases particulares</Link></li>
           </ul>
         </div>
         <div className="flex flex-col text-left">

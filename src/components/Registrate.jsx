@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router';
+import { isEmail } from '../utils/Utils';
 
 
 export default function Registrate({ props }) {
@@ -21,17 +22,14 @@ export default function Registrate({ props }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(values)
     setSubmitted(true)
-    if (values.nombre && values.apellido && values.numero && !isNaN(values.numero) && values.password && values.mail && values.password.length >= 8) {
+    if (values.nombre && values.apellido && values.numero && !isNaN(values.numero) && values.password && isEmail(values.mail) && values.password.length >= 8) {
       console.log("hola")
       goTo("/")
     } else {
 
     }
   }
-
-
 
   return (
     <div className='flex justify-center'>
@@ -51,7 +49,7 @@ export default function Registrate({ props }) {
             <input type="text" placeholder='Numero de telefono' name='numero' value={values.numero} onChange={handleInputChange} className='bg-slate-300 placeholder-slate-500 rounded h-12 pl-2' />
             {submitted && !values.numero || isNaN(values.numero) ? (<span className='w-full text-left text-red-500'>{(!values.numero ? "Ingrese su numero de telefono" : (isNaN(values.numero) ? "Debe ingresar un numero" : ""))}</span>) : ""}
             <input type="text" placeholder='Correo electronico' name='mail' value={values.mail} onChange={handleInputChange} className='bg-slate-300 placeholder-slate-500 rounded h-12 pl-2' />
-            {submitted && !values.mail ? (<span className='w-full text-left text-red-500'>Ingrese su email</span>) : ""}
+            {submitted && !isEmail(values.mail) ? (<span className='w-full text-left text-red-500'>Ingrese su email</span>) : ""}
             <input type="password" placeholder='Contraseña' name='password' value={values.password} onChange={handleInputChange} className='bg-slate-300 placeholder-slate-500 rounded h-12 pl-2' />
             {submitted && !values.password ? (<span className='w-full text-left text-red-500'>Ingrese una contraseña</span>) : (values.password.length < 8 ? ((<span className='w-full text-left text-red-500'>La contraseña debe tener minimo 8 caracteres</span>)) : "")}
             <button type="submit" onClick={handleSubmit} className='mt-5 p-2 bg-coral text-white text-lg rounded-xl w-full font-bold'>Empezar ahora</button>

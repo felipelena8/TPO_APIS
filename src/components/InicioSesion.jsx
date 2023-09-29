@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from 'react'
 
 import { useNavigate } from 'react-router-dom'
+import { isEmail } from '../utils/Utils'
 
 export default function InicioSesion({ props }) {
 
-  const [mail, setMail] = useState("")
-  const [password, setPassword] = useState("")
+  let [mail, setMail] = useState("")
+  let [password, setPassword] = useState("")
+  let [submitted, setSubmitted] = useState(false)
+  let [existe, setExiste] = useState(true)
+
   const goTo = useNavigate();
 
   const { sesionIniciada, setSesionIniciada } = props;
@@ -16,8 +20,21 @@ export default function InicioSesion({ props }) {
     }
   })
 
+  let handleSubmit = (e) => {
+    e.preventDefault();
+    setSubmitted(true)
+    if (password.length >= 8 && isEmail(mail)) {
+      buscarUsuario()
+    }
+
+  }
+
   const buscarUsuario = () => {
-    fetch("/servicios.json").then(data => data.json()).then(json => json.find((usuario) => usuario.mail == mail && usuario.password == password)).then(usuario => { if (usuario != null) { guardarUsuario(usuario) } })
+    fetch("/servicios.json").then(data => data.json()).then(json => json.find((usuario) => usuario.mail == mail && usuario.password == password)).then(usuario => {
+      if (usuario != null) { guardarUsuario(usuario) } else {
+        setExiste(false)
+      }
+    })
   }
 
   const guardarUsuario = (usuario) => {
@@ -36,10 +53,12 @@ export default function InicioSesion({ props }) {
         <div className='font-bold text-2xl text-center p-8' >Iniciar sesion</div>
         <div className='flex flex-col max-md:w-9/12 w-4/5 items-center gap-2 mb-14'>
           <input type="text" placeholder='Correo electronico' className='bg-slate-300 placeholder-slate-500 rounded h-10 w-full pl-2' onChange={(e) => setMail(e.target.value)} />
+          {submitted && !isEmail(mail) ? (<span className='w-full text-left text-red-500'>Ingrese su email</span>) : ""}
           <input type="password" placeholder='Contraseña' className='bg-slate-300 placeholder-slate-500 rounded h-10 w-full pl-2' onChange={(e) => setPassword(e.target.value)} />
-          <div className='flex self-start gap-2'><input type="checkbox" name="sesion" id="" /><span>Mantener mi sesion iniciada</span></div>
-          <button type="submit" className='my-3 p-2 bg-coral text-white text-lg rounded-xl w-full font-bold' onClick={buscarUsuario}>Entrar</button>
+          {submitted && password.length < 8 ? (<span className='w-full text-left text-red-500'>La contraseña debe tener minimo 8 caracteres</span>) : ""}
+          <button type="submit" className='my-3 p-2 bg-coral text-white text-lg rounded-xl w-full font-bold' onClick={handleSubmit}>Entrar</button>
           <span className='font-bold text-lg text-blue-600'>¿Has olvidado tu constraseña?</span>
+          {!existe ? <span className='w-full text-center text-red-500'>Tu contraseña no es correcta</span> : ""}
         </div>
 
       </div>
