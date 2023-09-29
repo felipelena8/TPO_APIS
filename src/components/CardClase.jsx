@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function CardClase({ props }) {
+export default function CardClase(props) {
   const { nombre, ubicacion, img, servicio } = props
   let { calificacion, categoria, costo, descripcion, id } = servicio
   return (

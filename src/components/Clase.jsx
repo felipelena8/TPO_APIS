@@ -228,7 +228,7 @@ export default function Clase() {
                                     mensaje={comentario.mensaje}
                                     admin={data.id == localStorage.getItem("id")}
                                     calificacion={comentario.calificacion}
-                                    key={comentario.fecha}
+                                    key={comentario.id}
                                 />
                             ))}
                         </div>

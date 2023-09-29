@@ -21,6 +21,49 @@ async function getData() {
         .then(res => res.json())
 }
 
+async function serviciosPorCategoria(categoria) {
+    let datos = await getData()
+    let clases = []
+    for (let i in datos) {
+        let profesor = datos[i]
+        let servicios = []
+        for (let j in profesor.servicios) {
+            if (profesor.servicios[j].categoria.toLowerCase() == categoria.toLowerCase()) {
+                servicios.push(profesor.servicios[j])
+            }
+        }
+        if (servicios.length != 0) {
+            profesor.servicios = servicios
+            clases.push(profesor)
+        }
+    }
+    return await clases
+}
+
+async function filtrarServicios(datos, tipo, frecuencia, calificacion) {
+    let calificaciones = calificacion.map((elem, i) => elem ? i + 1 : -1).filter(elem => elem != -1)
+
+    for (let i in datos) {
+        let profesor = datos[i]
+        profesor.servicios = profesor.servicios.filter((elem) => {
+            let coincide = true
+            if (tipo != "Todas") {
+                coincide = (elem.tipoClase == tipo) && coincide
+            }
+            if (frecuencia != "Todas") {
+                coincide = (elem.frecuencia == frecuencia) && coincide
+            }
+            if (calificaciones.length != 0) {
+                let redondeo = Math.round(elem.calificacion)
+                if (redondeo == 0) { redondeo = 1 }
+                coincide = calificaciones.includes(redondeo) && coincide
+            }
+            return coincide
+        })
+    }
+    return await datos
+}
+
 async function buscarServicio(id) {
     let datos = await getData()
     for (let i in datos) {
@@ -77,7 +120,7 @@ function calcularEstrellas(calificacion) {
 }
 
 function estrellasHtml(calificacion) {
-    return calcularEstrellas(calificacion).map((elemento, i) => <div className="flex" key={i}>{(elemento == 1 ? estrellaLlena : (elemento ? estrellaMitad : estrellaVacia))}</div>)
+    return calcularEstrellas(calificacion).map((elemento, i) => <div className="flex h-full w-full" key={i}>{(elemento == 1 ? estrellaLlena : (elemento ? estrellaMitad : estrellaVacia))}</div>)
 }
 
 
@@ -94,4 +137,6 @@ function isEmail(mail) {
 }
 
 
-export { getData, buscarServicio, formatearFecha, estrellasHtml, isEmail, reseñaEstrella };
+
+
+export { getData, buscarServicio, formatearFecha, estrellasHtml, isEmail, reseñaEstrella, serviciosPorCategoria, filtrarServicios };
