@@ -4,11 +4,11 @@ import { getCategorias } from '../utils/Utils'
 export default function Modal({ setModal, publicacion }) {
     const [categorias, setCategorias] = useState([])
     const [cargando, setCargando] = useState(true)
-    const [values, setValues] = useState({ duracion: publicacion?.duracion, costo: publicacion?.costo, descripcion: publicacion?.descripcion })
-    const [tipo, setTipo] = useState(publicacion?.tipoClase)
-    const [frecuencia, setFrecuencia] = useState(publicacion?.frecuencia)
-    const [metodologia, setMetodologia] = useState(publicacion?.metodologia)
-    const [categoria, setCategoria] = useState(publicacion?.categoria)
+    const [values, setValues] = useState({ duracion: publicacion?.duracion || "", costo: publicacion?.costo || "", descripcion: publicacion?.descripcion || "" })
+    const [tipo, setTipo] = useState(publicacion?.tipoClase || "")
+    const [frecuencia, setFrecuencia] = useState(publicacion?.frecuencia || "")
+    const [metodologia, setMetodologia] = useState(publicacion?.metodologia || "")
+    const [categoria, setCategoria] = useState(publicacion?.categoria || "")
 
     const [submitted, setSubmitted] = useState(false)
 
@@ -21,6 +21,12 @@ export default function Modal({ setModal, publicacion }) {
     const handleSubmit = (e) => {
         e.preventDefault()
         setSubmitted(true)
+        if (values.duracion && values.costo && values.descripcion && frecuencia && metodologia && categoria && tipo && !isNaN(values.duracion) && !isNaN(values.costo)) {
+            alert(publicacion ? "Publicacion modificada" : "Publicacion creada")
+            setSubmitted(false)
+            setModal(false)
+        }
+
     }
 
     const handleCategoriaChange = (e) => {
@@ -84,7 +90,7 @@ export default function Modal({ setModal, publicacion }) {
                         />
                     </div>
                     <div className='flex gap-3'>
-                        <select className={`bg-slate-300  placeholder-slate-500 rounded h-12 w-full pl-2 ${submitted && tipo == "" ? "border-red-600 border-l-2" : ""}`} value={tipo} onClick={handleTipoChange} >
+                        <select className={`bg-slate-300  placeholder-slate-500 rounded h-12 w-full pl-2 ${submitted && tipo == "" ? "border-red-600 border-l-2" : ""}`} defaultValue={tipo} onClick={handleTipoChange} >
                             <option value="" className='p-2 rounded-full text-slate-500'>Tipo de clase</option>
                             <option value="Grupal" className='p-2 rounded-full'>Grupal</option>
                             <option value="Individual" className='p-2 rounded-full'>Individual</option>
@@ -109,7 +115,7 @@ export default function Modal({ setModal, publicacion }) {
                         onChange={handleInputChange}
                     />
 
-                    <button className='bg-coral border border-coral text-white p-2 w-3/4 self-center rounded hover:bg-white hover:text-coral transition-all' onClick={handleSubmit}>Crear publicación</button>
+                    <button className='bg-coral border border-coral text-white p-2 w-3/4 self-center rounded hover:bg-white hover:text-coral transition-all' onClick={handleSubmit}>{publicacion ? "Modificar publicacion" : "Crear publicación"}</button>
                 </form>
 
             </div>

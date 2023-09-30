@@ -154,6 +154,10 @@ async function getCategorias() {
     return await fetch("/categorias.json").then(response => response.json())
 }
 
+function sesionIniciada() {
+    return localStorage.getItem("id") != ""
+}
 
 
-export { getData, buscarServicio, formatearFecha, estrellasHtml, isEmail, reseñaEstrella, serviciosPorCategoria, filtrarServicios, serviciosPorProfesor, getCategorias };
+
+export { getData, buscarServicio, formatearFecha, estrellasHtml, isEmail, reseñaEstrella, serviciosPorCategoria, filtrarServicios, serviciosPorProfesor, getCategorias, sesionIniciada };

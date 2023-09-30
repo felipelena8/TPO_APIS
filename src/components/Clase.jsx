@@ -44,6 +44,8 @@ export default function Clase() {
             alert("Se ha creado un nuevo comentario")
         }
     }
+
+
     return (
         <>
 

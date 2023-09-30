@@ -126,10 +126,10 @@ export default function ContenedorClases() {
       </button>
 
       <div className='flex gap-3'>
-        {mostrarFiltro ? <div className='flex gap-4 items-center flex-col sm:ml-10 max-sm:w-full sm:hidden'>{filtro}</div> : <div className='flex flex-col gap-4 self-center items-center  lg:mx-28 sm:hidden mx-auto'>{serviciosHtml}</div>}
-        <div className='flex gap-4 flex-col  sm:ml-10 max-sm:hidden'>{filtro}</div >
+        {mostrarFiltro ? <div className='flex gap-4 items-center flex-col sm:ml-10 max-sm:w-full sm:hidden'>{filtro}</div> : <div className='flex flex-col gap-4 self-center items-center  sm:hidden mx-auto'>{serviciosHtml}</div>}
+        <div className='flex gap-4 flex-col  sm:mx-10 max-sm:hidden'>{filtro}</div >
 
-        <div className='flex flex-wrap gap-4 self-center items-center ml-auto lg:mx-28 max-sm:hidden'>
+        <div className='flex flex-wrap gap-4 self-center items-center  max-sm:hidden'>
           {cargando ? <div
             className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-blue-500 border-solid border-current border-r-transparent align-[-0.125em] text-primary motion-reduce:animate-[spin_1.5s_linear_infinite]"
             role="status">
