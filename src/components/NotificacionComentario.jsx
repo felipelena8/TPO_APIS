@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import { estrellasHtml } from '../utils/Utils'
-import { useNavigate } from 'react-router-dom'
 
-export default function NotificacionComentario({ fecha, mensaje, calificacion }) {
-    const [visto, setVisto] = useState(false)
+
+export default function NotificacionComentario({ fecha, mensaje, calificacion, leido }) {
+    const [visto, setVisto] = useState(leido)
     function handleVisto() {
         setVisto(!visto)
     }

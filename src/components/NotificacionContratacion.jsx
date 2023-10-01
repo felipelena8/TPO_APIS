@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import { estrellasHtml } from '../utils/Utils'
 import { Link } from 'react-router-dom'
 
-export default function NotificacionContratacion({ fecha, descripcionServicio, mail, telefono, horario, motivo, idServicio }) {
+export default function NotificacionContratacion({ fecha, descripcionServicio, mail, telefono, horario, motivo, idServicio, leido }) {
 
-    const [visto, setVisto] = useState(false)
+    const [visto, setVisto] = useState(leido)
     function handleVisto() {
         setVisto(!visto)
     }

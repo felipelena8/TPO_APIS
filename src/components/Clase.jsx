@@ -88,17 +88,17 @@ export default function Clase() {
                             />
                             {submitted && (!isEmail(mail) || !mail) ? (<span className='w-full text-left text-red-500'>Ingrese su email</span>) : ""}
                             <div className="flex gap-3">
-                                <div className="flex flex-col">
+                                <div className="flex flex-col w-full">
                                     <input
                                         type="text"
                                         placeholder="Numero de telefono"
                                         name="numero"
-                                        className="bg-slate-300 placeholder-slate-500 rounded h-12 pl-2"
+                                        className="bg-slate-300 placeholder-slate-500 rounded w-full h-12 pl-2"
                                         onChange={(e) => setTelefono(e.target.value)}
                                     />
                                     {submitted && (isNaN(telefono) || !telefono) ? (<span className='w-full text-left text-red-500'>Debe ingresar un numero</span>) : ""}
                                 </div>
-                                <div className="flex flex-col">
+                                <div className="flex flex-col w-full">
                                     <input
                                         type="text"
                                         placeholder="Horario de referencia"
@@ -161,7 +161,7 @@ export default function Clase() {
                     <div className="flex justify-around  max-md:flex-col-reverse max-md:items-center">
                         <div className="flex flex-col w-9/12 max-md:items-center max-md:text-center">
                             <div className="rounded-3xl bg-rosa text-coral w-min px-4 py-2">
-                                Matematica
+                                {data.servicio.categoria}
                             </div>
                             <div className="flex flex-col justify-between h-full gap-6 ">
                                 <div className="text-3xl mt-7 font-bold">

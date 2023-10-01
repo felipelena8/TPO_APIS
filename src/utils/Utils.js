@@ -40,7 +40,7 @@ async function serviciosPorCategoria(categoria) {
     return await clases
 }
 
-async function serviciosPorProfesor(idProfesor) {
+async function profesorPorId(idProfesor) {
     let datos = await getData()
     for (let i in datos) {
         let profesor = datos[i]
@@ -155,9 +155,9 @@ async function getCategorias() {
 }
 
 function sesionIniciada() {
-    return localStorage.getItem("id") != ""
+    return localStorage.getItem("id") != undefined
 }
 
 
 
-export { getData, buscarServicio, formatearFecha, estrellasHtml, isEmail, reseñaEstrella, serviciosPorCategoria, filtrarServicios, serviciosPorProfesor, getCategorias, sesionIniciada };
+export { getData, buscarServicio, formatearFecha, estrellasHtml, isEmail, reseñaEstrella, serviciosPorCategoria, filtrarServicios, profesorPorId, getCategorias, sesionIniciada };

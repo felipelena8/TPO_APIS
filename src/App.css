@@ -658,6 +658,10 @@ video {
   left: 1rem;
 }
 
+.right-10 {
+  right: 2.5rem;
+}
+
 .right-2 {
   right: 0.5rem;
 }
@@ -672,6 +676,10 @@ video {
 
 .top-0 {
   top: 0px;
+}
+
+.top-10 {
+  top: 2.5rem;
 }
 
 .top-3 {
@@ -738,6 +746,11 @@ video {
 .my-3 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .mb-14 {
@@ -820,10 +833,6 @@ video {
   height: 3.5rem;
 }
 
-.h-20 {
-  height: 5rem;
-}
-
 .h-3 {
   height: 0.75rem;
 }
@@ -867,12 +876,6 @@ video {
 .h-min {
   height: -webkit-min-content;
   height: min-content;
-}
-
-.min-h-fit {
-  min-height: -webkit-fit-content;
-  min-height: -moz-fit-content;
-  min-height: fit-content;
 }
 
 .min-h-screen {
@@ -1176,6 +1179,11 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
+.bg-gray-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
 .bg-red-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
@@ -1206,16 +1214,6 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-gray-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
-
-.bg-gray-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
-}
-
 .bg-opacity-80 {
   --tw-bg-opacity: 0.8;
 }
@@ -1226,6 +1224,10 @@ video {
 
 .p-1 {
   padding: 0.25rem;
+}
+
+.p-10 {
+  padding: 2.5rem;
 }
 
 .p-2 {
@@ -1286,6 +1288,11 @@ video {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .px-8 {
@@ -1406,11 +1413,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
 }
 
 .font-bold {
@@ -1546,6 +1548,11 @@ body {
   background-color: rgb(224 69 86 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-gray-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-rosa:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 241 241 / var(--tw-bg-opacity));
@@ -1632,6 +1639,10 @@ body {
     flex-direction: column;
   }
 
+  .max-lg\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
   .max-lg\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -1712,6 +1723,10 @@ body {
 }
 
 @media (min-width: 768px) {
+  .md\:absolute {
+    position: absolute;
+  }
+
   .md\:hidden {
     display: none;
   }
