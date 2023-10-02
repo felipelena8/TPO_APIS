@@ -344,7 +344,7 @@
     "servicios": [
       {
         "id": 11,
-        "categoria": "Deportes",
+        "categoria": "Química",
         "tipoClase": "Individual",
         "frecuencia": "Unica",
         "calificacion": 0.2,
@@ -357,7 +357,7 @@
       },
       {
         "id": 12,
-        "categoria": "Lengua Española",
+        "categoria": "Historia",
         "tipoClase": "Grupal",
         "frecuencia": "Unica",
         "calificacion": 2.3,
@@ -377,7 +377,7 @@
       },
       {
         "id": 13,
-        "categoria": "Deportes",
+        "categoria": "Química",
         "tipoClase": "Individual",
         "frecuencia": "Mensual",
         "calificacion": 4.6,
@@ -660,7 +660,7 @@
       },
       {
         "id": 22,
-        "categoria": "Deportes",
+        "categoria": "Química",
         "tipoClase": "Individual",
         "frecuencia": "Mensual",
         "calificacion": 3.7,
@@ -796,7 +796,7 @@
       },
       {
         "id": 28,
-        "categoria": "Psicología",
+        "categoria": "Historia",
         "tipoClase": "Grupal",
         "frecuencia": "Unica",
         "calificacion": 3.7,
@@ -969,7 +969,7 @@
       },
       {
         "id": 33,
-        "categoria": "Deportes",
+        "categoria": "Química",
         "tipoClase": "Grupal",
         "frecuencia": "Unica",
         "calificacion": 4.3,
@@ -1206,7 +1206,7 @@
       },
       {
         "id": 41,
-        "categoria": "Psicología",
+        "categoria": "Historia",
         "tipoClase": "Individual",
         "frecuencia": "Unica",
         "calificacion": 1.5,
@@ -1289,7 +1289,7 @@
       },
       {
         "id": 43,
-        "categoria": "Deportes",
+        "categoria": "Química",
         "tipoClase": "Individual",
         "frecuencia": "Mensual",
         "calificacion": 4.6,
@@ -1432,7 +1432,7 @@
       },
       {
         "id": 49,
-        "categoria": "Psicología",
+        "categoria": "Historia",
         "tipoClase": "Individual",
         "frecuencia": "Unica",
         "calificacion": 3.4,

@@ -30,8 +30,10 @@ export default function Header({ props }) {
       <img src={localStorage.getItem("img")} alt="" className="rounded-full" />
       {(mostrarPerfil && <div className="absolute mt-5 max-lg:right-0 -right-1/2 shadow-2xl border-2 border-coral bg-white py-2 px-2 rounded-lg z-10">
         <ul className="w-full flex flex-col gap-1">
-          <li className="py-2   border-b pr-12 border-black hover:text-coral cursor-pointer"><NavLink to="/notificaciones">Notificaciones</NavLink></li>
-          <li className="py-2   border-b pr-12 border-black hover:text-coral cursor-pointer"><NavLink to="/perfil">Perfil</NavLink> </li>
+          <li className="flex align-middle py-2   border-b pr-12 border-black hover:text-coral cursor-pointer justify-between w-full">
+            <NavLink to="/notificaciones">Notificaciones </NavLink>
+          </li>
+          <li className="py-2   border-b pr-12 border-black hover:text-coral cursor-pointer"><NavLink to="/perfil" className="w-full">Perfil</NavLink> </li>
           <li className="py-2   border-b pr-12 border-black hover:text-coral cursor-pointer"><NavLink to="/mis-clases">Mis clases</NavLink></li>
           <li className="py-2   border-b pr-12 border-black hover:text-coral cursor-pointer" onClick={(e) => cerrarSesion()}>Cerrar Sesion</li>
         </ul>
@@ -51,14 +53,14 @@ export default function Header({ props }) {
               </svg>
             </div>
           </li>
+
+          <li className="text-slate-600 hover:text-purple-800"><NavLink to="/" className={({ isActive }) => isActive ? "text-coral" : ""} >Inicio</NavLink></li>
           <li >
             <span className="text-slate-600 hover:text-purple-800 cursor-pointer relative" onClick={() => setCategoriasVisibles(!categoriasVisibles)}>Categorias</span>
 
             {(categoriasVisibles && <ul className="flex flex-wrap rounded-lg absolute bg-white mt-4 shadow-xl flex-col z-10 w-64">{categorias}</ul>)}
 
           </li>
-          <li className="text-slate-600 hover:text-purple-800"><NavLink to="/" className={({ isActive }) => isActive ? "text-coral" : ""} >Inicio</NavLink></li>
-          <li className="text-slate-600 hover:text-purple-800"><NavLink to="como-funciona" className={({ isActive }) => isActive ? "text-coral" : ""} >Como funciona</NavLink></li>
           {(sesionIniciada ?
             miniPerfil :
             <li className="flex justify-between"><Link className="px-3 py-2 mx-2 border-2 border-coral rounded text-coral transition ease-in-out hover:bg-coral hover:text-white" to={"iniciar-sesion"}>Iniciar sesion</Link>
@@ -105,7 +107,6 @@ export default function Header({ props }) {
                 <span className="font-bold border-b w-full block text-lg pb-2">Categorias</span>
                 <ul>{categorias}</ul>
               </li>
-              <li className="text-slate-600 hover:bg-zinc-100 p-2 rounded border border-t-0"> <NavLink to="/como-funciona" className={({ isActive }) => isActive ? "text-" : ""} >Como funciona</NavLink></li>
             </ul>
 
           </div>)}

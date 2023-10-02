@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { estrellasHtml, profesorPorId, sesionIniciada } from '../utils/Utils'
 import { useNavigate } from 'react-router-dom'
 import Spinner from './Spinner'
+import Contratacion from './Contratacion'
 
 export default function Perfil() {
     const [profesor, setProfesor] = useState({})
@@ -57,61 +58,79 @@ export default function Perfil() {
         </div>
     </div>
 
-
-
     return (
-        <div className='flex flex-col items-center mx-3'>
-            <h2 className='text-4xl font-bold mb-3'>Perfil</h2>
+        <div className='flex flex-col items-center gap-6'>
             {cargando ? <Spinner /> :
-                <>{console.log(profesor.servicios.map(servicio => servicio.calificacion))}
-                    {(modal && modalHtml)}
-                    <div className="flex flex-col max-lg:px-10 lg:px-32 gap-10 items-center ">
-                        <div className="flex flex-col shadow-card p-10 rounded-2xl items-center gap-4 relative">
+                <>
+                    <div className='flex flex-col items-center mx-3'>
+                        <h2 className='text-4xl font-bold mb-3'>Perfil</h2>
 
-
-                            <img
-                                src={profesor.img}
-                                width={230}
-                                height={230}
-                                alt=""
-                                className="rounded-full mx-20"
-                            />
-                            <div className='flex rounded-full hover:bg-gray-200 cursor-pointer md:absolute top-10 right-10 p-2' onClick={() => { setModal(true) }}>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 60 60" fill="none" >
-                                    <path d="M24.1415 42.5H17.4994V35M15.2559 37.2435L43.5267 8.97253C45.4795 7.0199 48.6453 7.0199 50.598 8.97253C52.5505 10.9252 52.5505 14.091 50.598 16.0436L21.91 44.7315C20.5698 46.0717 19.8998 46.7417 19.158 47.3177C18.4991 47.8295 17.7987 48.2855 17.064 48.6807C16.2369 49.1257 15.3529 49.467 13.5849 50.1497L7.5 52.4995L9.4578 46.6252C10.126 44.6207 10.4601 43.6182 10.9248 42.6822C11.3374 41.851 11.8264 41.06 12.3852 40.319C13.0146 39.4847 13.7617 38.7377 15.2559 37.2435Z" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </div>
-                            <span className="text-2xl font-semibold text-center">
-                                {profesor.nombre} {profesor.apellido}
-                            </span>
-                            <div className="flex">
-                                <div className="flex gap-2 h-8">
-                                    {estrellasHtml(profesor.servicios.map(servicio => servicio.calificacion).reduce((a, b) => a + b, 0) / profesor.servicios.length)}
+                        {(modal && modalHtml)}
+                        <div className="flex flex-col max-lg:px-10 lg:px-32 gap-10 items-center ">
+                            <div className="flex flex-col shadow-card p-10 rounded-2xl items-center gap-4 relative">
+                                <img
+                                    src={profesor.img}
+                                    width={230}
+                                    height={230}
+                                    alt=""
+                                    className="rounded-full mx-20"
+                                />
+                                <div className='flex rounded-full hover:bg-gray-200 cursor-pointer md:absolute top-10 right-10 p-2' onClick={() => { setModal(true) }}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 60 60" fill="none" >
+                                        <path d="M24.1415 42.5H17.4994V35M15.2559 37.2435L43.5267 8.97253C45.4795 7.0199 48.6453 7.0199 50.598 8.97253C52.5505 10.9252 52.5505 14.091 50.598 16.0436L21.91 44.7315C20.5698 46.0717 19.8998 46.7417 19.158 47.3177C18.4991 47.8295 17.7987 48.2855 17.064 48.6807C16.2369 49.1257 15.3529 49.467 13.5849 50.1497L7.5 52.4995L9.4578 46.6252C10.126 44.6207 10.4601 43.6182 10.9248 42.6822C11.3374 41.851 11.8264 41.06 12.3852 40.319C13.0146 39.4847 13.7617 38.7377 15.2559 37.2435Z" stroke="black" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
                                 </div>
-                            </div>
-                            <div className="flex justify-around  max-md:flex-col-reverse max-md:items-center">
-                                <div className="flex flex-col w-9/12 max-md:items-center max-md:text-center">
-                                    <div className="flex flex-col justify-between h-full gap-6 ">
-                                        <div className="flex flex-col items-center">
-                                            <span className='text-2xl font-semibold'>Experiencia</span>
-                                            <p className="text-xl mb-5">{profesor.experiencia}</p>
-                                        </div>
-                                        <div className="flex max-lg:flex-wrap  justify-evenly">
-                                            <div className='flex flex-col text-center w-full'><span className='text-2xl font-semibold'>Email</span>
-                                                <p className="text-xl mb-5">{profesor.mail}</p></div>
-                                            <div className='flex flex-col text-center w-full'><span className='text-2xl font-semibold'>Telefono</span>
-                                                <p className="text-xl mb-5">{profesor.telefono}</p></div>
-                                            <div className='flex flex-col text-center w-full'><span className='text-2xl font-semibold'>Ubicacion</span>
-                                                <p className="text-xl mb-5">{profesor.ubicacion}</p></div>
+                                <span className="text-2xl font-semibold text-center">
+                                    {profesor.nombre} {profesor.apellido}
+                                </span>
+                                <div className="flex">
+                                    <div className="flex gap-2 h-8">
+                                        {estrellasHtml(profesor.servicios.map(servicio => servicio.calificacion).reduce((a, b) => a + b, 0) / profesor.servicios.length)}
+                                    </div>
+                                </div>
+                                <div className="flex justify-around  max-md:flex-col-reverse max-md:items-center">
+                                    <div className="flex flex-col w-9/12 max-md:items-center max-md:text-center">
+                                        <div className="flex flex-col justify-between h-full gap-6 ">
+                                            <div className="flex flex-col items-center">
+                                                <span className='text-2xl font-semibold'>Experiencia</span>
+                                                <p className="text-xl mb-5">{profesor.experiencia}</p>
+                                            </div>
+                                            <div className="flex max-lg:flex-wrap  justify-evenly">
+                                                <div className='flex flex-col text-center w-full'><span className='text-2xl font-semibold'>Email</span>
+                                                    <p className="text-xl mb-5">{profesor.mail}</p></div>
+                                                <div className='flex flex-col text-center w-full'><span className='text-2xl font-semibold'>Telefono</span>
+                                                    <p className="text-xl mb-5">{profesor.telefono}</p></div>
+                                                <div className='flex flex-col text-center w-full'><span className='text-2xl font-semibold'>Ubicacion</span>
+                                                    <p className="text-xl mb-5">{profesor.ubicacion}</p></div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </>
+                    </div >
+                    <div className='flex flex-col mx-3'>
+                        <h2 className='text-4xl font-bold text-center mb-3'>Contrataciones activas</h2>
+                        <div className='flex flex-wrap gap-4  justify-center'>
+                            <Contratacion mail={"usuario1@example.com"}
+                                telefono={1123456789}
+                                horario={"Entre 12hs hasta 16hs"}
+                                motivo={"Quisiera mejorar mi inglés"}
+                                idServicio={1} leido={true}
+                                descripcionServicio={"Mejora tus habilidades en el idioma inglés con mis clases en línea. Trabajaremos en gramática, vocabulario y conversación para que te sientas más seguro y fluido en este idioma tan importante."} />
+
+                            <Contratacion mail={"usuario1@example.com"}
+                                telefono={1123456789}
+                                horario={"Entre 12hs hasta 16hs"}
+                                motivo={"Quisiera mejorar mi inglés"}
+                                idServicio={1} leido={true}
+                                descripcionServicio={"Mejora tus habilidades en el idioma inglés con mis clases en línea. Trabajaremos en gramática, vocabulario y conversación para que te sientas más seguro y fluido en este idioma tan importante."} />
+
+                        </div>
+                    </div></>
             }
 
-        </div >
+        </div>
+
     )
 }

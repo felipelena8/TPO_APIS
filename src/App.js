@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
-import ComoFunciona from './components/ComoFunciona';
 import { Route, Router, Routes } from 'react-router-dom';
 import Inicio from './components/Inicio';
 import InicioSesion from './components/InicioSesion';
@@ -23,7 +22,6 @@ function App() {
       <main className='min-h-screen'>
         <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route path="/como-funciona" element={<ComoFunciona />} />
           <Route path="/iniciar-sesion" element={<InicioSesion props={{ sesionIniciada, setSesionIniciada }} />} />
           <Route path="/registrate" element={<Registrate props={{ sesionIniciada }} />} />
           <Route path="/clases/:categoria" element={<ContenedorClases />} />

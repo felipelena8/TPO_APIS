@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { buscarServicio, estrellasHtml, isEmail, reseñaEstrella } from "../utils/Utils";
 import Comentario from "./Comentario";
+import Spinner from "./Spinner";
 
 export default function Clase() {
     let { id } = useParams();
@@ -21,8 +22,8 @@ export default function Clase() {
 
     const getData = () => {
         buscarServicio(id)
-            .then((data) => setData(data))
-            .then(() => setTimeout(setCargando(false), 300));
+            .then((data) => { setData(data); console.log(data); return Object.keys(data).length == 0 })
+            .then(existe => setTimeout(setCargando(existe), 300));
     };
 
     useEffect(() => {
@@ -50,14 +51,7 @@ export default function Clase() {
         <>
 
             {cargando ? (
-                <div
-                    className="inline-block h-8 w-8 animate-spin rounded-full border-4 border-blue-500 border-solid border-current border-r-transparent align-[-0.125em] text-primary motion-reduce:animate-[spin_1.5s_linear_infinite]"
-                    role="status"
-                >
-                    <span className="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">
-                        Loading...
-                    </span>
-                </div>
+                <Spinner />
             ) : (<>
                 {modalContacto ? <div className="fixed top-0 left-0 z-10 w-full h-full  bg-black bg-opacity-80 flex justify-center items-center">
                     <div className="flex flex-col bg-white rounded-3xl text-center items-center p-7 gap-3 relative">
