@@ -7,7 +7,7 @@
     "experiencia": "Como tutor experimentado, comprendo las necesidades únicas de mis estudiantes. Mi objetivo es proporcionar un ambiente de aprendizaje enriquecedor y estimulante.",
     "password": "password1",
     "ubicacion": "Rosario",
-    "img": "https://img.freepik.com/fotos-premium/retrato-joven-feliz-parado-afuera-su-bicicleta-creado-ai-generativo_762026-45154.jpg",
+    "img": "https://img.freepik.com/fotos-premium/hombre-guapo-pelo-corto-sobre-fondo-gris_251136-30459.jpg?size=626&ext=jpg&ga=GA1.2.88060135.1696466475&semt=ais",
     "servicios": [
       {
         "id": 1,
@@ -186,7 +186,7 @@
     "experiencia": "He dedicado mi vida a la educación y tengo una profunda pasión por transmitir conocimiento. Mis clases son interactivas y están diseñadas para inspirar el aprendizaje.",
     "password": "password2",
     "ubicacion": "Salta",
-    "img": "https://images.unsplash.com/photo-1607990283143-e81e7a2c9349?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fHw%3D&w=1000&q=80",
+    "img": "https://img.freepik.com/foto-gratis/vista-frontal-hermoso-hombre_23-2148780802.jpg?size=626&ext=jpg&ga=GA1.1.88060135.1696466475&semt=ais",
     "servicios": [
       {
         "id": 6,
@@ -340,7 +340,7 @@
     "experiencia": "Mi amor por la enseñanza y el aprendizaje me motiva a ayudar a mis alumnos a tener éxito en sus estudios. Creo en la importancia de la educación en el desarrollo personal.",
     "password": "password3",
     "ubicacion": "Buenos Aires",
-    "img": "https://us.123rf.com/450wm/milkos/milkos1707/milkos170700274/81379727-me-gusta-hombre-negro-feliz-que-muestra-el-pulgar-encima-del-gesto-y-que-sonr%C3%ADe-en-el-fondo-blanco.jpg?ver=6",
+    "img": "https://img.freepik.com/fotos-premium/retrato-joven-estudiante-barbudo-positivo-mirando-camara-riendo-mochila-espalda-manana-hombre-barbudo-viajando-manana_129180-3331.jpg?w=740",
     "servicios": [
       {
         "id": 11,
@@ -612,7 +612,7 @@
     "experiencia": "Soy un apasionado por la enseñanza con años de experiencia ayudando a estudiantes a alcanzar sus metas académicas. Mi enfoque es brindar una educación de calidad y personalizada.",
     "password": "password5",
     "ubicacion": "La Plata",
-    "img": "https://img.freepik.com/foto-gratis/retrato-mujer-caucasica-sonriendo_53876-24998.jpg",
+    "img": "https://img.freepik.com/foto-gratis/mujer-sonriente-que-relaja-afuera-libro_23-2148396364.jpg?w=740&t=st=1696467306~exp=1696467906~hmac=b1b9683d743bbc933e8e785883ea1d1f4e0b584361d9b590952ece7c1316c6ad",
     "servicios": [
       {
         "id": 21,
@@ -741,7 +741,7 @@
     "experiencia": "He dedicado mi vida a la educación y tengo una profunda pasión por transmitir conocimiento. Mis clases son interactivas y están diseñadas para inspirar el aprendizaje.",
     "password": "password6",
     "ubicacion": "Buenos Aires",
-    "img": "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?cs=srgb&dl=pexels-christina-morillo-1181686.jpg&fm=jpg",
+    "img": "https://img.freepik.com/fotos-premium/imagen-vertical-feliz-chica-birracial-mirando-camara-jardin-estilo-vida-pasar-tiempo-libre-casa-concepto-jardin_13339-309985.jpg?size=626&ext=jpg&ga=GA1.1.88060135.1696466475&semt=ais",
     "servicios": [
       {
         "id": 26,
@@ -913,7 +913,7 @@
     "experiencia": "Mi amor por la enseñanza y el aprendizaje me motiva a ayudar a mis alumnos a tener éxito en sus estudios. Creo en la importancia de la educación en el desarrollo personal.",
     "password": "password7",
     "ubicacion": "San Juan",
-    "img": "https://img.freepik.com/foto-gratis/varon-joven-emocional-camisa-azul-pie-puerta-leve-sonrisa-su-rostro_181624-27994.jpg",
+    "img": "https://img.freepik.com/foto-gratis/primer-plano-hombre-jubilado-sonriente_23-2147562098.jpg?w=740&t=st=1696467567~exp=1696468167~hmac=b78bc4ed696ada8798c7b319a2604f67df6bc271296bf4b07ca5d2c0259133c6",
     "servicios": [
       {
         "id": 31,
@@ -1074,7 +1074,7 @@
     "experiencia": "He dedicado mi vida a la educación y tengo una profunda pasión por transmitir conocimiento. Mis clases son interactivas y están diseñadas para inspirar el aprendizaje.",
     "password": "password8",
     "ubicacion": "Córdoba",
-    "img": "https://us.123rf.com/450wm/allaiatsun/allaiatsun1407/allaiatsun140700036/29993005-hermosa-chica-toma-la-imagen-de-s%C3%AD-misma-selfie-mujer-joven-con-el-pelo-largo-se-fotografi%C3%B3-frente.jpg",
+    "img": "https://img.freepik.com/foto-gratis/retrato-mujer-vistiendo-sueter-blanco_23-2148827154.jpg?size=626&ext=jpg&ga=GA1.1.88060135.1696466475&semt=ais",
     "servicios": [
       {
         "id": 36,
@@ -1234,14 +1234,14 @@
     "id": 7
   },
   {
-    "nombre": "Lautaro",
+    "nombre": "Mario",
     "apellido": "Gomez",
     "telefono": "1234567890",
     "mail": "proveedor9@example.com",
     "experiencia": "Como tutor experimentado, comprendo las necesidades únicas de mis estudiantes. Mi objetivo es proporcionar un ambiente de aprendizaje enriquecedor y estimulante.",
     "password": "password9",
     "ubicacion": "Rosario",
-    "img": "https://us.123rf.com/450wm/nicolasmenijes/nicolasmenijes1707/nicolasmenijes170700240/82164846-joven-latino-hombre-tomando-un-selfie-concepto-de-la-tecnolog%C3%ADa.jpg?ver=6",
+    "img": "https://img.freepik.com/fotos-premium/retrato-pasaporte_262288-7744.jpg?size=626&ext=jpg&ga=GA1.1.88060135.1696466475&semt=ais",
     "servicios": [
       {
         "id": 42,
@@ -1389,7 +1389,7 @@
     "experiencia": "Mi amor por la enseñanza y el aprendizaje me motiva a ayudar a mis alumnos a tener éxito en sus estudios. Creo en la importancia de la educación en el desarrollo personal.",
     "password": "password10",
     "ubicacion": "Córdoba",
-    "img": "https://img.freepik.com/foto-gratis/escritura-hermosa-mujer-joven-cuaderno_23-2148208841.jpg",
+    "img": "https://img.freepik.com/foto-gratis/mujer-deportista-brazos-cruzados-al-aire-libre_23-2147562380.jpg?w=740&t=st=1696467844~exp=1696468444~hmac=f37dca0dedecb1f79af2c21af88b459d8e2c354cb0c8756cbeba2f83e89c1bc6",
     "servicios": [
       {
         "id": 47,
