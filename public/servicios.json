@@ -730,19 +730,6 @@
         ]
       },
       {
-        "id": 27,
-        "categoria": "Música",
-        "tipoClase": "Grupal",
-        "frecuencia": "Mensual",
-        "calificacion": 0,
-        "metodologia": "Ambas",
-        "costo": 3200,
-        "duracion": 1,
-        "descripcion": "Si tienes pasión por la música, te ofrezco clases en línea para desarrollar tus habilidades musicales. Aprende a tocar un instrumento, componer canciones o mejorar tus conocimientos teóricos musicales.",
-        "activo": true,
-        "comentarios": []
-      },
-      {
         "id": 28,
         "categoria": "Historia",
         "tipoClase": "Grupal",
@@ -1227,26 +1214,6 @@
         "descripcion": "Como instructor, me enorgullece guiar a mis alumnos hacia el éxito académico. Mis clases están diseñadas para ser dinámicas y enriquecedoras.",
         "activo": true,
         "comentarios": []
-      },
-      {
-        "id": 44,
-        "categoria": "Biología",
-        "tipoClase": "Individual",
-        "frecuencia": "Mensual",
-        "calificacion": 2.9,
-        "metodologia": "Ambas",
-        "costo": 2700,
-        "duracion": 1,
-        "descripcion": "Como profesor particular de Biología, te ayudaré a desentrañar los misterios de la vida. Exploraremos la genética, la ecología y la anatomía, y te proporcionaré las herramientas para comprender el mundo natural que te rodea.",
-        "activo": true,
-        "comentarios": [
-          {
-            "fecha": "2022-10-16T03:33:58",
-            "calificacion": 4.3,
-            "mensaje": "Quisquam dolore non porro eius amet ipsum.",
-            "id": 101
-          }
-        ]
       },
       {
         "id": 45,
