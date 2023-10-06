@@ -73,7 +73,7 @@ export default function Perfil() {
                                     width={230}
                                     height={230}
                                     alt=""
-                                    className="rounded-full mx-20"
+                                    className="rounded-full mx-20  h-56 w-56"
                                 />
                                 <div className='flex rounded-full hover:bg-gray-200 cursor-pointer md:absolute top-10 right-10 p-2' onClick={() => { setModal(true) }}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 60 60" fill="none" >
