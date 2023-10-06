@@ -67,7 +67,7 @@ export default function Clase() {
                         </svg>
                         <span className="font-bold text-3xl">Ingrese sus datos</span>
                         <span className="font-semibold text-xl">Para contactar a {data.nombre}</span>
-                        <img src={data.img} width={200} height={200} className="rounded-2xl" alt="" />
+                        <img src={data.img} width={200} height={200} className="rounded-2xl h-56 w-56" alt="" />
                         <div className="flex">
                             <div className="flex gap-2 h-5">
                                 {estrellasHtml(data.servicio.calificacion)}
@@ -177,7 +177,7 @@ export default function Clase() {
                                 width={230}
                                 height={230}
                                 alt=""
-                                className="rounded-full mx-20"
+                                className="rounded-full mx-20 max-w-56  max-h-56"
                             />
                             <span className="text-2xl font-semibold text-center">
                                 {data.nombre} {data.apellido}
