@@ -48,7 +48,6 @@ export default function Modal({ setModal, publicacion }) {
     useEffect(() => {
         getCategorias().then(categorias => setCategorias(categorias)).then(setCargando(false))
     }, [])
-    console.log(publicacion)
     return (
         <div className="fixed top-0 left-0 z-10 w-full h-full  py-20 bg-black bg-opacity-80 flex justify-center items-center ">
             <div className="flex flex-col bg-white rounded-3xl text-center items-center p-7 my-10 gap-3 relative h-full  overflow-y-scroll">

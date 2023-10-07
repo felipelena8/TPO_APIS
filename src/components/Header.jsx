@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
 
 export default function Header({ props }) {
@@ -14,6 +14,8 @@ export default function Header({ props }) {
     fetch("/categorias.json").then(response => response.json()).then(json => setData(json))
   }
 
+  const goTo = useNavigate()
+
   useEffect(() => {
     getData()
   }, [])
@@ -21,6 +23,7 @@ export default function Header({ props }) {
   function cerrarSesion() {
     localStorage.clear()
     setSesionIniciada(false)
+    goTo("")
   }
 
   const categorias = data.map(element => <li className="border-b p-1 w-full hover:bg-coral hover:text-white transition-all pl-2 rounded-lg" key={element.toLowerCase()}><a href={"/clases/" + element.toLowerCase()}>{element}</a></li >)

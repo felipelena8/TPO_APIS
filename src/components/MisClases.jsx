@@ -34,7 +34,7 @@ export default function MisClases({ props }) {
             {modalModificar ? <Modal setModal={setModalModificar} publicacion={publicacion} /> : ""}
             <div className='flex flex-col gap-3'>
                 <div className='flex lg:ml-10 max-lg:ml-3 gap-4 items-center flex-col mt-2'>
-                    <button className='p-2 bg-verde rounded-xl text-red-100 hover:bg-white hover:text-verde border border-verde transition-all' onClick={() => { setModalCrear(true) }}>Crear nuevo servicio</button>
+                    <button className='p-2 bg-verde rounded-xl text-white hover:bg-white hover:text-verde border border-verde transition-all' onClick={() => { setModalCrear(true) }}>Crear nuevo servicio</button>
                 </div>
                 <div className='flex flex-wrap gap-4 justify-around lg:mx-28'>
                     {cargando ? <Spinner /> : profesor.servicios.map(servicio => <CardClaseAdmin servicio={servicio} nombre={profesor.nombre} ubicacion={profesor.ubicacion} img={profesor.img} key={servicio.id} activo={servicio.activo} setModal={setModalModificar} setPublicacion={setPublicacion} />)}
