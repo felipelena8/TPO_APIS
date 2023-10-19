@@ -23,7 +23,7 @@ export default function NotificacionContratacion({ fecha, descripcionServicio, m
         <div className={`w-full  md:w-7/12 rounded-xl border border-coral ${visto ? "bg-gray-200" : ""}`}>
             <div className='flex flex-col p-2  '>
                 <div className='flex justify-between w-full pb-1'>
-                    <div className='text-xl font-bold'>Nueva contacto</div>
+                    <div className='text-xl font-bold'>Nuevo contacto</div>
                     <div className='text-gray-400'>{fecha}</div>
                 </div>
                 <div className='h-12 overflow-hidden '><span className='font-bold'>Para el servicio:</span>

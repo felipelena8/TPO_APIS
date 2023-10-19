@@ -35,8 +35,8 @@ export default function NotificacionComentario({ fecha, mensaje, calificacion, l
                     <Link to={`/clase/${idServicio}`}>{" " + descripcionServicio}</Link>
                 </div>
                 <div className='flex text-lg h-12 overflow-hidden mt-2 '><span className='font-bold'>Mensaje: </span>
-                    {mensaje}
-                    <span></span>
+
+                    <span>{mensaje}</span>
                 </div>
                 <div className='flex'>
                     <span className={`font-bold mt-auto p-1 rounded  ` + (estado == "Pendiente" ? "text-cyan-400 bg-cyan-100" : (estado == "Aceptado" ? "text-green-600 bg-green-300" : "text-red-600 bg-red-400"))}>{estado}</span>

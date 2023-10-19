@@ -23,7 +23,7 @@
         "comentarios": [
           {
             "fecha": "2023-06-02T15:29:26",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Quisquam etincidunt adipisci dolor numquam non.",
             "id": 0
           }
@@ -43,25 +43,25 @@
         "comentarios": [
           {
             "fecha": "2022-06-11T01:38:00",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Porro magnam adipisci eius dolor etincidunt.",
             "id": 1
           },
           {
             "fecha": "2022-02-03T08:49:32",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Est voluptatem neque dolor consectetur.",
             "id": 2
           },
           {
             "fecha": "2021-01-29T15:17:59",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Adipisci tempora amet adipisci numquam.",
             "id": 3
           },
           {
             "fecha": "2023-04-22T08:34:10",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Est modi velit porro quaerat.",
             "id": 4
           }
@@ -81,13 +81,13 @@
         "comentarios": [
           {
             "fecha": "2021-11-23T13:19:54",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Dolore labore sit ipsum quiquia.",
             "id": 5
           },
           {
             "fecha": "2022-05-04T21:12:13",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Porro numquam porro dolor tempora.",
             "id": 6
           }
@@ -107,31 +107,31 @@
         "comentarios": [
           {
             "fecha": "2021-12-05T22:52:36",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Porro aliquam voluptatem quiquia quaerat porro.",
             "id": 7
           },
           {
             "fecha": "2021-06-08T19:49:17",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Porro etincidunt consectetur neque.",
             "id": 8
           },
           {
             "fecha": "2022-06-04T05:46:22",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Dolore velit amet numquam dolore sed ut.",
             "id": 9
           },
           {
             "fecha": "2020-12-18T02:49:58",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Magnam etincidunt eius ipsum neque porro.",
             "id": 10
           },
           {
             "fecha": "2020-05-25T03:27:20",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Consectetur numquam quaerat dolor porro.",
             "id": 11
           }
@@ -151,25 +151,25 @@
         "comentarios": [
           {
             "fecha": "2023-07-29T22:45:26",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Adipisci quaerat voluptatem sit.",
             "id": 12
           },
           {
             "fecha": "2022-10-29T05:27:06",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Tempora aliquam dolore eius.",
             "id": 13
           },
           {
             "fecha": "2022-07-21T20:44:40",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Magnam adipisci sit sed neque est sed.",
             "id": 14
           },
           {
             "fecha": "2021-03-11T12:29:27",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Adipisci ut ipsum eius.",
             "id": 15
           }
@@ -202,19 +202,19 @@
         "comentarios": [
           {
             "fecha": "2020-12-26T09:53:44",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Adipisci modi sed quisquam numquam sed.",
             "id": 16
           },
           {
             "fecha": "2023-06-05T03:55:47",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Quiquia tempora modi ipsum est quaerat.",
             "id": 17
           },
           {
             "fecha": "2021-10-07T18:28:48",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Quisquam dolor quiquia dolorem ipsum ipsum consectetur consectetur.",
             "id": 18
           }
@@ -234,7 +234,7 @@
         "comentarios": [
           {
             "fecha": "2021-10-27T21:38:31",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Dolore ipsum magnam neque voluptatem dolorem quiquia etincidunt.",
             "id": 19
           }
@@ -254,25 +254,25 @@
         "comentarios": [
           {
             "fecha": "2022-07-12T19:52:52",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Amet sed aliquam sit dolorem neque.",
             "id": 20
           },
           {
             "fecha": "2020-07-29T23:56:12",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Voluptatem eius magnam est amet velit quisquam.",
             "id": 21
           },
           {
             "fecha": "2022-02-22T00:57:45",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Est labore porro quisquam.",
             "id": 22
           },
           {
             "fecha": "2021-09-23T02:18:15",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Ipsum quaerat ipsum voluptatem sed est adipisci.",
             "id": 23
           }
@@ -292,7 +292,7 @@
         "comentarios": [
           {
             "fecha": "2022-06-14T03:24:05",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Dolorem quisquam sed consectetur.",
             "id": 24
           }
@@ -311,19 +311,19 @@
         "comentarios": [
           {
             "fecha": "2021-07-06T16:42:07",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Consectetur modi ut magnam etincidunt quisquam sit voluptatem.",
             "id": 25
           },
           {
             "fecha": "2023-08-01T20:27:30",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Voluptatem ipsum dolorem quiquia dolor velit.",
             "id": 26
           },
           {
             "fecha": "2020-01-20T11:17:59",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Aliquam magnam dolorem labore.",
             "id": 27
           }
@@ -356,7 +356,7 @@
         "comentarios": [
           {
             "fecha": "2021-10-27T15:23:06",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Ipsum quisquam numquam velit aliquam quiquia eius dolore.",
             "id": 28
           }
@@ -376,31 +376,31 @@
         "comentarios": [
           {
             "fecha": "2020-11-17T14:17:00",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Dolore adipisci ipsum ipsum quiquia.",
             "id": 29
           },
           {
             "fecha": "2020-11-15T21:54:39",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Dolore est dolorem magnam dolorem consectetur.",
             "id": 30
           },
           {
             "fecha": "2021-02-10T10:06:59",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Quisquam sed ut consectetur etincidunt quisquam amet quiquia.",
             "id": 31
           },
           {
             "fecha": "2020-01-29T17:34:20",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Modi sed ipsum dolore neque.",
             "id": 32
           },
           {
             "fecha": "2021-01-04T08:24:11",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Eius quiquia ipsum numquam non numquam.",
             "id": 33
           }
@@ -420,19 +420,19 @@
         "comentarios": [
           {
             "fecha": "2021-06-15T22:43:14",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Consectetur dolorem consectetur neque porro est modi.",
             "id": 34
           },
           {
             "fecha": "2020-08-03T01:39:46",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Dolorem est adipisci porro.",
             "id": 35
           },
           {
             "fecha": "2021-03-26T02:33:44",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Eius numquam magnam tempora dolorem magnam adipisci velit.",
             "id": 36
           }
@@ -452,13 +452,13 @@
         "comentarios": [
           {
             "fecha": "2020-03-23T04:32:03",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Est amet ut amet magnam sed quisquam aliquam.",
             "id": 37
           },
           {
             "fecha": "2020-05-29T22:58:19",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Consectetur neque amet etincidunt labore.",
             "id": 38
           }
@@ -491,7 +491,7 @@
         "comentarios": [
           {
             "fecha": "2021-04-24T21:54:22",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Est quaerat est porro.",
             "id": 39
           }
@@ -511,7 +511,7 @@
         "comentarios": [
           {
             "fecha": "2023-01-16T00:44:12",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Dolorem consectetur dolor eius dolorem non.",
             "id": 42
           }
@@ -531,19 +531,19 @@
         "comentarios": [
           {
             "fecha": "2022-09-08T11:15:38",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Adipisci dolore velit consectetur neque porro quiquia.",
             "id": 43
           },
           {
             "fecha": "2020-11-30T07:19:21",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Labore ut quisquam dolore dolor dolor non.",
             "id": 44
           },
           {
             "fecha": "2023-04-22T19:50:26",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Adipisci dolor amet porro est ipsum.",
             "id": 45
           }
@@ -567,7 +567,7 @@
         "categoria": "Matemáticas",
         "tipoClase": "Individual",
         "frecuencia": "Unica",
-        "calificacion": 4.3,
+        "calificacion": 4,
         "metodologia": "Ambas",
         "costo": 3400,
         "duracion": 1,
@@ -576,31 +576,31 @@
         "comentarios": [
           {
             "fecha": "2023-02-02T20:03:03",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Velit ipsum velit etincidunt non dolore.",
             "id": 46
           },
           {
             "fecha": "2020-09-10T07:10:45",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Voluptatem amet etincidunt modi dolorem.",
             "id": 47
           },
           {
             "fecha": "2022-06-01T06:49:47",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Aliquam labore voluptatem adipisci quiquia porro.",
             "id": 48
           },
           {
             "fecha": "2022-09-07T12:55:23",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Tempora sed est dolor consectetur voluptatem.",
             "id": 49
           },
           {
             "fecha": "2022-06-29T06:44:36",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Ut dolore aliquam amet consectetur dolore ut.",
             "id": 50
           }
@@ -620,7 +620,7 @@
         "comentarios": [
           {
             "fecha": "2021-02-08T20:01:10",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Porro ipsum quiquia sit aliquam non tempora sed.",
             "id": 51
           }
@@ -653,13 +653,13 @@
         "comentarios": [
           {
             "fecha": "2021-12-09T19:17:38",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Labore amet amet modi modi non est.",
             "id": 52
           },
           {
             "fecha": "2022-01-23T01:36:33",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Aliquam labore sit eius dolorem etincidunt dolore consectetur.",
             "id": 53
           }
@@ -705,25 +705,25 @@
         "comentarios": [
           {
             "fecha": "2023-03-02T21:29:00",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Tempora quiquia quiquia velit quaerat.",
             "id": 54
           },
           {
             "fecha": "2020-09-25T11:12:13",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Amet quiquia sed magnam non quiquia.",
             "id": 55
           },
           {
             "fecha": "2022-07-12T01:56:53",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Amet sed quaerat neque.",
             "id": 56
           },
           {
             "fecha": "2021-09-21T17:30:14",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Numquam est ut etincidunt.",
             "id": 57
           }
@@ -743,31 +743,31 @@
         "comentarios": [
           {
             "fecha": "2023-01-14T02:29:08",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Sit dolor magnam dolor sit.",
             "id": 58
           },
           {
             "fecha": "2022-02-13T13:44:01",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Quisquam etincidunt quiquia velit eius.",
             "id": 59
           },
           {
             "fecha": "2023-08-03T14:43:32",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Eius numquam sed est voluptatem dolore sit.",
             "id": 60
           },
           {
             "fecha": "2021-01-28T23:16:33",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Dolor porro adipisci sit.",
             "id": 61
           },
           {
             "fecha": "2022-10-05T15:55:20",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Voluptatem voluptatem voluptatem labore quaerat sed ut.",
             "id": 62
           }
@@ -787,19 +787,19 @@
         "comentarios": [
           {
             "fecha": "2020-11-13T16:22:48",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Etincidunt quaerat dolorem eius numquam sit neque magnam.",
             "id": 63
           },
           {
             "fecha": "2022-03-10T12:48:29",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Ipsum eius ut est etincidunt dolor sit quisquam.",
             "id": 64
           },
           {
             "fecha": "2021-02-13T06:47:17",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Quaerat tempora est tempora magnam.",
             "id": 65
           }
@@ -819,19 +819,19 @@
         "comentarios": [
           {
             "fecha": "2022-12-29T18:29:06",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Consectetur eius dolore est tempora non est neque.",
             "id": 66
           },
           {
             "fecha": "2022-07-30T20:00:00",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Dolor adipisci neque sit labore est quaerat.",
             "id": 67
           },
           {
             "fecha": "2021-09-20T19:02:44",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Dolorem amet voluptatem aliquam amet.",
             "id": 68
           }
@@ -864,19 +864,19 @@
         "comentarios": [
           {
             "fecha": "2021-12-11T19:50:18",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Quiquia non voluptatem magnam amet est sed neque.",
             "id": 70
           },
           {
             "fecha": "2023-05-10T12:29:25",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Ipsum magnam tempora quisquam modi aliquam amet.",
             "id": 71
           },
           {
             "fecha": "2021-12-05T07:08:34",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Quaerat velit tempora consectetur numquam.",
             "id": 72
           }
@@ -887,7 +887,7 @@
         "categoria": "Química",
         "tipoClase": "Grupal",
         "frecuencia": "Unica",
-        "calificacion": 4.3,
+        "calificacion": 4,
         "metodologia": "Ambas",
         "costo": 3700,
         "duracion": 1,
@@ -896,13 +896,13 @@
         "comentarios": [
           {
             "fecha": "2020-03-25T23:59:16",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Amet consectetur quiquia eius dolor.",
             "id": 73
           },
           {
             "fecha": "2021-12-02T17:30:35",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Modi quaerat velit est dolorem modi consectetur eius.",
             "id": 74
           }
@@ -922,19 +922,19 @@
         "comentarios": [
           {
             "fecha": "2020-05-13T18:26:27",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Dolor eius tempora sit.",
             "id": 75
           },
           {
             "fecha": "2021-01-17T02:05:00",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Eius neque quisquam porro.",
             "id": 76
           },
           {
             "fecha": "2020-04-03T14:49:52",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Ut voluptatem non neque quisquam quiquia voluptatem magnam.",
             "id": 77
           }
@@ -954,25 +954,25 @@
         "comentarios": [
           {
             "fecha": "2020-07-13T22:26:26",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Voluptatem sed dolorem etincidunt dolor dolor.",
             "id": 78
           },
           {
             "fecha": "2020-03-24T15:26:53",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Adipisci adipisci porro quisquam magnam adipisci quiquia modi.",
             "id": 79
           },
           {
             "fecha": "2020-11-27T06:10:47",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Quaerat quaerat quaerat modi amet ipsum etincidunt.",
             "id": 80
           },
           {
             "fecha": "2021-04-30T04:46:54",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Neque dolore sed consectetur.",
             "id": 81
           }
@@ -1005,7 +1005,7 @@
         "comentarios": [
           {
             "fecha": "2021-06-08T08:38:14",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Neque labore quaerat dolorem non tempora non voluptatem.",
             "id": 82
           }
@@ -1025,25 +1025,25 @@
         "comentarios": [
           {
             "fecha": "2020-08-25T23:38:29",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Quisquam numquam aliquam ipsum voluptatem consectetur labore sed.",
             "id": 83
           },
           {
             "fecha": "2023-01-11T01:50:47",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Amet dolorem tempora ut quaerat labore.",
             "id": 84
           },
           {
             "fecha": "2020-06-05T01:07:59",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Ut velit ipsum quiquia quaerat non.",
             "id": 85
           },
           {
             "fecha": "2021-11-20T18:45:01",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Amet numquam velit quisquam est est velit non.",
             "id": 86
           }
@@ -1063,19 +1063,19 @@
         "comentarios": [
           {
             "fecha": "2022-09-18T18:19:34",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Sed porro adipisci non quaerat.",
             "id": 87
           },
           {
             "fecha": "2023-04-08T08:28:47",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Quisquam sed ut adipisci dolore neque porro porro.",
             "id": 88
           },
           {
             "fecha": "2020-10-27T09:06:17",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Labore aliquam dolorem voluptatem ut.",
             "id": 89
           }
@@ -1095,25 +1095,25 @@
         "comentarios": [
           {
             "fecha": "2022-08-25T12:20:29",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Eius dolor etincidunt modi consectetur consectetur sit.",
             "id": 90
           },
           {
             "fecha": "2020-03-13T10:48:37",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Aliquam est neque velit.",
             "id": 91
           },
           {
             "fecha": "2020-10-31T12:08:39",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Dolorem magnam adipisci porro non amet aliquam dolore.",
             "id": 92
           },
           {
             "fecha": "2021-08-14T04:32:18",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Consectetur quisquam quisquam voluptatem consectetur velit.",
             "id": 93
           }
@@ -1133,13 +1133,13 @@
         "comentarios": [
           {
             "fecha": "2021-10-29T12:00:30",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Magnam ipsum ut velit porro.",
             "id": 94
           },
           {
             "fecha": "2021-08-22T07:48:20",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Labore sed quiquia aliquam quiquia est modi tempora.",
             "id": 95
           }
@@ -1172,31 +1172,31 @@
         "comentarios": [
           {
             "fecha": "2021-10-06T14:34:13",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Est etincidunt sed consectetur magnam voluptatem est neque.",
             "id": 96
           },
           {
             "fecha": "2021-01-20T23:17:17",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Quiquia voluptatem quisquam non est consectetur velit aliquam.",
             "id": 97
           },
           {
             "fecha": "2021-11-01T19:51:42",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Labore consectetur velit dolore numquam amet.",
             "id": 98
           },
           {
             "fecha": "2020-02-10T14:34:15",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Etincidunt aliquam sed voluptatem.",
             "id": 99
           },
           {
             "fecha": "2020-03-22T02:24:43",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Neque tempora sit voluptatem.",
             "id": 100
           }
@@ -1229,13 +1229,13 @@
         "comentarios": [
           {
             "fecha": "2020-06-22T09:23:36",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Amet consectetur quisquam sed sit ut eius.",
             "id": 102
           },
           {
             "fecha": "2023-01-06T09:13:24",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Non dolor quaerat aliquam velit modi sed velit.",
             "id": 103
           }
@@ -1255,19 +1255,19 @@
         "comentarios": [
           {
             "fecha": "2023-08-15T05:11:29",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Consectetur amet est amet.",
             "id": 104
           },
           {
             "fecha": "2021-11-24T06:01:42",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Est quiquia neque amet ipsum numquam.",
             "id": 105
           },
           {
             "fecha": "2022-04-03T11:30:30",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Porro amet ut dolor adipisci velit ut sit.",
             "id": 106
           }
@@ -1291,7 +1291,7 @@
         "categoria": "Biología",
         "tipoClase": "Grupal",
         "frecuencia": "Unica",
-        "calificacion": 4.3,
+        "calificacion": 4,
         "metodologia": "Ambas",
         "costo": 4900,
         "duracion": 1,
@@ -1313,13 +1313,13 @@
         "comentarios": [
           {
             "fecha": "2020-06-25T09:11:31",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Tempora quisquam eius tempora.",
             "id": 107
           },
           {
             "fecha": "2020-02-29T05:51:59",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Velit porro modi quiquia adipisci ipsum eius quaerat.",
             "id": 108
           }
@@ -1339,19 +1339,19 @@
         "comentarios": [
           {
             "fecha": "2021-11-24T23:00:23",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Amet dolorem quaerat consectetur adipisci dolor.",
             "id": 109
           },
           {
             "fecha": "2021-11-20T13:58:23",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Dolorem quaerat eius porro.",
             "id": 110
           },
           {
             "fecha": "2023-05-31T22:29:53",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Sit consectetur quisquam sed labore amet.",
             "id": 111
           }
@@ -1371,25 +1371,25 @@
         "comentarios": [
           {
             "fecha": "2021-08-04T16:32:43",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Sit amet neque quiquia ipsum porro magnam.",
             "id": 115
           },
           {
             "fecha": "2020-08-01T02:27:08",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Modi etincidunt etincidunt tempora.",
             "id": 116
           },
           {
             "fecha": "2022-07-19T19:49:40",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Amet quisquam etincidunt magnam amet est velit.",
             "id": 117
           },
           {
             "fecha": "2020-10-01T06:10:03",
-            "calificacion": 4.3,
+            "calificacion": 4,
             "mensaje": "Amet labore dolorem amet ipsum consectetur tempora tempora.",
             "id": 118
           }

@@ -17,15 +17,15 @@ export default function Notificaciones() {
             <h2 className='text-5xl pb-4 font-bold text-coral'>Notificaciones</h2>
             <div className='flex flex-col gap-2 items-center'>
                 <NotificacionComentario fecha={"26/03/2003"} leido={false}
-                    mensaje={"lis ullamcorper molestie, fermentum duis mi facilisi lacus euismod litora."} calificacion={2} idServicio={1}
+                    mensaje={"El servicio de inglés está bien, pero esperaba una mejor experiencia y más interacción con los instructores"} calificacion={2} idServicio={1}
                     descripcionServicio={"Mejora tus habilidades en el idioma inglés con mis clases en línea. Trabajaremos en gramática, vocabulario y conversación para que te sientas más seguro y fluido en este idioma tan importante."} />
 
                 <NotificacionComentario fecha={"26/03/2003"} leido={false}
-                    mensaje={"lis ullamcorper molestie, fermentum duis mi facilisi lacus euismod litora."} calificacion={2} idServicio={1}
+                    mensaje={"El servicio de inglés está bien, pero esperaba una mejor experiencia y más interacción con los instructores"} calificacion={2} idServicio={1}
                     descripcionServicio={"Mejora tus habilidades en el idioma inglés con mis clases en línea. Trabajaremos en gramática, vocabulario y conversación para que te sientas más seguro y fluido en este idioma tan importante."} />
 
-                <NotificacionComentario fecha={"26/03/2003"} leido={true}
-                    mensaje={"lis ullamcorper molestie, fermentum duis mi facilisi lacus euismod litora."} calificacion={2} idServicio={1}
+                <NotificacionComentario fecha={"26/03/2003"} leido={false}
+                    mensaje={"El servicio de inglés está bien, pero esperaba una mejor experiencia y más interacción con los instructores"} calificacion={2} idServicio={1}
                     descripcionServicio={"Mejora tus habilidades en el idioma inglés con mis clases en línea. Trabajaremos en gramática, vocabulario y conversación para que te sientas más seguro y fluido en este idioma tan importante."} />
 
 
