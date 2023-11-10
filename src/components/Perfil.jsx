@@ -99,11 +99,7 @@ export default function Perfil() {
           </div>
           <div className="flex justify-between gap-3 max-sm:flex-col">
             <span className="font-bold my-auto">Imagen: </span>
-            <input
-              type="text"
-              className="flex border rounded p-2"
-              defaultValue={profesor.img}
-            />
+            <input type="file" className="flex border rounded p-2 bg-white" />
           </div>
           <div className="flex justify-between gap-3 max-sm:flex-col">
             <span className="font-bold">Experiencia: </span>
