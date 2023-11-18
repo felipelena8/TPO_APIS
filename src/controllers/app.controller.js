@@ -9,11 +9,10 @@ export const login = async function (login) {
     formData.append('password', login.password);
     try {
         let response = await fetch(url, {
-            method: 'POST', // or 'PUT'
+            method: 'POST',
             mode: "cors",
             headers: {
                 'Accept': 'application/x-www-form-urlencoded',
-                // 'x-access-token': WebToken.webToken,
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
             body: formData,
@@ -45,11 +44,10 @@ export const isLogged = async function (token) {
     let url = urlWebServices.isLogged
     try {
         let response = await fetch(url, {
-            method: 'GET', // or 'PUT'
+            method: 'GET',
             mode: "cors",
             headers: {
                 'Accept': 'application/x-www-form-urlencoded',
-                // 'x-access-token': WebToken.webToken,
                 'Content-Type': 'application/x-www-form-urlencoded',
                 'x-access-token': token
             },
@@ -80,11 +78,10 @@ export const registrate = async function (registro) {
     formData.append('apellido', registro.apellido);
     try {
         let response = await fetch(url, {
-            method: 'POST', // or 'PUT'
+            method: 'POST',
             mode: "cors",
             headers: {
                 'Accept': 'application/x-www-form-urlencoded',
-                // 'x-access-token': WebToken.webToken,
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
             body: formData,
@@ -110,11 +107,10 @@ export const profesorPorId = async function (token) {
     let url = urlWebServices.getUser
     try {
         let response = await fetch(url, {
-            method: 'GET', // or 'PUT'
+            method: 'GET',
             mode: "cors",
             headers: {
                 'Accept': 'application/x-www-form-urlencoded',
-                // 'x-access-token': WebToken.webToken,
                 'Content-Type': 'application/x-www-form-urlencoded',
                 'x-access-token': token
             },
@@ -149,7 +145,7 @@ export const updateUser = async function (update, token) {
     formData.append('img', update.img)
     try {
         let response = await fetch(url, {
-            method: 'PUT', // or 'PUT'
+            method: 'PUT',
             mode: "cors",
             headers: {
                 'x-access-token': token,
@@ -163,6 +159,69 @@ export const updateUser = async function (update, token) {
             case 20:
                 localStorage.setItem("token", data.createdUser.token);
                 return true;
+            case 400:
+                return false;
+        }
+
+    } catch (e) {
+        console.log(e);
+        return false;
+    };
+}
+
+export const serviciosPorCategoria = async function (categoria) {
+    let url = urlWebServices.getClassesByCategory + categoria
+    try {
+        let response = await fetch(url, {
+            method: 'GET',
+            mode: "cors",
+            headers: {
+                'Accept': 'application/x-www-form-urlencoded',
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+        });
+
+        let data = await response.json()
+        switch (response.status) {
+            case 200:
+                return data
+            case 404:
+                return false;
+        }
+
+    } catch (e) {
+        console.log(e);
+        return false;
+    };
+}
+export const createClass = async function (clase) {
+    let url = urlWebServices.createClass
+    const formData = new URLSearchParams();
+    formData.append("categoria", clase.categoria)
+    formData.append("tipoClase", clase.tipo)
+    formData.append("frecuencia", clase.frecuencia)
+    formData.append("metodologia", clase.metodologia)
+    formData.append("costo", clase.costo)
+    formData.append("duracion", clase.duracion)
+    formData.append("descripcion", clase.descripcion)
+    try {
+        let response = await fetch(url, {
+            method: 'POST',
+            mode: "cors",
+            headers: {
+                'Accept': 'application/x-www-form-urlencoded',
+                'Content-Type': 'application/x-www-form-urlencoded',
+                'x-access-token': localStorage.getItem("token")
+            },
+            body: formData
+        });
+
+        let data = await response.json()
+        switch (response.status) {
+            case 200:
+                return data;
+            case 401:
+                return false;
             case 400:
                 return false;
         }

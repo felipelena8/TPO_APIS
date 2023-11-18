@@ -72,7 +72,7 @@ export default function InicioSesion({ props }) {
           <span className="font-bold text-lg text-blue-600">
             ¿Has olvidado tu constraseña?
           </span>
-          {!existe ? (
+          {!existe && submitted ? (
             <span className="w-full text-center text-red-500">
               Tu contraseña no es correcta
             </span>
