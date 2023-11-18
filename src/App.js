@@ -15,7 +15,7 @@ import MisClases from './components/MisClases';
 
 
 function App() {
-  const [sesionIniciada, setSesionIniciada] = useState(() => { return localStorage.getItem("mail") != null })
+  const [sesionIniciada, setSesionIniciada] = useState(() => { return localStorage.getItem("token") != null })
   return (
     <>
       <Header props={{ sesionIniciada, setSesionIniciada }} />
@@ -23,7 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/iniciar-sesion" element={<InicioSesion props={{ sesionIniciada, setSesionIniciada }} />} />
-          <Route path="/registrate" element={<Registrate props={{ sesionIniciada }} />} />
+          <Route path="/registrate" element={<Registrate props={{ sesionIniciada, setSesionIniciada }} />} />
           <Route path="/clases/:categoria" element={<ContenedorClases />} />
           <Route path="/clase/:id" element={<Clase />} />
 

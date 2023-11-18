@@ -155,7 +155,7 @@ async function getCategorias() {
 }
 
 function sesionIniciada() {
-    return localStorage.getItem("id") != undefined
+    return localStorage.getItem("token") != undefined
 }
 
 

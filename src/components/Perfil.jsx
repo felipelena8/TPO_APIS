@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { estrellasHtml, profesorPorId, sesionIniciada } from "../utils/Utils";
+import { estrellasHtml, isEmail, sesionIniciada } from "../utils/Utils";
+import { profesorPorId, updateUser } from "../controllers/app.controller";
+
 import { useNavigate } from "react-router-dom";
 import Spinner from "./Spinner";
 import Contratacion from "./Contratacion";
@@ -9,19 +11,51 @@ export default function Perfil() {
   const [cargando, setCargando] = useState(true);
   const [modal, setModal] = useState(false);
 
+  const [profesorUpdate, setProfesorUpdate] = useState({
+    nombre: "",
+    apellido: "",
+    numero: "",
+    mail: "",
+    img: "",
+    experiencia: "",
+  });
+
+  const handleInputChange = (e) => {
+    e.preventDefault();
+    const { name, value } = e.target;
+    setProfesorUpdate((values) => ({
+      ...values,
+      [name]: value,
+    }));
+  };
+
   const goTo = useNavigate();
   useEffect(() => {
     if (!sesionIniciada()) {
       goTo("/");
     } else {
-      profesorPorId(localStorage.getItem("id"))
-        .then((data) => setProfesor(data))
+      profesorPorId(localStorage.getItem("token"))
+        .then((data) => {
+          setProfesor(data);
+          setProfesorUpdate(data);
+        })
         .then(() => setCargando(false));
     }
   }, []);
 
-  const handleGuardar = () => {
-    setModal(false);
+  const handleGuardar = (e) => {
+    e.preventDefault();
+    console.log(profesorUpdate);
+    if (
+      profesorUpdate.nombre &&
+      profesorUpdate.apellido &&
+      profesorUpdate.telefono &&
+      !isNaN(profesorUpdate.telefono) &&
+      isEmail(profesorUpdate.mail)
+    ) {
+      updateUser(profesorUpdate, localStorage.getItem("token"));
+      setModal(false);
+    }
   };
 
   const modalHtml = (
@@ -62,58 +96,81 @@ export default function Perfil() {
             <input
               type="text"
               className="flex border rounded p-2"
-              defaultValue={profesor.nombre}
+              name={"nombre"}
+              onChange={handleInputChange}
+              defaultValue={profesorUpdate.nombre}
             />
           </div>
           <div className="flex justify-between gap-3 max-sm:flex-col">
             <span className="font-bold my-auto">Apellido: </span>
             <input
               type="text"
+              name={"apellido"}
+              onChange={handleInputChange}
               className="flex border rounded p-2"
-              defaultValue={profesor.apellido}
+              defaultValue={profesorUpdate.apellido}
             />
           </div>
           <div className="flex justify-between gap-3 max-sm:flex-col">
             <span className="font-bold my-auto">Mail: </span>
             <input
               type="text"
+              name={"mail"}
+              onChange={handleInputChange}
               className="flex border rounded p-2"
-              defaultValue={profesor.mail}
+              defaultValue={profesorUpdate.mail}
             />
           </div>
           <div className="flex justify-between gap-3 max-sm:flex-col">
             <span className="font-bold my-auto">Telefono: </span>
             <input
-              type="text"
+              type="number"
+              name={"telefono"}
+              onChange={handleInputChange}
               className="flex border rounded p-2"
-              defaultValue={profesor.telefono}
+              defaultValue={profesorUpdate.telefono}
             />
           </div>
           <div className="flex justify-between gap-3 max-sm:flex-col">
             <span className="font-bold my-auto">Ubicación: </span>
             <input
               type="text"
+              name={"ubicacion"}
+              onChange={handleInputChange}
               className="flex border rounded p-2"
-              defaultValue={profesor.ubicacion}
+              defaultValue={profesorUpdate.ubicacion}
             />
           </div>
           <div className="flex justify-between gap-3 max-sm:flex-col">
             <span className="font-bold my-auto">Imagen: </span>
-            <input type="file" className="flex border rounded p-2 bg-white" />
+            <input
+              type="file"
+              className="flex border rounded p-2 bg-white"
+              encType="multipart/form-data"
+              onChange={(e) => {
+                setProfesorUpdate({
+                  ...profesorUpdate,
+                  img: e.target.files[0],
+                });
+              }}
+            />
           </div>
           <div className="flex justify-between gap-3 max-sm:flex-col">
             <span className="font-bold">Experiencia: </span>
+
             <textarea
               className="h-40 w-2/3 border rounded p-2"
               type="text"
+              name={"experiencia"}
+              onChange={handleInputChange}
               defaultValue={profesor.experiencia}
             />
           </div>
         </div>
         <button
           className="flex bg-coral text-white border border-coral hover:bg-white hover:text-coral py-2 px-6 rounded-xl text-lg mt-auto"
-          onClick={() => {
-            handleGuardar();
+          onClick={(e) => {
+            handleGuardar(e);
           }}
         >
           Guardar
@@ -135,7 +192,7 @@ export default function Perfil() {
             <div className="flex flex-col max-lg:px-10 lg:px-32 gap-10 items-center ">
               <div className="flex flex-col shadow-card p-10 rounded-2xl items-center gap-4 relative">
                 <img
-                  src={profesor.img}
+                  src={localStorage.getItem("img")}
                   width={230}
                   height={230}
                   alt=""

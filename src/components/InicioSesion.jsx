@@ -28,7 +28,6 @@ export default function InicioSesion({ props }) {
         setExiste(existeData);
         setSesionIniciada(true);
       });
-      console.log(existe);
     }
   };
 
