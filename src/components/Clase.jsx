@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import {
-  buscarServicio,
+  calcularCalificacionServicio,
   estrellasHtml,
   isEmail,
   reseñaEstrella,
 } from "../utils/Utils";
 import Comentario from "./Comentario";
 import Spinner from "./Spinner";
+import { buscarServicio } from "../controllers/app.controller";
 
 export default function Clase() {
   let { id } = useParams();
@@ -116,7 +117,7 @@ export default function Clase() {
                 />
                 <div className="flex">
                   <div className="flex gap-2 h-5">
-                    {estrellasHtml(data.servicio.calificacion)}
+                    {estrellasHtml(calcularCalificacionServicio(data))}
                   </div>
                 </div>
                 <form className="flex flex-col h-full">

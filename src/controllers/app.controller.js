@@ -231,3 +231,28 @@ export const createClass = async function (clase) {
         return false;
     };
 }
+
+export const buscarServicio = async function (idServicio) {
+    let url = urlWebServices.getClass + idServicio
+    try {
+        let response = await fetch(url, {
+            method: 'GET',
+            mode: "cors",
+            headers: {
+                'Accept': 'application/x-www-form-urlencoded',
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+        });
+
+        let data = await response.json()
+        switch (response.status) {
+            case 200:
+                return data
+            case 400:
+                return false;
+        }
+
+    } catch (e) {
+        return false;
+    };
+}

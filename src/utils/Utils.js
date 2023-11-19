@@ -158,6 +158,26 @@ function sesionIniciada() {
     return localStorage.getItem("token") != undefined
 }
 
+function calcularCalificacionServicio(servicio) {
+    let n = servicio.comentarios ? servicio.comentarios.length : 0
+    if (n == 0) return 0;
+    let suma = 0;
+    for (let i = 0; i < n; i++) {
+        suma += servicio.comentarios[i].calificacion
+    }
+    return suma / n
+}
+
+function calcularCalificacionUsuario(user) {
+    let n = user.servicios.length
+    if (n == 0) return 0;
+    let suma = 0;
+    for (let i = 0; i < n; i++) {
+        suma += calcularCalificacionServicio(user.servicio[i])
+    }
+    return suma / n
+}
 
 
-export { getData, buscarServicio, formatearFecha, estrellasHtml, isEmail, reseñaEstrella, serviciosPorCategoria, filtrarServicios, profesorPorId, getCategorias, sesionIniciada };
+
+export { getData, buscarServicio, formatearFecha, estrellasHtml, isEmail, reseñaEstrella, serviciosPorCategoria, filtrarServicios, profesorPorId, getCategorias, sesionIniciada, calcularCalificacionServicio, calcularCalificacionUsuario };
