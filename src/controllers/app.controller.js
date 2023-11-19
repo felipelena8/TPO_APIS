@@ -19,15 +19,12 @@ export const login = async function (login) {
         });
 
         let data = await response.json()
-        console.log(data)
         switch (response.status) {
             case 201:
                 localStorage.setItem("token", data.loginUser.token);
                 if (data.loginUser.user.img === undefined) {
-                    console.log("1")
                     localStorage.setItem("img", "/images/user.png")
                 } else {
-                    console.log("2")
                     localStorage.setItem("img", data.loginUser.user.img)
                 }
                 return true;
@@ -38,6 +35,7 @@ export const login = async function (login) {
     } catch (e) {
         console.log(e);
     };
+    return false;
 }
 
 export const isLogged = async function (token) {
@@ -91,7 +89,7 @@ export const registrate = async function (registro) {
         console.log(data)
         switch (response.status) {
             case 201:
-                localStorage.setItem("token", data.createdUser.token);
+                localStorage.setItem("token", data.createdUser);
                 return true;
             case 400:
                 return false;
@@ -226,6 +224,79 @@ export const createClass = async function (clase) {
                 return false;
         }
 
+    } catch (e) {
+        console.log(e);
+        return false;
+    };
+}
+
+export const buscarServicio = async function (idServicio) {
+    let url = urlWebServices.getClass + idServicio
+    try {
+        let response = await fetch(url, {
+            method: 'GET',
+            mode: "cors",
+            headers: {
+                'Accept': 'application/x-www-form-urlencoded',
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+        });
+
+        let data = await response.json()
+        switch (response.status) {
+            case 200:
+                return data
+            case 400:
+                return false;
+        }
+
+    } catch (e) {
+        return false;
+    };
+}
+
+export const createCommentClass = async function (idClase, comment) {
+    let url = urlWebServices.commentClass + idClase
+    const formData = new URLSearchParams();
+    formData.append("estrellas", comment.calificacion)
+    formData.append("mensaje", comment.comentario)
+    try {
+        let response = await fetch(url, {
+            method: 'POST',
+            mode: "cors",
+            headers: {
+                'Accept': 'application/x-www-form-urlencoded',
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: formData
+        });
+
+        switch (response.status) {
+            case 200:
+                return 0;
+            case 400:
+                return 1;
+        }
+
+    } catch (e) {
+        console.log(e);
+        return 2;
+    };
+}
+
+export const changeSeenNotification = async function (idNotification) {
+    let url = urlWebServices.notificationChangeSeen + idNotification
+    try {
+        let response = await fetch(url, {
+            method: 'PUT',
+            mode: "cors",
+            headers: {
+                'x-access-token': localStorage.getItem("token"),
+            },
+        });
+
+        let data = await response.json()
+        console.log(response.status)
     } catch (e) {
         console.log(e);
         return false;

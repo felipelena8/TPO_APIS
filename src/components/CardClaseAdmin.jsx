@@ -1,11 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Metodologia from "./Metodologia";
+import { calcularCalificacionServicio } from "../utils/Utils";
 
 export default function CardClaseAdmin(props) {
   const { nombre, ubicacion, img, servicio, setModal, setPublicacion } = props;
-  let { calificacion, categoria, costo, descripcion, id, metodologia, activo } =
-    servicio;
+  let {
+    calificacion,
+    categoria,
+    costo,
+    descripcion,
+    _id,
+    metodologia,
+    activo,
+  } = servicio;
 
   const handleModificar = () => {
     setModal(true);
@@ -19,7 +27,7 @@ export default function CardClaseAdmin(props) {
       }`}
     >
       <div className="flex relative">
-        <Link to={"/clase/" + id}>
+        <Link to={"/clase/" + _id}>
           <img src={img} alt="" className="rounded-3xl w-72 h-72" />
         </Link>
         <span className="absolute bottom-12 left-4 text-3xl font-bold text-white">
@@ -47,7 +55,9 @@ export default function CardClaseAdmin(props) {
                 fill="#FFCB45"
               />
             </svg>
-            <span className="font-bold">{calificacion}</span>
+            <span className="font-bold">
+              {calcularCalificacionServicio(servicio)}
+            </span>
           </div>
           <div className="flex gap-2 items-center">
             <svg

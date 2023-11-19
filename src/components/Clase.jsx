@@ -1,13 +1,17 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import {
-  buscarServicio,
+  calcularCalificacionServicio,
   estrellasHtml,
   isEmail,
   reseñaEstrella,
 } from "../utils/Utils";
 import Comentario from "./Comentario";
 import Spinner from "./Spinner";
+import {
+  buscarServicio,
+  createCommentClass,
+} from "../controllers/app.controller";
 
 export default function Clase() {
   let { id } = useParams();
@@ -59,10 +63,14 @@ export default function Clase() {
   const handleSubmitComentario = (e) => {
     e.preventDefault();
     setSubmitted(true);
-    setModalComentario(false);
 
     if (comentario && calificacion != 0) {
       alert("Comentario pendiente a revisión");
+      let commentCreated = createCommentClass(id, { comentario, calificacion });
+      if (commentCreated == 0) {
+        alert("El comentario ha sido enviado para revision");
+      }
+      setModalComentario(false);
     }
   };
 
@@ -116,7 +124,7 @@ export default function Clase() {
                 />
                 <div className="flex">
                   <div className="flex gap-2 h-5">
-                    {estrellasHtml(data.servicio.calificacion)}
+                    {estrellasHtml(calcularCalificacionServicio(data))}
                   </div>
                 </div>
                 <form className="flex flex-col h-full">
@@ -351,7 +359,7 @@ export default function Clase() {
                   <Comentario
                     fecha={comentario.fecha}
                     mensaje={comentario.mensaje}
-                    admin={data.id == localStorage.getItem("id")}
+                    admin={data.id == localStorage.getItem("token")}
                     calificacion={comentario.calificacion}
                     key={comentario.id}
                   />
