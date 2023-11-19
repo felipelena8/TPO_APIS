@@ -1,10 +1,19 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Metodologia from "./Metodologia";
 import { calcularCalificacionServicio } from "../utils/Utils";
+import { activateClass } from "../controllers/app.controller";
 
 export default function CardClaseAdmin(props) {
-  const { nombre, ubicacion, img, servicio, setModal, setPublicacion } = props;
+  const {
+    nombre,
+    ubicacion,
+    img,
+    servicio,
+    setModal,
+    setPublicacion,
+    getData,
+  } = props;
   let {
     calificacion,
     categoria,
@@ -18,6 +27,11 @@ export default function CardClaseAdmin(props) {
   const handleModificar = () => {
     setModal(true);
     setPublicacion(servicio);
+  };
+
+  const handleChangeActivate = () => {
+    activateClass(_id);
+    getData();
   };
 
   return (
@@ -191,11 +205,17 @@ export default function CardClaseAdmin(props) {
               Eliminar
             </button>
             {activo ? (
-              <button className="bg-coral rounded-lg p-2 w-2/3 text-white border border-coral hover:bg-white hover:text-coral transition-all">
+              <button
+                className="bg-coral rounded-lg p-2 w-2/3 text-white border border-coral hover:bg-white hover:text-coral transition-all"
+                onClick={handleChangeActivate}
+              >
                 Despublicar
               </button>
             ) : (
-              <button className="bg-verde rounded-lg p-2 w-2/3 text-white border border-verde hover:bg-white hover:text-verde transition-all">
+              <button
+                className="bg-verde rounded-lg p-2 w-2/3 text-white border border-verde hover:bg-white hover:text-verde transition-all"
+                onClick={handleChangeActivate}
+              >
                 Publicar
               </button>
             )}

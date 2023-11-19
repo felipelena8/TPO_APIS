@@ -2,7 +2,12 @@ import React, { useEffect, useState } from "react";
 import { getCategorias } from "../utils/Utils";
 import { createClass } from "../controllers/app.controller";
 
-export default function Modal({ setModal, publicacion }) {
+export default function Modal({
+  setModal,
+  publicacion,
+  setUpdateCount,
+  updateCount,
+}) {
   const [categorias, setCategorias] = useState([]);
   const [cargando, setCargando] = useState(true);
   const [values, setValues] = useState({
@@ -49,6 +54,7 @@ export default function Modal({ setModal, publicacion }) {
         descripcion: values.descripcion,
       };
       createClass(clase);
+      setUpdateCount(updateCount + 1);
       alert(publicacion ? "Publicacion modificada" : "Publicacion creada");
       setSubmitted(false);
       setModal(false);

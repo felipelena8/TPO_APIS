@@ -16,14 +16,16 @@ export default function MisClases({ props }) {
   const getData = () => {
     profesorPorId(localStorage.getItem("token"))
       .then((data) => setProfesor(data))
-      .finally(setTimeout(() => setCargando(false), 400));
-    console.log(profesor);
+      .finally(setCargando(profesor == false));
   };
+
+  useEffect(() => {}, [profesor]);
 
   useEffect(() => {
     if (!props.sesionIniciada) {
       goTo("/");
     }
+    setCargando(true);
     getData();
   }, []);
 
@@ -60,6 +62,7 @@ export default function MisClases({ props }) {
                 activo={servicio.activo}
                 setModal={setModalModificar}
                 setPublicacion={setPublicacion}
+                getData={getData}
               />
             ))
           )}
