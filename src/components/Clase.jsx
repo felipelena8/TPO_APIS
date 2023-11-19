@@ -8,7 +8,10 @@ import {
 } from "../utils/Utils";
 import Comentario from "./Comentario";
 import Spinner from "./Spinner";
-import { buscarServicio } from "../controllers/app.controller";
+import {
+  buscarServicio,
+  createCommentClass,
+} from "../controllers/app.controller";
 
 export default function Clase() {
   let { id } = useParams();
@@ -60,10 +63,14 @@ export default function Clase() {
   const handleSubmitComentario = (e) => {
     e.preventDefault();
     setSubmitted(true);
-    setModalComentario(false);
 
     if (comentario && calificacion != 0) {
       alert("Comentario pendiente a revisión");
+      let commentCreated = createCommentClass(id, { comentario, calificacion });
+      if (commentCreated == 0) {
+        alert("El comentario ha sido enviado para revision");
+      }
+      setModalComentario(false);
     }
   };
 
@@ -352,7 +359,7 @@ export default function Clase() {
                   <Comentario
                     fecha={comentario.fecha}
                     mensaje={comentario.mensaje}
-                    admin={data.id == localStorage.getItem("id")}
+                    admin={data.id == localStorage.getItem("token")}
                     calificacion={comentario.calificacion}
                     key={comentario.id}
                   />
