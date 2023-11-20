@@ -18,7 +18,7 @@ export default function Notificaciones() {
     } else {
       profesorPorId(localStorage.getItem("token"))
         .then((data) => {
-          setNotificaciones(data.notificaciones.reverse());
+          setNotificaciones(data.notificaciones);
         })
         .then(() => setCargando(false));
     }
@@ -29,7 +29,7 @@ export default function Notificaciones() {
   ) : (
     <div className="flex flex-col items-center mx-3">
       <h2 className="text-5xl pb-4 font-bold text-coral">Notificaciones</h2>
-      <div className="flex flex-col gap-2 items-center">
+      <div className="flex flex-col gap-2 md:w-3/4 items-center">
         {notificaciones.map((notificacion) => {
           if (notificacion.tipo == "Comentario") {
             return (
@@ -42,6 +42,7 @@ export default function Notificaciones() {
                 idServicio={notificacion.idServicio}
                 idNotificacion={notificacion._id}
                 key={notificacion._id}
+                state={notificacion.estado}
               />
             );
           } else {
@@ -57,6 +58,7 @@ export default function Notificaciones() {
                 leido={notificacion.visto}
                 idNotificacion={notificacion._id}
                 key={notificacion._id}
+                state={notificacion.estado}
               />
             );
           }

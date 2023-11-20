@@ -355,15 +355,19 @@ export default function Clase() {
                 Agregar un comentario
               </button>
               <div className="flex flex-col container gap-2">
-                {data.servicio.comentarios.map((comentario) => (
-                  <Comentario
-                    fecha={comentario.fecha}
-                    mensaje={comentario.mensaje}
-                    admin={data.id == localStorage.getItem("token")}
-                    calificacion={comentario.calificacion}
-                    key={comentario.id}
-                  />
-                ))}
+                {data.servicio.comentarios.map((comentario) =>
+                  comentario.estado == "Cancelado" ? (
+                    ""
+                  ) : (
+                    <Comentario
+                      fecha={comentario.fecha}
+                      mensaje={comentario.mensaje}
+                      admin={data.id == localStorage.getItem("token")}
+                      calificacion={comentario.estrellas}
+                      key={comentario.id}
+                    />
+                  )
+                )}
               </div>
             </div>
           </div>
