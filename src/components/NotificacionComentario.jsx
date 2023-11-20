@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { estrellasHtml } from "../utils/Utils";
+import { estrellasHtml, formatearFecha } from "../utils/Utils";
 import { Link } from "react-router-dom";
-import { changeSeenNotification } from "../controllers/app.controller";
+import {
+  changeSeenNotification,
+  changeStateNotification,
+} from "../controllers/app.controller";
 
 export default function NotificacionComentario({
   idNotificacion,
@@ -11,9 +14,10 @@ export default function NotificacionComentario({
   leido,
   descripcionServicio,
   idServicio,
+  state,
 }) {
   const [visto, setVisto] = useState(leido);
-  const [estado, setEstado] = useState("Pendiente");
+  const [estado, setEstado] = useState(state);
 
   function handleVisto() {
     setVisto(!visto);
@@ -23,11 +27,13 @@ export default function NotificacionComentario({
   function handleAceptar() {
     setEstado("Aceptado");
     setVisto(true);
+    changeStateNotification(idNotificacion, "Aceptado");
   }
 
   function handleCancelar() {
     setEstado("Bloqueado");
     setVisto(true);
+    changeStateNotification(idNotificacion, "Cancelado");
   }
 
   return (
@@ -39,7 +45,7 @@ export default function NotificacionComentario({
       <div className="flex flex-col p-2  ">
         <div className="flex justify-between w-full pb-1">
           <div className="text-xl font-bold">Nuevo comentario</div>
-          <div className="text-gray-400">{fecha}</div>
+          <div className="text-gray-400">{formatearFecha(fecha)}</div>
         </div>
         <div className="flex pb-2">
           <div className="flex gap-2 h-4">{estrellasHtml(calificacion)}</div>

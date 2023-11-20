@@ -90,6 +90,7 @@ export const registrate = async function (registro) {
         switch (response.status) {
             case 201:
                 localStorage.setItem("token", data.createdUser);
+                localStorage.setItem("img", "/images/user.png")
                 return true;
             case 400:
                 return false;
@@ -297,6 +298,27 @@ export const changeSeenNotification = async function (idNotification) {
 
         let data = await response.json()
         console.log(response.status)
+    } catch (e) {
+        console.log(e);
+        return false;
+    };
+}
+
+export const changeStateNotification = async function (idNotification, estado) {
+    let url = urlWebServices.notificationChangeState + idNotification
+    const formData = new URLSearchParams();
+    formData.append("estado", estado)
+    try {
+        let response = await fetch(url, {
+            method: 'PUT',
+            mode: "cors",
+            headers: {
+                'x-access-token': localStorage.getItem("token"),
+            },
+            body: formData
+        });
+
+        let data = await response.json()
     } catch (e) {
         console.log(e);
         return false;
