@@ -65,23 +65,34 @@ export const isLogged = async function (token) {
 };
 
 export const registrate = async function (registro) {
-  let url = urlWebServices.register;
-  const formData = new URLSearchParams();
-  formData.append("mail", registro.mail);
-  formData.append("password", registro.password);
-  formData.append("telefono", registro.telefono);
-  formData.append("nombre", registro.nombre);
-  formData.append("apellido", registro.apellido);
-  try {
-    let response = await fetch(url, {
-      method: "POST",
-      mode: "cors",
-      headers: {
-        Accept: "application/x-www-form-urlencoded",
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      body: formData,
-    });
+    let url = urlWebServices.register
+    const formData = new URLSearchParams();
+    formData.append('mail', registro.mail);
+    formData.append('password', registro.password);
+    formData.append('telefono', registro.telefono);
+    formData.append('nombre', registro.nombre);
+    formData.append('apellido', registro.apellido);
+    try {
+        let response = await fetch(url, {
+            method: 'POST',
+            mode: "cors",
+            headers: {
+                'Accept': 'application/x-www-form-urlencoded',
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: formData,
+        });
+
+        let data = await response.json()
+        console.log(data)
+        switch (response.status) {
+            case 201:
+                localStorage.setItem("token", data.createdUser);
+                localStorage.setItem("img", "/images/user.png")
+                return true;
+            case 400:
+                return false;
+        }
 
     let data = await response.json();
     console.log(data);
@@ -286,6 +297,7 @@ export const changeSeenNotification = async function (idNotification) {
       },
     });
 
+
     let data = await response.json();
     console.log(response.status);
   } catch (e) {
@@ -312,3 +324,26 @@ export const activateClass = async function (idClase) {
     return false;
   }
 };
+
+
+export const changeStateNotification = async function (idNotification, estado) {
+    let url = urlWebServices.notificationChangeState + idNotification
+    const formData = new URLSearchParams();
+    formData.append("estado", estado)
+    try {
+        let response = await fetch(url, {
+            method: 'PUT',
+            mode: "cors",
+            headers: {
+                'x-access-token': localStorage.getItem("token"),
+            },
+            body: formData
+        });
+
+        let data = await response.json()
+    } catch (e) {
+        console.log(e);
+        return false;
+    };
+}
+

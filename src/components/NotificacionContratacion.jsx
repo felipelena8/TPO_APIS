@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { changeSeenNotification } from "../controllers/app.controller";
+import {
+  changeSeenNotification,
+  changeStateNotification,
+} from "../controllers/app.controller";
+import { formatearFecha } from "../utils/Utils";
 
 export default function NotificacionContratacion({
   idNotificacion,
@@ -12,6 +16,7 @@ export default function NotificacionContratacion({
   motivo,
   idServicio,
   leido,
+  state,
 }) {
   const [visto, setVisto] = useState(leido);
   const [estado, setEstado] = useState("Pendiente");
@@ -22,10 +27,12 @@ export default function NotificacionContratacion({
 
   function handleAceptar() {
     setEstado("Aceptado");
+    changeStateNotification(idNotificacion, "Aceptado");
   }
 
   function handleCancelar() {
     setEstado("Cancelado");
+    changeStateNotification(idNotificacion, "Cancelado");
   }
 
   return (
@@ -37,7 +44,7 @@ export default function NotificacionContratacion({
       <div className="flex flex-col p-2  ">
         <div className="flex justify-between w-full pb-1">
           <div className="text-xl font-bold">Nuevo contacto</div>
-          <div className="text-gray-400">{fecha}</div>
+          <div className="text-gray-400">{formatearFecha(fecha)}</div>
         </div>
         <div className="h-12 overflow-hidden ">
           <span className="font-bold">Para el servicio:</span>
