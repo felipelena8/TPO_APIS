@@ -29,17 +29,22 @@ export default function Perfil() {
     }));
   };
 
+  const getData = () => {
+    profesorPorId(localStorage.getItem("token"))
+      .then((data) => {
+        setProfesor(data);
+        setProfesorUpdate(data);
+        localStorage.setItem("img", data.img);
+      })
+      .then(() => setCargando(false));
+  };
+
   const goTo = useNavigate();
   useEffect(() => {
     if (!sesionIniciada()) {
       goTo("/");
     } else {
-      profesorPorId(localStorage.getItem("token"))
-        .then((data) => {
-          setProfesor(data);
-          setProfesorUpdate(data);
-        })
-        .then(() => setCargando(false));
+      getData();
     }
   }, []);
 
@@ -53,7 +58,9 @@ export default function Perfil() {
       !isNaN(profesorUpdate.telefono) &&
       isEmail(profesorUpdate.mail)
     ) {
-      updateUser(profesorUpdate, localStorage.getItem("token"));
+      updateUser(profesorUpdate, localStorage.getItem("token")).then(() => {
+        getData();
+      });
       setModal(false);
     }
   };

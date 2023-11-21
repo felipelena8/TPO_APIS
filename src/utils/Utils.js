@@ -159,11 +159,12 @@ function sesionIniciada() {
 }
 
 function calcularCalificacionServicio(servicio) {
+    console.log(servicio)
     let n = servicio.comentarios ? servicio.comentarios.length : 0
     if (n == 0) return 0;
     let suma = 0;
     for (let i = 0; i < n; i++) {
-        suma += servicio.comentarios[i].calificacion
+        suma += servicio.comentarios[i].estrellas
     }
     return suma / n
 }

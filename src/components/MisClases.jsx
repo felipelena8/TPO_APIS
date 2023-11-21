@@ -11,29 +11,43 @@ export default function MisClases({ props }) {
   let [modalCrear, setModalCrear] = useState(false);
   let [modalModificar, setModalModificar] = useState(false);
   let [publicacion, setPublicacion] = useState();
+  let [servicioId, setServicioId] = useState();
   const goTo = useNavigate();
 
-  const getData = () => {
-    profesorPorId(localStorage.getItem("token"))
-      .then((data) => setProfesor(data))
-      .finally(setCargando(profesor == false));
-  };
-
-  useEffect(() => {}, [profesor]);
+  function getData() {
+    profesorPorId(localStorage.getItem("token")).then((data) => {
+      setProfesor(data);
+      setCargando(Object.keys(data) == 0);
+    });
+  }
 
   useEffect(() => {
     if (!props.sesionIniciada) {
       goTo("/");
     }
-    setCargando(true);
     getData();
+    setCargando(Object.keys(profesor) == 0);
   }, []);
 
   return (
     <>
-      {modalCrear ? <Modal setModal={setModalCrear} /> : ""}
+      {modalCrear ? (
+        <Modal
+          setModal={setModalCrear}
+          getData={getData}
+          tipoModal={"create"}
+        />
+      ) : (
+        ""
+      )}
       {modalModificar ? (
-        <Modal setModal={setModalModificar} publicacion={publicacion} />
+        <Modal
+          setModal={setModalModificar}
+          getData={getData}
+          tipoModal={"update"}
+          publicacion={publicacion}
+          servicioId={servicioId}
+        />
       ) : (
         ""
       )}
@@ -54,15 +68,16 @@ export default function MisClases({ props }) {
           ) : (
             profesor.servicios.map((servicio) => (
               <CardClaseAdmin
+                key={servicio.id}
                 servicio={servicio}
                 nombre={profesor.nombre}
                 ubicacion={profesor.ubicacion}
                 img={profesor.img}
-                key={servicio.id}
                 activo={servicio.activo}
                 setModal={setModalModificar}
                 setPublicacion={setPublicacion}
                 getData={getData}
+                setServicioId={setServicioId}
               />
             ))
           )}

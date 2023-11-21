@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Metodologia from "./Metodologia";
 import { calcularCalificacionServicio } from "../utils/Utils";
-import { activateClass } from "../controllers/app.controller";
+import { activateClass, eliminarServicio } from "../controllers/app.controller";
 
 export default function CardClaseAdmin(props) {
   const {
@@ -13,25 +13,22 @@ export default function CardClaseAdmin(props) {
     setModal,
     setPublicacion,
     getData,
+    setServicioId,
   } = props;
-  let {
-    calificacion,
-    categoria,
-    costo,
-    descripcion,
-    _id,
-    metodologia,
-    activo,
-  } = servicio;
+  let { categoria, costo, descripcion, _id, metodologia, activo } = servicio;
 
   const handleModificar = () => {
     setModal(true);
     setPublicacion(servicio);
+    setServicioId(_id);
   };
 
   const handleChangeActivate = () => {
-    activateClass(_id);
-    getData();
+    activateClass(_id).then(() => getData());
+  };
+
+  const handleDelete = () => {
+    eliminarServicio(_id).then(() => getData());
   };
 
   return (
@@ -201,7 +198,10 @@ export default function CardClaseAdmin(props) {
             )}
           </div>
           <div className="flex items-center flex-col gap-2 mt-2">
-            <button className="bg-coral rounded-lg p-2 w-2/3 text-white border border-coral hover:bg-white hover:text-coral transition-all">
+            <button
+              className="bg-coral rounded-lg p-2 w-2/3 text-white border border-coral hover:bg-white hover:text-coral transition-all"
+              onClick={handleDelete}
+            >
               Eliminar
             </button>
             {activo ? (

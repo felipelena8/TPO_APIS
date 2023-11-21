@@ -10,6 +10,7 @@ import Comentario from "./Comentario";
 import Spinner from "./Spinner";
 import {
   buscarServicio,
+  contactarProfesor,
   createCommentClass,
 } from "../controllers/app.controller";
 
@@ -53,9 +54,8 @@ export default function Clase() {
       telefono &&
       !isNaN(telefono)
     ) {
-      console.log("mensaje");
       setModalContacto(false);
-
+      contactarProfesor(id, { mail, horario, mensaje, telefono });
       alert("Se ha notificado a " + data.nombre);
     }
   };

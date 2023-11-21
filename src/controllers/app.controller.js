@@ -65,40 +65,30 @@ export const isLogged = async function (token) {
 };
 
 export const registrate = async function (registro) {
-    let url = urlWebServices.register
-    const formData = new URLSearchParams();
-    formData.append('mail', registro.mail);
-    formData.append('password', registro.password);
-    formData.append('telefono', registro.telefono);
-    formData.append('nombre', registro.nombre);
-    formData.append('apellido', registro.apellido);
-    try {
-        let response = await fetch(url, {
-            method: 'POST',
-            mode: "cors",
-            headers: {
-                'Accept': 'application/x-www-form-urlencoded',
-                'Content-Type': 'application/x-www-form-urlencoded'
-            },
-            body: formData,
-        });
+  let url = urlWebServices.register
+  const formData = new URLSearchParams();
+  formData.append('mail', registro.mail);
+  formData.append('password', registro.password);
+  formData.append('telefono', registro.telefono);
+  formData.append('nombre', registro.nombre);
+  formData.append('apellido', registro.apellido);
+  try {
+    let response = await fetch(url, {
+      method: 'POST',
+      mode: "cors",
+      headers: {
+        'Accept': 'application/x-www-form-urlencoded',
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      body: formData,
+    });
 
-        let data = await response.json()
-        console.log(data)
-        switch (response.status) {
-            case 201:
-                localStorage.setItem("token", data.createdUser);
-                localStorage.setItem("img", "/images/user.png")
-                return true;
-            case 400:
-                return false;
-        }
-
-    let data = await response.json();
-    console.log(data);
+    let data = await response.json()
+    console.log(data)
     switch (response.status) {
       case 201:
         localStorage.setItem("token", data.createdUser);
+        localStorage.setItem("img", "/images/user.png")
         return true;
       case 400:
         return false;
@@ -127,14 +117,15 @@ export const profesorPorId = async function (token) {
       case 200:
         return data;
       case 401:
-        return false;
+        return {};
       case 404:
-        return false;
+        return {};
     }
   } catch (e) {
     console.log(e);
-    return false;
+    return {};
   }
+  return {}
 };
 
 export const updateUser = async function (update, token) {
@@ -270,6 +261,7 @@ export const createCommentClass = async function (idClase, comment) {
       headers: {
         Accept: "application/x-www-form-urlencoded",
         "Content-Type": "application/x-www-form-urlencoded",
+        "x-access-token": localStorage.getItem("token")
       },
       body: formData,
     });
@@ -317,8 +309,6 @@ export const activateClass = async function (idClase) {
       },
     });
 
-    let data = await response.json();
-    console.log(response.status);
   } catch (e) {
     console.log(e);
     return false;
@@ -327,23 +317,114 @@ export const activateClass = async function (idClase) {
 
 
 export const changeStateNotification = async function (idNotification, estado) {
-    let url = urlWebServices.notificationChangeState + idNotification
-    const formData = new URLSearchParams();
-    formData.append("estado", estado)
-    try {
-        let response = await fetch(url, {
-            method: 'PUT',
-            mode: "cors",
-            headers: {
-                'x-access-token': localStorage.getItem("token"),
-            },
-            body: formData
-        });
+  let url = urlWebServices.notificationChangeState + idNotification
+  const formData = new URLSearchParams();
+  formData.append("estado", estado)
+  try {
+    let response = await fetch(url, {
+      method: 'PUT',
+      mode: "cors",
+      headers: {
+        'x-access-token': localStorage.getItem("token"),
+      },
+      body: formData
+    });
 
-        let data = await response.json()
-    } catch (e) {
-        console.log(e);
-        return false;
-    };
+    let data = await response.json()
+  } catch (e) {
+    console.log(e);
+    return false;
+  };
 }
 
+export const updateClass = async function (idServicio, clase) {
+  let url = urlWebServices.updateClass + idServicio;
+  const formData = new URLSearchParams();
+  formData.append("categoria", clase.categoria);
+  formData.append("tipoClase", clase.tipo);
+  formData.append("frecuencia", clase.frecuencia);
+  formData.append("metodologia", clase.metodologia);
+  formData.append("costo", clase.costo);
+  formData.append("duracion", clase.duracion);
+  formData.append("descripcion", clase.descripcion);
+  try {
+    let response = await fetch(url, {
+      method: "PUT",
+      mode: "cors",
+      headers: {
+        Accept: "application/x-www-form-urlencoded",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "x-access-token": localStorage.getItem("token"),
+      },
+      body: formData,
+    });
+
+    switch (response.status) {
+      case 200:
+        alert("Se actualizo la clase correctamente");
+        break;
+      case 500:
+        alert("Surgio un error al intentar actualizar la clase");
+        break;
+
+    }
+  } catch (e) {
+    console.log(e);
+    return false;
+  }
+};
+
+export const eliminarServicio = async function (idServicio) {
+  let url = urlWebServices.deleteClass + idServicio;
+  try {
+    let response = await fetch(url, {
+      method: "DELETE",
+      mode: "cors",
+      headers: {
+        Accept: "application/x-www-form-urlencoded",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "x-access-token": localStorage.getItem("token")
+      },
+    });
+
+    let data = await response.json();
+    switch (response.status) {
+      case 200:
+        return true;
+      case 500:
+        return false;
+    }
+  } catch (e) {
+    return false;
+  }
+};
+
+export const contactarProfesor = async function (idServicio, contacto) {
+  let url = urlWebServices.contactClassProvider + idServicio;
+  const formData = new URLSearchParams();
+  formData.append("mail", contacto.mail);
+  formData.append("motivo", contacto.mensaje);
+  formData.append("horario", contacto.horario)
+  formData.append("telefono", contacto.telefono)
+  try {
+    let response = await fetch(url, {
+      method: "POST",
+      mode: "cors",
+      headers: {
+        Accept: "application/x-www-form-urlencoded",
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: formData,
+    });
+
+    switch (response.status) {
+      case 200:
+        return 0;
+      case 400:
+        return 1;
+    }
+  } catch (e) {
+    console.log(e);
+    return 2;
+  }
+}
