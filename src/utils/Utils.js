@@ -179,6 +179,13 @@ function calcularCalificacionUsuario(user) {
     return suma / n
 }
 
+function getContratacionesProfesor(profesor) {
+    let contrataciones = []
+    for (let i = 0; i < profesor.servicios.length; i++) {
+        contrataciones = contrataciones.concat(profesor.servicios[i].contrataciones)
+    }
+    return contrataciones;
+}
 
 
-export { getData, buscarServicio, formatearFecha, estrellasHtml, isEmail, reseñaEstrella, serviciosPorCategoria, filtrarServicios, profesorPorId, getCategorias, sesionIniciada, calcularCalificacionServicio, calcularCalificacionUsuario };
+export { getData, buscarServicio, formatearFecha, estrellasHtml, isEmail, reseñaEstrella, serviciosPorCategoria, filtrarServicios, profesorPorId, getCategorias, getContratacionesProfesor, sesionIniciada, calcularCalificacionServicio, calcularCalificacionUsuario };

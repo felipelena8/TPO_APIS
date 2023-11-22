@@ -16,7 +16,6 @@ export default function NotificacionContratacion({
   motivo,
   idServicio,
   leido,
-  state,
 }) {
   const [visto, setVisto] = useState(leido);
   const [estado, setEstado] = useState("Pendiente");

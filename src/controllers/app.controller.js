@@ -266,11 +266,9 @@ export const createCommentClass = async function (idClase, comment) {
       body: formData,
     });
 
-    switch (response.status) {
-      case 200:
-        return 0;
-      case 400:
-        return 1;
+    console.log(response.status)
+    if (response.status == 401) {
+      return false;
     }
   } catch (e) {
     console.log(e);
@@ -321,7 +319,7 @@ export const changeStateNotification = async function (idNotification, estado) {
   const formData = new URLSearchParams();
   formData.append("estado", estado)
   try {
-    let response = await fetch(url, {
+    await fetch(url, {
       method: 'PUT',
       mode: "cors",
       headers: {
@@ -330,7 +328,6 @@ export const changeStateNotification = async function (idNotification, estado) {
       body: formData
     });
 
-    let data = await response.json()
   } catch (e) {
     console.log(e);
     return false;
@@ -413,18 +410,14 @@ export const contactarProfesor = async function (idServicio, contacto) {
       headers: {
         Accept: "application/x-www-form-urlencoded",
         "Content-Type": "application/x-www-form-urlencoded",
+        "x-access-token": localStorage.getItem("token")
       },
       body: formData,
     });
-
-    switch (response.status) {
-      case 200:
-        return 0;
-      case 400:
-        return 1;
+    if (response.status == 401) {
+      return false;
     }
   } catch (e) {
-    console.log(e);
     return 2;
   }
 }
