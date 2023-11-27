@@ -1,6 +1,6 @@
 # Aulaez
 
-![Screenshot](public/images/home.png)
+![Screenshot](/public/home.png)
 
 ## Bienvenidos! 👋
 
