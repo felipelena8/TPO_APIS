@@ -8,7 +8,11 @@ Aulaez es una plataforma para el ofrecimiento de clases particulares de cualquie
 
 ## Instalación
 
-1. Forkeá y cloná el repositorio
+1. Cloná el repositorio
+
+   ```
+   git clone https://github.com/felipelena8/TPO_APIS.git
+   ```
 
 2. Parado en la raíz del proyecto corré el comando
 
