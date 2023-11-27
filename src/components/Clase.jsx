@@ -10,6 +10,7 @@ import Comentario from "./Comentario";
 import Spinner from "./Spinner";
 import {
   buscarServicio,
+  contactarProfesor,
   createCommentClass,
 } from "../controllers/app.controller";
 
@@ -53,23 +54,29 @@ export default function Clase() {
       telefono &&
       !isNaN(telefono)
     ) {
-      console.log("mensaje");
       setModalContacto(false);
-
-      alert("Se ha notificado a " + data.nombre);
+      contactarProfesor(id, { mail, horario, mensaje, telefono }).then(
+        (response) => {
+          if (response != false) {
+            alert("Se ha contactado al profesor");
+          }
+        }
+      );
     }
   };
 
   const handleSubmitComentario = (e) => {
     e.preventDefault();
     setSubmitted(true);
-
     if (comentario && calificacion != 0) {
-      alert("Comentario pendiente a revisión");
-      let commentCreated = createCommentClass(id, { comentario, calificacion });
-      if (commentCreated == 0) {
-        alert("El comentario ha sido enviado para revision");
-      }
+      createCommentClass(id, { comentario, calificacion }).then((response) => {
+        if (response != false) {
+          alert("El comentario ha sido enviado para revision");
+        }
+      });
+      setComentario("");
+      setCalificacion(0);
+      setSubmitted(false);
       setModalComentario(false);
     }
   };
@@ -362,7 +369,6 @@ export default function Clase() {
                     <Comentario
                       fecha={comentario.fecha}
                       mensaje={comentario.mensaje}
-                      admin={data.id == localStorage.getItem("token")}
                       calificacion={comentario.estrellas}
                       key={comentario.id}
                     />

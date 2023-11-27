@@ -4,7 +4,6 @@ import { profesorPorId, updateUser } from "../controllers/app.controller";
 
 import { useNavigate } from "react-router-dom";
 import Spinner from "./Spinner";
-import Contratacion from "./Contratacion";
 
 export default function Perfil() {
   const [profesor, setProfesor] = useState({});
@@ -29,17 +28,22 @@ export default function Perfil() {
     }));
   };
 
+  const getData = () => {
+    profesorPorId(localStorage.getItem("token"))
+      .then((data) => {
+        setProfesor(data);
+        setProfesorUpdate(data);
+        localStorage.setItem("img", data.img);
+      })
+      .then(() => setCargando(false));
+  };
+
   const goTo = useNavigate();
   useEffect(() => {
     if (!sesionIniciada()) {
       goTo("/");
     } else {
-      profesorPorId(localStorage.getItem("token"))
-        .then((data) => {
-          setProfesor(data);
-          setProfesorUpdate(data);
-        })
-        .then(() => setCargando(false));
+      getData();
     }
   }, []);
 
@@ -53,7 +57,9 @@ export default function Perfil() {
       !isNaN(profesorUpdate.telefono) &&
       isEmail(profesorUpdate.mail)
     ) {
-      updateUser(profesorUpdate, localStorage.getItem("token"));
+      updateUser(profesorUpdate, localStorage.getItem("token")).then(() => {
+        getData();
+      });
       setModal(false);
     }
   };
@@ -265,36 +271,6 @@ export default function Perfil() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div className="flex flex-col mx-3">
-            <h2 className="text-4xl font-bold text-center mb-3 text-coral">
-              Contrataciones activas
-            </h2>
-            <div className="flex flex-wrap gap-4  justify-center">
-              <Contratacion
-                mail={"usuario1@example.com"}
-                telefono={1123456789}
-                horario={"Entre 12hs hasta 16hs"}
-                motivo={"Quisiera mejorar mi inglés"}
-                idServicio={1}
-                leido={true}
-                descripcionServicio={
-                  "Mejora tus habilidades en el idioma inglés con mis clases en línea. Trabajaremos en gramática, vocabulario y conversación para que te sientas más seguro y fluido en este idioma tan importante."
-                }
-              />
-
-              <Contratacion
-                mail={"usuario1@example.com"}
-                telefono={1123456789}
-                horario={"Entre 12hs hasta 16hs"}
-                motivo={"Quisiera mejorar mi inglés"}
-                idServicio={1}
-                leido={true}
-                descripcionServicio={
-                  "Mejora tus habilidades en el idioma inglés con mis clases en línea. Trabajaremos en gramática, vocabulario y conversación para que te sientas más seguro y fluido en este idioma tan importante."
-                }
-              />
             </div>
           </div>
         </>

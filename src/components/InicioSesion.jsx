@@ -18,14 +18,14 @@ export default function InicioSesion({ props }) {
     if (sesionIniciada == true) {
       goTo("/");
     }
-  }, [existe]);
+  }, [sesionIniciada]);
 
   let handleSubmit = (e) => {
+    setExiste(true);
     e.preventDefault();
     setSubmitted(true);
     if (password.length >= 8 && isEmail(mail)) {
       login({ mail: mail, password: password }).then((existeData) => {
-        setExiste(existeData);
         setSesionIniciada(existeData);
       });
     }

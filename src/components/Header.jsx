@@ -60,6 +60,9 @@ export default function Header({ props }) {
             <li className="py-2   border-b pr-12 border-black hover:text-coral cursor-pointer">
               <NavLink to="/mis-clases">Mis clases</NavLink>
             </li>
+            <li className="py-2   border-b pr-12 border-black hover:text-coral cursor-pointer">
+              <NavLink to="/contrataciones">Contrataciones</NavLink>
+            </li>
             <li
               className="py-2   border-b pr-12 border-black hover:text-coral cursor-pointer"
               onClick={(e) => cerrarSesion()}
