@@ -65,30 +65,30 @@ export const isLogged = async function (token) {
 };
 
 export const registrate = async function (registro) {
-  let url = urlWebServices.register
+  let url = urlWebServices.register;
   const formData = new URLSearchParams();
-  formData.append('mail', registro.mail);
-  formData.append('password', registro.password);
-  formData.append('telefono', registro.telefono);
-  formData.append('nombre', registro.nombre);
-  formData.append('apellido', registro.apellido);
+  formData.append("mail", registro.mail);
+  formData.append("password", registro.password);
+  formData.append("telefono", registro.telefono);
+  formData.append("nombre", registro.nombre);
+  formData.append("apellido", registro.apellido);
   try {
     let response = await fetch(url, {
-      method: 'POST',
+      method: "POST",
       mode: "cors",
       headers: {
-        'Accept': 'application/x-www-form-urlencoded',
-        'Content-Type': 'application/x-www-form-urlencoded'
+        Accept: "application/x-www-form-urlencoded",
+        "Content-Type": "application/x-www-form-urlencoded",
       },
       body: formData,
     });
 
-    let data = await response.json()
-    console.log(data)
+    let data = await response.json();
+    console.log(data);
     switch (response.status) {
       case 201:
         localStorage.setItem("token", data.createdUser);
-        localStorage.setItem("img", "/images/user.png")
+        localStorage.setItem("img", "/images/user.png");
         return true;
       case 400:
         return false;
@@ -125,7 +125,7 @@ export const profesorPorId = async function (token) {
     console.log(e);
     return {};
   }
-  return {}
+  return {};
 };
 
 export const updateUser = async function (update, token) {
@@ -261,12 +261,12 @@ export const createCommentClass = async function (idClase, comment) {
       headers: {
         Accept: "application/x-www-form-urlencoded",
         "Content-Type": "application/x-www-form-urlencoded",
-        "x-access-token": localStorage.getItem("token")
+        "x-access-token": localStorage.getItem("token"),
       },
       body: formData,
     });
 
-    console.log(response.status)
+    console.log(response.status);
     if (response.status == 401) {
       return false;
     }
@@ -287,7 +287,6 @@ export const changeSeenNotification = async function (idNotification) {
       },
     });
 
-
     let data = await response.json();
     console.log(response.status);
   } catch (e) {
@@ -306,33 +305,30 @@ export const activateClass = async function (idClase) {
         "x-access-token": localStorage.getItem("token"),
       },
     });
-
   } catch (e) {
     console.log(e);
     return false;
   }
 };
 
-
 export const changeStateNotification = async function (idNotification, estado) {
-  let url = urlWebServices.notificationChangeState + idNotification
+  let url = urlWebServices.notificationChangeState + idNotification;
   const formData = new URLSearchParams();
-  formData.append("estado", estado)
+  formData.append("estado", estado);
   try {
     await fetch(url, {
-      method: 'PUT',
+      method: "PUT",
       mode: "cors",
       headers: {
-        'x-access-token': localStorage.getItem("token"),
+        "x-access-token": localStorage.getItem("token"),
       },
-      body: formData
+      body: formData,
     });
-
   } catch (e) {
     console.log(e);
     return false;
-  };
-}
+  }
+};
 
 export const updateClass = async function (idServicio, clase) {
   let url = urlWebServices.updateClass + idServicio;
@@ -363,7 +359,6 @@ export const updateClass = async function (idServicio, clase) {
       case 500:
         alert("Surgio un error al intentar actualizar la clase");
         break;
-
     }
   } catch (e) {
     console.log(e);
@@ -380,7 +375,7 @@ export const eliminarServicio = async function (idServicio) {
       headers: {
         Accept: "application/x-www-form-urlencoded",
         "Content-Type": "application/x-www-form-urlencoded",
-        "x-access-token": localStorage.getItem("token")
+        "x-access-token": localStorage.getItem("token"),
       },
     });
 
@@ -401,8 +396,8 @@ export const contactarProfesor = async function (idServicio, contacto) {
   const formData = new URLSearchParams();
   formData.append("mail", contacto.mail);
   formData.append("motivo", contacto.mensaje);
-  formData.append("horario", contacto.horario)
-  formData.append("telefono", contacto.telefono)
+  formData.append("horario", contacto.horario);
+  formData.append("telefono", contacto.telefono);
   try {
     let response = await fetch(url, {
       method: "POST",
@@ -410,7 +405,7 @@ export const contactarProfesor = async function (idServicio, contacto) {
       headers: {
         Accept: "application/x-www-form-urlencoded",
         "Content-Type": "application/x-www-form-urlencoded",
-        "x-access-token": localStorage.getItem("token")
+        "x-access-token": localStorage.getItem("token"),
       },
       body: formData,
     });
@@ -420,4 +415,20 @@ export const contactarProfesor = async function (idServicio, contacto) {
   } catch (e) {
     return 2;
   }
-}
+};
+
+export const finalizarContratacion = async function (idContratacion) {
+  let url = urlWebServices.finalizarContratacion + idContratacion;
+  try {
+    let response = await fetch(url, {
+      method: "PUT",
+      mode: "cors",
+      headers: {
+        "x-access-token": localStorage.getItem("token"),
+      },
+    });
+  } catch (e) {
+    console.log(e);
+    return false;
+  }
+};

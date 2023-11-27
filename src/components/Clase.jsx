@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import {
   calcularCalificacionServicio,
+  calcularCalificacionUsuario,
   estrellasHtml,
   isEmail,
   reseñaEstrella,
@@ -131,7 +132,7 @@ export default function Clase() {
                 />
                 <div className="flex">
                   <div className="flex gap-2 h-5">
-                    {estrellasHtml(calcularCalificacionServicio(data))}
+                    {estrellasHtml(calcularCalificacionUsuario(data))}
                   </div>
                 </div>
                 <form className="flex flex-col h-full">
@@ -307,7 +308,7 @@ export default function Clase() {
                 </span>
                 <div className="flex">
                   <div className="flex gap-2 h-8">
-                    {estrellasHtml(data.servicio.calificacion)}
+                    {estrellasHtml(calcularCalificacionServicio(data.servicio))}
                   </div>
                 </div>
                 <div className="flex flex-col w-full gap-2">

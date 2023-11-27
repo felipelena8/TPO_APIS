@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { estrellasHtml, isEmail, sesionIniciada } from "../utils/Utils";
+import {
+  calcularCalificacionUsuario,
+  estrellasHtml,
+  isEmail,
+  sesionIniciada,
+} from "../utils/Utils";
 import { profesorPorId, updateUser } from "../controllers/app.controller";
 
 import { useNavigate } from "react-router-dom";
@@ -231,11 +236,7 @@ export default function Perfil() {
                 </span>
                 <div className="flex">
                   <div className="flex gap-2 h-8">
-                    {estrellasHtml(
-                      profesor.servicios
-                        .map((servicio) => servicio.calificacion)
-                        .reduce((a, b) => a + b, 0) / profesor.servicios.length
-                    )}
+                    {estrellasHtml(calcularCalificacionUsuario(profesor))}
                   </div>
                 </div>
                 <div className="flex justify-around  max-md:flex-col-reverse max-md:items-center">
