@@ -47,7 +47,6 @@ export default function ContenedorClases() {
       })
       .then((servicios) => setServicios(servicios))
       .finally(setTimeout(() => setCargando(false), 400));
-    console.log(servicios);
   };
 
   useEffect(() => {

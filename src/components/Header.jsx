@@ -7,7 +7,7 @@ export default function Header({ props }) {
   const [navMobile, setNavMobile] = useState(false);
   const [mostrarPerfil, setMostrarPerfil] = useState(false);
 
-  const { sesionIniciada, setSesionIniciada } = props;
+  const { sesionIniciada, setSesionIniciada, imgChanged } = props;
 
   const getData = () => {
     fetch("/categorias.json")
@@ -19,7 +19,7 @@ export default function Header({ props }) {
 
   useEffect(() => {
     getData();
-  }, []);
+  }, [imgChanged]);
 
   function cerrarSesion() {
     localStorage.clear();

@@ -203,7 +203,6 @@ function sesionIniciada() {
 }
 
 function calcularCalificacionServicio(servicio) {
-  console.log(servicio);
   let n = servicio.comentarios ? servicio.comentarios.length : 0;
   if (n == 0) return 0;
   let suma = 0;

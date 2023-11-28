@@ -10,11 +10,12 @@ import { profesorPorId, updateUser } from "../controllers/app.controller";
 import { useNavigate } from "react-router-dom";
 import Spinner from "./Spinner";
 
-export default function Perfil() {
+export default function Perfil({ props }) {
   const [profesor, setProfesor] = useState({});
   const [cargando, setCargando] = useState(true);
   const [modal, setModal] = useState(false);
 
+  const { setImgChanged } = props;
   const [profesorUpdate, setProfesorUpdate] = useState({
     nombre: "",
     apellido: "",
@@ -39,6 +40,7 @@ export default function Perfil() {
         setProfesor(data);
         setProfesorUpdate(data);
         localStorage.setItem("img", data.img);
+        setImgChanged((v) => v + 1);
       })
       .then(() => setCargando(false));
   };
@@ -54,7 +56,6 @@ export default function Perfil() {
 
   const handleGuardar = (e) => {
     e.preventDefault();
-    console.log(profesorUpdate);
     if (
       profesorUpdate.nombre &&
       profesorUpdate.apellido &&

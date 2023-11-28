@@ -84,7 +84,6 @@ export const registrate = async function (registro) {
     });
 
     let data = await response.json();
-    console.log(data);
     switch (response.status) {
       case 201:
         localStorage.setItem("token", data.createdUser);
@@ -131,7 +130,6 @@ export const profesorPorId = async function (token) {
 export const updateUser = async function (update, token) {
   let url = urlWebServices.updateUser;
   const formData = new FormData();
-  console.log(update.img);
   formData.append("mail", update.mail);
   formData.append("telefono", update.telefono);
   formData.append("nombre", update.nombre);
@@ -150,7 +148,6 @@ export const updateUser = async function (update, token) {
     });
 
     let data = await response.json();
-    console.log(data);
     switch (response.status) {
       case 20:
         localStorage.setItem("token", data.createdUser.token);
@@ -266,7 +263,6 @@ export const createCommentClass = async function (idClase, comment) {
       body: formData,
     });
 
-    console.log(response.status);
     if (response.status == 401) {
       return false;
     }
@@ -288,7 +284,6 @@ export const changeSeenNotification = async function (idNotification) {
     });
 
     let data = await response.json();
-    console.log(response.status);
   } catch (e) {
     console.log(e);
     return false;

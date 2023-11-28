@@ -17,9 +17,10 @@ import Contrataciones from './components/Contrataciones';
 
 function App() {
   const [sesionIniciada, setSesionIniciada] = useState(() => { return localStorage.getItem("token") != null })
+  const [imgChanged, setImgChanged] = useState()
   return (
     <>
-      <Header props={{ sesionIniciada, setSesionIniciada }} />
+      <Header props={{ sesionIniciada, setSesionIniciada, imgChanged }} />
       <main className='min-h-screen'>
         <Routes>
           <Route path="/" element={<Inicio />} />
@@ -29,7 +30,7 @@ function App() {
           <Route path="/clase/:id" element={<Clase />} />
           <Route path='/contrataciones' element={<Contrataciones />} />
           <Route path='/notificaciones' element={<Notificaciones />} />
-          <Route path='/perfil' element={<Perfil />} />
+          <Route path='/perfil' element={<Perfil props={{ setImgChanged }} />} />
           <Route path='/mis-clases' element={<MisClases props={{ sesionIniciada }} />} />
         </Routes>
       </main>
