@@ -36,6 +36,8 @@ export default function Contrataciones() {
                 motivo={contratacion.motivo}
                 idServicio={contratacion.idServicio}
                 descripcionServicio={contratacion.descripcionServicio}
+                idContratacion={contratacion._id}
+                getData={getData}
               />
             ))}
           </div>

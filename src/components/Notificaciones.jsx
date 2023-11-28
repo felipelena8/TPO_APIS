@@ -18,7 +18,10 @@ export default function Notificaciones() {
     } else {
       profesorPorId(localStorage.getItem("token"))
         .then((data) => {
-          setNotificaciones(data.notificaciones);
+          const notificacionesVistas = data.notificaciones.filter(
+            (notificacion) => notificacion.visto === false
+          );
+          setNotificaciones(notificacionesVistas);
         })
         .then(() => setCargando(false));
     }
