@@ -40,9 +40,9 @@ export default function Perfil({ props }) {
         setProfesor(data);
         setProfesorUpdate(data);
         localStorage.setItem("img", data.img);
-        setImgChanged((v) => v + 1);
       })
-      .then(() => setCargando(false));
+      .then(() => setCargando(false))
+      .then(() => setImgChanged((v) => v + 1));
   };
 
   const goTo = useNavigate();
@@ -204,7 +204,11 @@ export default function Perfil({ props }) {
             <div className="flex flex-col max-lg:px-10 lg:px-32 gap-10 items-center ">
               <div className="flex flex-col shadow-card p-10 rounded-2xl items-center gap-4 relative">
                 <img
-                  src={localStorage.getItem("img")}
+                  src={
+                    localStorage.getItem("img") != "undefined"
+                      ? localStorage.getItem("img")
+                      : "/images/user.png"
+                  }
                   width={230}
                   height={230}
                   alt=""

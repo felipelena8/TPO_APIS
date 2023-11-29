@@ -42,7 +42,11 @@ export default function Header({ props }) {
       onClick={() => setMostrarPerfil(!mostrarPerfil)}
     >
       <img
-        src={localStorage.getItem("img")}
+        src={
+          localStorage.getItem("img") != "undefined"
+            ? localStorage.getItem("img")
+            : "/images/user.png"
+        }
         alt=""
         className="rounded-full w-full h-full"
       />
