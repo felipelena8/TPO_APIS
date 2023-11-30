@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Metodologia from "./Metodologia";
-import { calcularCalificacionServicio } from "../utils/Utils";
+import { calcularCalificacionServicio, fixCalificacion } from "../utils/Utils";
 import { activateClass, eliminarServicio } from "../controllers/app.controller";
 
 export default function CardClaseAdmin(props) {
@@ -16,7 +16,7 @@ export default function CardClaseAdmin(props) {
     setServicioId,
   } = props;
   let { categoria, costo, descripcion, _id, metodologia, activo } = servicio;
-
+  const [claseActiva, setClaseActiva] = useState(activo);
   const handleModificar = () => {
     setModal(true);
     setPublicacion(servicio);
@@ -25,6 +25,7 @@ export default function CardClaseAdmin(props) {
 
   const handleChangeActivate = () => {
     activateClass(_id).then(() => getData());
+    setClaseActiva(!claseActiva);
   };
 
   const handleDelete = () => {
@@ -67,7 +68,7 @@ export default function CardClaseAdmin(props) {
               />
             </svg>
             <span className="font-bold">
-              {calcularCalificacionServicio(servicio)}
+              {fixCalificacion(calcularCalificacionServicio(servicio))}
             </span>
           </div>
           <div className="flex gap-2 items-center">
@@ -204,7 +205,7 @@ export default function CardClaseAdmin(props) {
             >
               Eliminar
             </button>
-            {activo ? (
+            {claseActiva ? (
               <button
                 className="bg-coral rounded-lg p-2 w-2/3 text-white border border-coral hover:bg-white hover:text-coral transition-all"
                 onClick={handleChangeActivate}

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { calcularCalificacionServicio } from "../utils/Utils";
+import { calcularCalificacionServicio, fixCalificacion } from "../utils/Utils";
 
 export default function CardClase(props) {
   const { nombre, ubicacion, img, servicio } = props;
@@ -37,7 +37,7 @@ export default function CardClase(props) {
               />
             </svg>
             <span className="font-bold">
-              {calcularCalificacionServicio(servicio)}
+              {fixCalificacion(calcularCalificacionServicio(servicio))}
             </span>
           </div>
           <div className="flex gap-2 items-center">

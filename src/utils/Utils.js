@@ -38,43 +38,6 @@ let estrellaVacia = (
   </svg>
 );
 
-async function getData() {
-  return await fetch("/servicios.json").then((res) => res.json());
-}
-
-async function serviciosPorCategoria(categoria) {
-  let datos = await getData();
-  let clases = [];
-  for (let i in datos) {
-    let profesor = datos[i];
-    let servicios = [];
-    for (let j in profesor.servicios) {
-      if (
-        profesor.servicios[j].activo == true &&
-        profesor.servicios[j].categoria.toLowerCase() == categoria.toLowerCase()
-      ) {
-        servicios.push(profesor.servicios[j]);
-      }
-    }
-    if (servicios.length != 0) {
-      profesor.servicios = servicios;
-      clases.push(profesor);
-    }
-  }
-  return await clases;
-}
-
-async function profesorPorId(idProfesor) {
-  let datos = await getData();
-  for (let i in datos) {
-    let profesor = datos[i];
-    if (profesor.id == idProfesor) {
-      return await profesor;
-    }
-  }
-  return {};
-}
-
 async function filtrarServicios(datos, tipo, frecuencia, calificacion) {
   let calificaciones = calificacion
     .map((elem, i) => (elem ? i + 1 : -1))
@@ -101,21 +64,6 @@ async function filtrarServicios(datos, tipo, frecuencia, calificacion) {
     });
   }
   return await datos;
-}
-
-async function buscarServicio(id) {
-  let datos = await getData();
-  for (let i in datos) {
-    let profesor = datos[i];
-    for (let j in profesor.servicios) {
-      if (profesor.servicios[j].id == id) {
-        profesor.servicio = profesor.servicios[j];
-        delete profesor.servicios;
-        return await profesor;
-      }
-    }
-  }
-  return {};
 }
 
 function reseñaEstrella(calificacion, setCalificacion) {
@@ -210,6 +158,16 @@ function calcularCalificacionServicio(servicio) {
     suma += servicio.comentarios[i].estrellas;
   }
   return suma / n;
+
+}
+
+function fixCalificacion(calificacion) {
+
+  if (calificacion % 1 == 0) {
+    return calificacion
+  } else {
+    return calificacion.toFixed(1)
+  }
 }
 
 function calcularCalificacionUsuario(user) {
@@ -219,6 +177,7 @@ function calcularCalificacionUsuario(user) {
   for (let i = 0; i < n; i++) {
     suma += calcularCalificacionServicio(user.servicios[i]);
   }
+
   return suma / n;
 }
 
@@ -239,18 +198,15 @@ function getContratacionesProfesor(profesor) {
 }
 
 export {
-  getData,
-  buscarServicio,
   formatearFecha,
   estrellasHtml,
   isEmail,
   reseñaEstrella,
-  serviciosPorCategoria,
   filtrarServicios,
-  profesorPorId,
   getCategorias,
   getContratacionesProfesor,
   sesionIniciada,
   calcularCalificacionServicio,
   calcularCalificacionUsuario,
+  fixCalificacion
 };

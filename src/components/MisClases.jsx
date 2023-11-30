@@ -68,7 +68,7 @@ export default function MisClases({ props }) {
           ) : (
             profesor.servicios.map((servicio) => (
               <CardClaseAdmin
-                key={servicio.id}
+                key={servicio._id}
                 servicio={servicio}
                 nombre={profesor.nombre}
                 ubicacion={profesor.ubicacion}

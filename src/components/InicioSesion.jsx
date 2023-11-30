@@ -27,6 +27,7 @@ export default function InicioSesion({ props }) {
     if (password.length >= 8 && isEmail(mail)) {
       login({ mail: mail, password: password }).then((existeData) => {
         setSesionIniciada(existeData);
+        setExiste(existeData);
       });
     }
   };
@@ -69,9 +70,6 @@ export default function InicioSesion({ props }) {
           >
             Entrar
           </button>
-          <span className="font-bold text-lg text-blue-600">
-            ¿Has olvidado tu constraseña?
-          </span>
           {!existe && submitted ? (
             <span className="w-full text-center text-red-500">
               Tu contraseña no es correcta
