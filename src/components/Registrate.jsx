@@ -152,6 +152,13 @@ export default function Registrate({ props }) {
             >
               Empezar ahora
             </button>
+            {setSubmitted ? (
+              <span className="w-full text-left text-red-500">
+                El mail ya se encuentra registrado
+              </span>
+            ) : (
+              ""
+            )}
           </form>
         </div>
       </div>
